@@ -12537,11 +12537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\P T G\\ATS\\PTG.ATS\\PTG.ATS.Web\\PTG.ATS.Web.csproj",
+      "projectUniqueName": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Web\\PTG.ATS.Web.csproj",
       "projectName": "PTG.ATS.Web",
-      "projectPath": "F:\\P T G\\ATS\\PTG.ATS\\PTG.ATS.Web\\PTG.ATS.Web.csproj",
+      "projectPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Web\\PTG.ATS.Web.csproj",
       "packagesPath": "C:\\Users\\Sathish Pabbati\\.nuget\\packages\\",
-      "outputPath": "F:\\P T G\\ATS\\PTG.ATS\\PTG.ATS.Web\\obj\\",
+      "outputPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

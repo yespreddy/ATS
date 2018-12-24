@@ -11800,11 +11800,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\P T G\\ATS\\PTG.ATS\\PTG.ATS.Services\\PTG.ATS.Services.csproj",
+      "projectUniqueName": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Services\\PTG.ATS.Services.csproj",
       "projectName": "PTG.ATS.Services",
-      "projectPath": "F:\\P T G\\ATS\\PTG.ATS\\PTG.ATS.Services\\PTG.ATS.Services.csproj",
+      "projectPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Services\\PTG.ATS.Services.csproj",
       "packagesPath": "C:\\Users\\Sathish Pabbati\\.nuget\\packages\\",
-      "outputPath": "F:\\P T G\\ATS\\PTG.ATS\\PTG.ATS.Services\\obj\\",
+      "outputPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
