@@ -1,0 +1,180 @@
+﻿//
+// Config Vars
+// -----------------------------------------------------
+
+// Colors from Fabric
+$color-theme-darker: #004578;
+$color-theme-dark: #005a9e;
+$color-theme-dark-alt: #106ebe;
+$color-theme-primary: #0078d4;
+$color-theme-secondary: #2b88d8;
+$color-theme-tertiary: #71afe5;
+$color-theme-light: #c7e0f4;
+$color-theme-lighter: #deecf9;
+$color-theme-lighter-alt: #eff6fc;
+
+$color-black: #000;
+$color-neutral-dark: #212121;
+$color-neutral-primary: #333;
+$color-neutral-primary-alt: #3c3c3c;
+$color-neutral-primary-light: #404040;
+$color-neutral-secondary: #666;
+$color-neutral-secondary-alt: #909090;
+$color-neutral-tertiary: #a6a6a6;
+$color-neutral-tertiary-alt: #c8c8c8;
+$color-neutral-quaternary: #d0d0d0;
+$color-neutral-quaternary-alt: #dadada;
+$color-neutral-light: #eaeaea;
+$color-neutral-lighter: #f4f4f4;
+$color-neutral-lighter-alt: #f8f8f8;
+$color-white: #fff;
+
+$color-form-item-border: #ccc;
+$color-form-item-background: $color-white;
+$color-form-item-button-border: #afafaf;
+$color-form-item-button-icon-background: #d4d4d4;
+
+$color-blue-dark: #002050;
+$color-blue-mid: #00188f;
+$color-blue: #0078d4;
+$color-blue-alt: #2763cd;
+$color-blue-light: #00bcf2;
+$color-blue-muted: #2888d2;
+
+$color-green-dark: #004b1c;
+$color-green: #107c10;
+$color-green-light: #bad80a;
+$color-green-lighter: #7ebb00;
+$color-green-notification: #7fba00;
+
+$color-magenta-dark: #5c005c;
+$color-magenta: #b4009e;
+$color-magenta-light: #e3008c;
+
+$color-orange: #d83b01;
+$color-orange-light: #ea4300;
+$color-orange-lighter: #ff8c00;
+$color-orange-notification: #ff8c00;
+
+$color-purple-dark: #32145a;
+$color-purple: #5c2d91;
+$color-purple-light: #b4a0ff;
+
+$color-red: #e81123;
+$color-red-type: #c12300;
+$color-red-dark: #a80000;
+$color-red-notification: #e81123;
+
+$color-teal-dark: #004b50;
+$color-teal: #008272;
+$color-teal-light: #00b294;
+
+$color-yellow: #ffb900;
+$color-yellow-light: #fff100;
+
+$color-body-bg: $color-neutral-lighter;
+$color-text: $color-neutral-primary;
+$color-title: $color-neutral-primary;
+$color-link: $color-blue;
+$color-link-hover: $color-blue;
+
+// Element type colors
+// -----------------------------------------------------
+$color-type-bd: $color-teal-dark; // Business Driver
+$color-type-bdn: $color-magenta-light; // Benefits Dependency Network
+$color-type-c: $color-blue; // Capabilities
+$color-type-cj: $color-green-light; // Customer Journey
+$color-type-dma: $color-neutral-primary; // Digital Maturity Assessment
+$color-type-if: $color-red-type; // Imagine If
+$color-type-rm: $color-blue-light; // Roadmap
+$color-type-s: $color-magenta; // Scenario
+$color-type-sc: $color-blue-dark; // Scenario Chain
+$color-type-scj: $color-green-light; // Scenario Customer Journey
+$color-type-sn: $color-teal-light; // Scenario Narrative
+$color-type-ss: $color-red-dark; // Success Story
+$color-type-ssb: $color-magenta-dark; // Scenario Storyboard
+$color-type-trm: $color-blue-light; // ??
+$color-type-tsb: $color-blue-mid; // Technology Storyboard
+$color-type-v: $color-orange-lighter; // Vision
+$color-type-vrs: $color-green-dark; // Value Realization Scorecard
+$color-type-vtp: $color-purple-light; // Value Touch Points
+
+// Additional colors
+$app-theme: $color-theme-primary;
+$content-subtle-background-dark: #e6e6e6;
+$app-theme-hover: rgba(0, 120, 212, 0.1);
+$gallery-background: $color-white;
+$content-foreground: #1a1a1a;
+$border-color: #c6c6c6;
+$content-subtle-foreground: #525252;
+
+// Paths
+$fonts-path: '/assets/fonts';
+
+// Fonts
+$font-primary: 'Segoe UI Web (West European)', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+
+// Animations
+$anim-speed: 0.3s;
+$anim-speed-fast: 0.111s;
+$anim-ease: ease-out;
+
+// Media Queries (based on Fabric Core)
+// Mobile
+$small-breakpoint-min: 1px;
+$small-breakpoint-max: 479px;
+$medium-breakpoint-min: 480px;
+$medium-breakpoint-max: 639px;
+// Tablet
+$large-breakpoint-min: 640px;
+$large-breakpoint-max: 1023px;
+// Desktop
+$x-large-breakpoint-min: 1024px;
+$x-large-breakpoint-mid: 1170px;
+$x-large-breakpoint-max: 1365px;
+$xx-large-breakpoint-min: 1366px;
+$xx-large-breakpoint-max: 1919px;
+$xxx-large-breakpoint-min: 1920px;
+
+// Container Sizes
+$min-width: 320px;
+$max-container-width: 1380px;
+$gutter-width: 10px;
+
+$header-top-height: 50px;
+$header-bottom-height: 80px;
+$header-height: $header-top-height + $header-bottom-height;
+
+$tile-list-view-height: 120px;
+$tile-list-view-btn-size: 50px;
+
+$pane-width-closed: 50px;
+$pane-width-condensed: 600px;
+$pane-width-opened: calc(100% - #{$pane-width-condensed});
+$pane-width-full: calc(100% - #{$pane-width-closed});
+$pane-header-height: 50px;
+
+$modal-sidebar-width: 300px;
+$modal-padding: 2rem;
+
+// Z Index
+$z-index-tile-base: 1;
+$z-index-tile-actions: 2;
+$z-index-carousel-arrows: 2;
+$z-index-predictive-search: 1;
+$z-index-predictive-search-submit: 2;
+$z-index-header: 3;
+$z-index-canvas-overlay: 0;
+$z-index-canvas-submenu: 1;
+$z-index-canvas-tab: 2;
+$z-index-canvas-header: 3;
+$z-index-filters-panel: 4;
+$z-index-loader: 5;
+
+
+@media (max-width: 767px) {
+    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+    body {
+        padding-top: 50px;
+    }
+}

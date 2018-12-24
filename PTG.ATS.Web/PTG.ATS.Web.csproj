@@ -23,7 +23,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Folder Include="ClientApp\src\assets\images\" />
+    <Folder Include="ClientApp\src\html\" />
+    <Folder Include="ClientApp\src\models\" />
+    <Folder Include="ClientApp\src\scripts\" />
+    <Folder Include="wwwroot\assets\js\" />
+    <Folder Include="wwwroot\assets\css\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
