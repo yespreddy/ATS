@@ -16,15 +16,15 @@ module.exports = merge(CONFIG_BASE, {
 		disableHostCheck: true,
 		host: '0.0.0.0',
 		port: 3000,
-		hot: false, // don't use hmr because it duplicates css files and crashes browser
-		setup: (app) => {
+        hot: false, // don't use hmr because it duplicates css files and crashes browser
+        before: (app) => {
 			app.post('*', (req, res) => {
 				res.redirect(req.originalUrl);
 			});
 		}
 	},
 	plugins: [
-		new webpack.NamedModulesPlugin()
-		//new webpack.HotModuleReplacementPlugin()
+		new webpack.NamedModulesPlugin(),
+		new webpack.HotModuleReplacementPlugin()
 	]
 });

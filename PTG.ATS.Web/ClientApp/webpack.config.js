@@ -72,10 +72,15 @@ module.exports = {
 		new ExtractTextPlugin({
 			filename: `${CONFIG_PATHS.output.styles}/[name].css`
 		}),
+
 		//new HtmlWebPackPlugin({
 		//	inject: true,
 		//	template: `${CONFIG_PATHS.src.html}/index.ejs`
 		//})
+        //new webpack.optimize.CommonsChunkPlugin({
+        //    names: ['app', 'vendor', 'manifest'],
+        //    minChunks: Infinity,
+        //})
 	],
 	//
 	// Define shortcuts for import/require paths
@@ -161,7 +166,7 @@ module.exports = {
 			{
 				enforce: 'pre',
 				test: /\.js$/,
-				include: CONFIG_PATHS.src.root,
+                include: CONFIG_PATHS.src.scripts,
 				exclude: /node_modules/,
 				loader: 'eslint-loader',
 				options: {
@@ -170,12 +175,12 @@ module.exports = {
 			},
 			// JS transpiler
 			{
-				test: /\.js$/,
+                test: /\.js|.jsx$/,
                 include: [CONFIG_PATHS.src.scripts, CONFIG_PATHS.src.models],
 				use: {
 					loader: 'babel-loader',
 					options: {
-                        presets: ['es2015', 'react'],
+                        presets: ['es2015', 'react','stage-0'],
 						compact: OPTIONS.minimize
 					}
 				}
