@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
 const webpack = require('webpack');
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+const ExtractTextPlugin = require("mini-css-extract-plugin");
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 // Get our file path variables
@@ -24,6 +24,11 @@ module.exports = {
 	//
 	// Define our entry files
 	//
+    //stats: {
+    //    // One of the two if I remember right
+    //    entrypoints: false,
+    //    children: false
+    //},
 	entry: {
 		vendor: ['babel-polyfill', 'isomorphic-fetch'],
 		app: [`${CONFIG_PATHS.src.root}/index.js`, `${CONFIG_PATHS.src.styles}/app.scss`]
@@ -52,7 +57,7 @@ module.exports = {
                 default: {
                     minChunks: 2,
                     priority: -20,
-			reuseExistingChunk: true
+                    reuseExistingChunk: true
                 },
                 vendors: {
                     test: /[\\/]node_modules[\\/]/,
@@ -70,13 +75,14 @@ module.exports = {
 		new StyleLintPlugin(),
 		// Create our CSS entry files
 		new ExtractTextPlugin({
-			filename: `${CONFIG_PATHS.output.styles}/[name].css`
+            filename: `${CONFIG_PATHS.output.styles}/[name].css`,
+            chunkFilename: "[name].css"
 		}),
 
-		//new HtmlWebPackPlugin({
-		//	inject: true,
-		//	template: `${CONFIG_PATHS.src.html}/index.ejs`
-		//})
+		new HtmlWebPackPlugin({
+			inject: true,
+			template: `${CONFIG_PATHS.public.html}/index.html`
+		})
         //new webpack.optimize.CommonsChunkPlugin({
         //    names: ['app', 'vendor', 'manifest'],
         //    minChunks: Infinity,
@@ -92,7 +98,7 @@ module.exports = {
 		],
 		alias: {
             scripts: path.resolve(__dirname, CONFIG_PATHS.src.scripts),
-            scripts: path.resolve(__dirname, CONFIG_PATHS.src.scripts),
+            
             images: path.resolve(__dirname, CONFIG_PATHS.src.images),
             models: path.resolve(__dirname, CONFIG_PATHS.src.models)
 		}
@@ -133,36 +139,14 @@ module.exports = {
 			{
 				test: /\.scss$/,
 				include: CONFIG_PATHS.src.styles,
-				use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
-					use: [
-						{
-							loader: 'css-loader',
-							options: {
-								minimize: OPTIONS.minimize,
-								sourceMap: OPTIONS.sourceMap
-							},
-						},
-						{
-							loader: 'postcss-loader',
-							options: {
-								sourceMap: OPTIONS.sourceMap
-							}
-						},
-						{
-							loader: 'sass-loader',
-							options: {
-								sourceMap: OPTIONS.sourceMap
-							}
-						}
-					]
-				}))
+                use: [ 'sass-loader' ]
 			},
-			// HTML using EJS templates
-			//{
-			//	test: /\.ejs$/,
-			//	loader: 'ejs-compiled-loader',
-			//	include: CONFIG_PATHS.src.html
-			//},
+			//HTML using EJS templates
+			{
+				test: /\.ejs$/,
+				loader: 'ejs-compiled-loader',
+				include: CONFIG_PATHS.public.html
+			},
 			// JS linter
 			{
 				enforce: 'pre',
