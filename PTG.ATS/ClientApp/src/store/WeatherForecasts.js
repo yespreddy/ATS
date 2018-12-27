@@ -24,7 +24,7 @@ export const reducer = (state, action) => {
 
   if (action.type === requestWeatherForecastsType) {
     return {
-      ...state,
+      state,
       startDateIndex: action.startDateIndex,
       isLoading: true
     };
@@ -32,7 +32,7 @@ export const reducer = (state, action) => {
 
   if (action.type === receiveWeatherForecastsType) {
     return {
-      ...state,
+      state,
       startDateIndex: action.startDateIndex,
       forecasts: action.forecasts,
       isLoading: false
