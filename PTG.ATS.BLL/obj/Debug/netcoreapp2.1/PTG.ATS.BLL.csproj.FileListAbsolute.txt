@@ -1,0 +1,16 @@
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.BLL\bin\Debug\netcoreapp2.1\PTG.ATS.BLL.deps.json
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.BLL\bin\Debug\netcoreapp2.1\PTG.ATS.BLL.dll
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.BLL\bin\Debug\netcoreapp2.1\PTG.ATS.BLL.pdb
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.BLL\obj\Debug\netcoreapp2.1\PTG.ATS.BLL.csprojAssemblyReference.cache
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.BLL\obj\Debug\netcoreapp2.1\PTG.ATS.BLL.csproj.CoreCompileInputs.cache
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.BLL\obj\Debug\netcoreapp2.1\PTG.ATS.BLL.AssemblyInfoInputs.cache
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.BLL\obj\Debug\netcoreapp2.1\PTG.ATS.BLL.AssemblyInfo.cs
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.BLL\obj\Debug\netcoreapp2.1\PTG.ATS.BLL.dll
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.BLL\obj\Debug\netcoreapp2.1\PTG.ATS.BLL.pdb
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.BLL\bin\Debug\netcoreapp2.1\PTG.ATS.DAL.dll
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.BLL\bin\Debug\netcoreapp2.1\PTG.ATS.Entities.dll
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.BLL\bin\Debug\netcoreapp2.1\PTG.ATS.Infra.dll
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.BLL\bin\Debug\netcoreapp2.1\PTG.ATS.DAL.pdb
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.BLL\bin\Debug\netcoreapp2.1\PTG.ATS.Entities.pdb
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.BLL\bin\Debug\netcoreapp2.1\PTG.ATS.Infra.pdb
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.BLL\obj\Debug\netcoreapp2.1\PTG.ATS.BLL.csproj.CopyComplete

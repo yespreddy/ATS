@@ -1,0 +1,9 @@
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.DAL\bin\Debug\netcoreapp2.1\PTG.ATS.DAL.deps.json
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.DAL\bin\Debug\netcoreapp2.1\PTG.ATS.DAL.dll
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.DAL\bin\Debug\netcoreapp2.1\PTG.ATS.DAL.pdb
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.DAL\obj\Debug\netcoreapp2.1\PTG.ATS.DAL.csproj.CoreCompileInputs.cache
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.DAL\obj\Debug\netcoreapp2.1\PTG.ATS.DAL.AssemblyInfoInputs.cache
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.DAL\obj\Debug\netcoreapp2.1\PTG.ATS.DAL.AssemblyInfo.cs
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.DAL\obj\Debug\netcoreapp2.1\PTG.ATS.DAL.dll
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.DAL\obj\Debug\netcoreapp2.1\PTG.ATS.DAL.pdb
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.DAL\obj\Debug\netcoreapp2.1\PTG.ATS.DAL.csprojAssemblyReference.cache

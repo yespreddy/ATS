@@ -2,7 +2,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 // Get our file path variables
@@ -91,7 +91,8 @@ module.exports = {
 			'.jpg', '.jpeg', '.png', '.gif', '.svg'
 		],
 		alias: {
-			scripts: path.resolve(__dirname, CONFIG_PATHS.src.scripts),
+            scripts: path.resolve(__dirname, CONFIG_PATHS.src.scripts),
+            scripts: path.resolve(__dirname, CONFIG_PATHS.src.scripts),
             images: path.resolve(__dirname, CONFIG_PATHS.src.images),
             models: path.resolve(__dirname, CONFIG_PATHS.src.models)
 		}

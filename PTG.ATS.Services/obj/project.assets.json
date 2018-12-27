@@ -4333,6 +4333,51 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "PTG.ATS.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "PTG.ATS.DAL": "1.0.0",
+          "PTG.ATS.Entities": "1.0.0",
+          "PTG.ATS.Infra": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PTG.ATS.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PTG.ATS.BLL.dll": {}
+        }
+      },
+      "PTG.ATS.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/PTG.ATS.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PTG.ATS.DAL.dll": {}
+        }
+      },
+      "PTG.ATS.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/PTG.ATS.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PTG.ATS.Entities.dll": {}
+        }
+      },
+      "PTG.ATS.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/PTG.ATS.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PTG.ATS.Infra.dll": {}
+        }
       }
     }
   },
@@ -11784,13 +11829,36 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "PTG.ATS.BLL/1.0.0": {
+      "type": "project",
+      "path": "../PTG.ATS.BLL/PTG.ATS.BLL.csproj",
+      "msbuildProject": "../PTG.ATS.BLL/PTG.ATS.BLL.csproj"
+    },
+    "PTG.ATS.DAL/1.0.0": {
+      "type": "project",
+      "path": "../PTG.ATS.DAL/PTG.ATS.DAL.csproj",
+      "msbuildProject": "../PTG.ATS.DAL/PTG.ATS.DAL.csproj"
+    },
+    "PTG.ATS.Entities/1.0.0": {
+      "type": "project",
+      "path": "../PTG.ATS.Entities/PTG.ATS.Entities.csproj",
+      "msbuildProject": "../PTG.ATS.Entities/PTG.ATS.Entities.csproj"
+    },
+    "PTG.ATS.Infra/1.0.0": {
+      "type": "project",
+      "path": "../PTG.ATS.Infra/PTG.ATS.Infra.csproj",
+      "msbuildProject": "../PTG.ATS.Infra/PTG.ATS.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "PTG.ATS.BLL >= 1.0.0",
+      "PTG.ATS.Entities >= 1.0.0",
+      "PTG.ATS.Infra >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11823,7 +11891,17 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj": {
+              "projectPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj"
+            },
+            "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj": {
+              "projectPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj"
+            },
+            "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj": {
+              "projectPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

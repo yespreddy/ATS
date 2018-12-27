@@ -1,0 +1,58 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "PTG.ATS.BLL/1.0.0": {
+        "dependencies": {
+          "PTG.ATS.DAL": "1.0.0",
+          "PTG.ATS.Entities": "1.0.0",
+          "PTG.ATS.Infra": "1.0.0"
+        },
+        "runtime": {
+          "PTG.ATS.BLL.dll": {}
+        }
+      },
+      "PTG.ATS.DAL/1.0.0": {
+        "runtime": {
+          "PTG.ATS.DAL.dll": {}
+        }
+      },
+      "PTG.ATS.Entities/1.0.0": {
+        "runtime": {
+          "PTG.ATS.Entities.dll": {}
+        }
+      },
+      "PTG.ATS.Infra/1.0.0": {
+        "runtime": {
+          "PTG.ATS.Infra.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PTG.ATS.BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PTG.ATS.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PTG.ATS.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PTG.ATS.Infra/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

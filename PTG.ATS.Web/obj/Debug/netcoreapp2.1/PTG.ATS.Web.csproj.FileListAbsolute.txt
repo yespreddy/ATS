@@ -54,7 +54,6 @@ F:\P T G\GutHub_ATS\ATS\PTG.ATS.Web\bin\Debug\netcoreapp2.1\PTG.ATS.Web.dll
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Web\bin\Debug\netcoreapp2.1\PTG.ATS.Web.pdb
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Web\bin\Debug\netcoreapp2.1\PTG.ATS.Web.Views.dll
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Web\bin\Debug\netcoreapp2.1\PTG.ATS.Web.Views.pdb
-F:\P T G\GutHub_ATS\ATS\PTG.ATS.Web\obj\Debug\netcoreapp2.1\PTG.ATS.Web.csprojAssemblyReference.cache
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Web\obj\Debug\netcoreapp2.1\PTG.ATS.Web.csproj.CoreCompileInputs.cache
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Web\obj\Debug\netcoreapp2.1\PTG.ATS.Web.RazorAssemblyInfo.cache
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Web\obj\Debug\netcoreapp2.1\PTG.ATS.Web.RazorAssemblyInfo.cs

@@ -9,4 +9,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PTG.ATS.BLL\PTG.ATS.BLL.csproj" />
+    <ProjectReference Include="..\PTG.ATS.Entities\PTG.ATS.Entities.csproj" />
+    <ProjectReference Include="..\PTG.ATS.Infra\PTG.ATS.Infra.csproj" />
+  </ItemGroup>
+
 </Project>

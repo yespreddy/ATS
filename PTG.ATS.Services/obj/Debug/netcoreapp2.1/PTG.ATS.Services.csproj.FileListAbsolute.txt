@@ -69,7 +69,6 @@ F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.1\PTG.ATS.Service
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.1\PTG.ATS.Services.pdb
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.1\PTG.ATS.Services.Views.dll
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.1\PTG.ATS.Services.Views.pdb
-F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.1\PTG.ATS.Services.csprojAssemblyReference.cache
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.1\PTG.ATS.Services.csproj.CoreCompileInputs.cache
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.1\PTG.ATS.Services.RazorAssemblyInfo.cache
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.1\PTG.ATS.Services.RazorAssemblyInfo.cs
@@ -94,3 +93,12 @@ F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.1\PTG.ATS.Service
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.1\PTG.ATS.Services.dll
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.1\PTG.ATS.Services.pdb
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.1\PTG.ATS.Services.csproj.CopyComplete
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.1\PTG.ATS.BLL.dll
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.1\PTG.ATS.DAL.dll
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.1\PTG.ATS.Entities.dll
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.1\PTG.ATS.Infra.dll
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.1\PTG.ATS.BLL.pdb
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.1\PTG.ATS.Entities.pdb
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.1\PTG.ATS.Infra.pdb
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.1\PTG.ATS.DAL.pdb
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.1\PTG.ATS.Services.csprojAssemblyReference.cache
