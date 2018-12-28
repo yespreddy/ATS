@@ -15,8 +15,8 @@ module.exports = {
         filename: '[name].js'
         //filename: '[name].[chunkhash].js'
     },
-    target: 'node', // update from 23.12.2018
-    externals: [nodeExternals()], // update from 23.12.2018
+    //target: 'node', // update from 23.12.2018
+    //externals: [nodeExternals()], // update from 23.12.2018
     module: {
         rules: [
             {
@@ -29,6 +29,12 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader']
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif|woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: {
+                    loader: "file-loader"
+                }
             }
         ]
     },
