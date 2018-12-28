@@ -28,12 +28,12 @@
     "mini-css-extract-plugin": "^0.5.0",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14",
     "webpack-md5-hash": "0.0.6",
     "webpack-node-externals": "^1.7.2"
   },
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack --mode development",
-    "start": "rimraf ./build && react-scripts start"
+    "dev": "webpack --mode development"
   }
 }
