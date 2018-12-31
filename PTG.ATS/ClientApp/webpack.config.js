@@ -11,7 +11,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
     entry: { main: './src/index.js' },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, './../wwwroot/dist'),
         filename: '[name].js'
         //filename: '[name].[chunkhash].js'
     },
@@ -39,7 +39,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin('dist', {}),
+        new CleanWebpackPlugin('./../wwwroot/dist', {}),
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
