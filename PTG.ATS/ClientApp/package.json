@@ -35,8 +35,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "dev": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development --open"
   },
   "browserslist": [
     ">0.2%",
