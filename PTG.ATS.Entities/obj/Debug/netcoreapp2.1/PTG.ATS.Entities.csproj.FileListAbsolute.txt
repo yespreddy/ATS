@@ -6,3 +6,4 @@ F:\P T G\GutHub_ATS\ATS\PTG.ATS.Entities\obj\Debug\netcoreapp2.1\PTG.ATS.Entitie
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Entities\obj\Debug\netcoreapp2.1\PTG.ATS.Entities.AssemblyInfo.cs
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Entities\obj\Debug\netcoreapp2.1\PTG.ATS.Entities.dll
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Entities\obj\Debug\netcoreapp2.1\PTG.ATS.Entities.pdb
+F:\P T G\GutHub_ATS\ATS\PTG.ATS.Entities\obj\Debug\netcoreapp2.1\PTG.ATS.Entities.csprojAssemblyReference.cache
