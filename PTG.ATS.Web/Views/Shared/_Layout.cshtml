@@ -13,7 +13,11 @@
     <link href="~/dist/main.css" rel="stylesheet" />
 </head>
 <body>
-
+    <script type="text/javascript">
+        ATS_WebUIHost = "@ViewBag.ATS_WebUIHost";
+        ATS_ServiceURL = "@ViewBag.ATS_ServiceURL";
+        console.log("log: "+ ATS_ServiceURL);
+    </script>
     @RenderBody()
     
 </body>
