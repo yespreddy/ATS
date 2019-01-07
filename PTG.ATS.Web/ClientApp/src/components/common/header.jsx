@@ -26,6 +26,9 @@ const Header = () => {
                     <NavLink className="nav-item nav-link" to="/jobs">
                         Jobs
                     </NavLink>
+					<NavLink className="nav-item nav-link" to="/newRequisition">
+                        Jobs Requisitions
+                    </NavLink>
                     <NavLink className="nav-item nav-link" to="/candidates">
                         Candidates
                      </NavLink>

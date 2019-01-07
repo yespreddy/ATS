@@ -366,3 +366,59 @@ a{
 }
 
 
+/*******************
+	HiringManager	
+******************/
+
+.processStage {
+	display: flex;
+	overflow: hidden;
+	padding: 30px;
+	background: #efefef;
+
+	& .Step {
+		display: inline-flex;
+		flex: 1 auto;
+		justify-content: center;
+		position: relative;
+
+		& span {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			border: 3px solid #ddd;
+			text-align: center;
+			line-height: 32px;
+
+			&:after {
+				content: '';
+				border-top: 3px solid #ddd;
+				width: calc(100% - 60px);
+				position: absolute;
+				top: 20px;
+				margin-left: 25px;
+			}
+		}
+
+		&:last-child {
+			span:after {
+				display: none;
+			}
+		}
+
+		&.active {
+			& span {
+				border: 3px solid #a71f37;
+				color: #a71f37;
+			}
+		}
+
+		&.completed {
+			& span {
+				border: 3px solid #a71f37;
+				background: #a71f37;
+				color: #fff;
+			}
+		}
+	}
+}
