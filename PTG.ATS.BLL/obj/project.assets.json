@@ -736,23 +736,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sathish Pabbati\\.nuget\\packages\\": {},
+    "C:\\Users\\shiva\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj",
+      "projectUniqueName": "D:\\ATS\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj",
       "projectName": "PTG.ATS.BLL",
-      "projectPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj",
-      "packagesPath": "C:\\Users\\Sathish Pabbati\\.nuget\\packages\\",
-      "outputPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.BLL\\obj\\",
+      "projectPath": "D:\\ATS\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj",
+      "packagesPath": "C:\\Users\\shiva\\.nuget\\packages\\",
+      "outputPath": "D:\\ATS\\PTG.ATS.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Sathish Pabbati\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\shiva\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -760,20 +763,19 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://microsoft.pkgs.visualstudio.com/_packaging/Universal.Store/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.DAL\\PTG.ATS.DAL.csproj": {
-              "projectPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.DAL\\PTG.ATS.DAL.csproj"
+            "D:\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj": {
+              "projectPath": "D:\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj"
             },
-            "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj": {
-              "projectPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj"
+            "D:\\ATS\\PTG.ATS.DAL\\PTG.ATS.DAL.csproj": {
+              "projectPath": "D:\\ATS\\PTG.ATS.DAL\\PTG.ATS.DAL.csproj"
             },
-            "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj": {
-              "projectPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj"
+            "D:\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj": {
+              "projectPath": "D:\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj"
             }
           }
         }

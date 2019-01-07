@@ -5286,7 +5286,6 @@
       "sha512": "ab4+TZw3Sxqrr5TwrwVyABeQkhSxYMJXgG6yZw7T+r6Vz+hcOt+pK79o15ESG7kZvWAK9wRG7emnTIia5O6R1Q==",
       "type": "package",
       "path": "microsoft.aspnetcore.razor.design/2.1.2",
-      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5650,7 +5649,6 @@
       "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
-      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         "Microsoft.CodeAnalysis.Analyzers.1.1.0.nupkg.sha512",
@@ -5888,7 +5886,6 @@
       "sha512": "OYHhKbFNJCSHpkLAKI9yqTx3+SZ7aHKZaCP+G5ctlL/rZm5Y37Ke00abUhp5mFEJlvEueYfOGDx/GjltEs210A==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.tools/2.1.1",
-      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7116,11 +7113,12 @@
       ]
     },
     "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "sha512": "znZGbws7E4BA9jxNZ7FuiIRI3C9hrgatVQSTKhIYZYNOud4M5VfGlTYi6RdYO5sQrebFuF/g9UEV3hOxDMXF6Q==",
       "type": "package",
       "path": "newtonsoft.json/11.0.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
@@ -7688,7 +7686,7 @@
       ]
     },
     "System.Collections.NonGeneric/4.3.0": {
-      "sha512": "ya82YiX44sl7HhPpdH9uxuTUGGpV0iNKOxxcGs+4irY4DU7wspoqTfblH+OM8SiS4mMfviLmV0BL0Mvgys4fnQ==",
+      "sha512": "prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
       "type": "package",
       "path": "system.collections.nongeneric/4.3.0",
       "files": [
@@ -7726,7 +7724,7 @@
       ]
     },
     "System.Collections.Specialized/4.3.0": {
-      "sha512": "heLqWp23QWxgzcVf8TpGL2rAX0521smzJKAeYPmokG1JravVNq5QvUjQ4D2rDWIlR7d1JUeDeObU+KJPngMHwg==",
+      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
       "type": "package",
       "path": "system.collections.specialized/4.3.0",
       "files": [
@@ -9074,7 +9072,7 @@
       ]
     },
     "System.Net.Http/4.3.0": {
-      "sha512": "sYg+FtILtRQuYWSIAuNOELwVuVsxVyJGWQyOnlAzhV4xvhyFnON1bAzYYC+jjRW8JREM45R0R5Dgi8MTC5sEwA==",
+      "sha512": "Z1UfSF6dlpCdZdxh6LeoGlYH+q6ptG/iiIWgUUeKhE3DbQACmZkU7Sz2nOX0qdHjz72MOdYRbkSJ5Qwl6sZgvg==",
       "type": "package",
       "path": "system.net.http/4.3.0",
       "files": [
@@ -11862,23 +11860,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sathish Pabbati\\.nuget\\packages\\": {},
+    "C:\\Users\\shiva\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Services\\PTG.ATS.Services.csproj",
+      "projectUniqueName": "D:\\ATS\\PTG.ATS.Services\\PTG.ATS.Services.csproj",
       "projectName": "PTG.ATS.Services",
-      "projectPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Services\\PTG.ATS.Services.csproj",
-      "packagesPath": "C:\\Users\\Sathish Pabbati\\.nuget\\packages\\",
-      "outputPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Services\\obj\\",
+      "projectPath": "D:\\ATS\\PTG.ATS.Services\\PTG.ATS.Services.csproj",
+      "packagesPath": "C:\\Users\\shiva\\.nuget\\packages\\",
+      "outputPath": "D:\\ATS\\PTG.ATS.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Sathish Pabbati\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\shiva\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11886,20 +11887,19 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://microsoft.pkgs.visualstudio.com/_packaging/Universal.Store/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj": {
-              "projectPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj"
+            "D:\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj": {
+              "projectPath": "D:\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj"
             },
-            "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj": {
-              "projectPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj"
+            "D:\\ATS\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj": {
+              "projectPath": "D:\\ATS\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj"
             },
-            "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj": {
-              "projectPath": "F:\\P T G\\GutHub_ATS\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj"
+            "D:\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj": {
+              "projectPath": "D:\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj"
             }
           }
         }

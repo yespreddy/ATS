@@ -23,6 +23,39 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\dist\448c34a56d699c29117adc64c43affeb.woff2" />
+    <Content Remove="wwwroot\dist\674f50d287a8c48dc19ba404d20fe713.eot" />
+    <Content Remove="wwwroot\dist\89889688147bd7575d6327160d64e760.svg" />
+    <Content Remove="wwwroot\dist\912ec66d7572ff821749319396470bde.svg" />
+    <Content Remove="wwwroot\dist\af7ae505a9eed503f8b8e6982036873e.woff2" />
+    <Content Remove="wwwroot\dist\b06871f281fee6b241d60582ae9369b9.ttf" />
+    <Content Remove="wwwroot\dist\e18bbf611f2a2e43afc071aa2f4e1512.ttf" />
+    <Content Remove="wwwroot\dist\f4769f9bdb7466be65088239c12046d1.eot" />
+    <Content Remove="wwwroot\dist\fa2772327f55d8198301fdb8bcfc8158.woff" />
+    <Content Remove="wwwroot\dist\fee66e712a8a08eef5805a46892932ad.woff" />
+    <Content Remove="wwwroot\dist\index.html" />
+    <Content Remove="wwwroot\dist\main.css" />
+    <Content Remove="wwwroot\dist\main.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\src\components\Counter.js" />
+    <None Remove="ClientApp\src\components\Counter.js" />
+    <None Remove="ClientApp\src\components\FetchData.js" />
+    <None Remove="ClientApp\src\components\FetchData.js" />
+    <None Remove="ClientApp\src\components\Home.js" />
+    <None Remove="ClientApp\src\components\Home.js" />
+    <None Remove="ClientApp\src\components\Layout.js" />
+    <None Remove="ClientApp\src\components\Layout.js" />
+    <None Remove="ClientApp\src\components\NavMenu.css" />
+    <None Remove="ClientApp\src\components\NavMenu.css" />
+    <None Remove="ClientApp\src\components\NavMenu.js" />
+    <None Remove="ClientApp\src\components\NavMenu.js" />
+    <None Remove="ClientApp\src\logo.svg" />
+    <None Remove="ClientApp\src\logo.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\dist\" />
   </ItemGroup>
 
