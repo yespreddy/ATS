@@ -155,6 +155,12 @@ a{
                 color:#fff;
                 padding: 0 !important; 
                 margin: 0 10px;
+
+                i{
+                    margin: 0 5px 0 0;
+
+                }
+
                 &.active{
                     border-bottom:2px solid yellow;
                 }
