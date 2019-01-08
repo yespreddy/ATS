@@ -2,14 +2,10 @@ import React, { Component } from 'react';
 import '../../styles/candidates.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { Accordion, AccordionItem, AccordionItemTitle, AccordionItemBody, } from 'react-accessible-accordion';
-import { Form, TextField, SelectField, TextareaField } from 'react-components-form';
 import Breadcrumbs from "../common/breadcrumb";
+import { Form, Button, FormGroup, Label, Input, FormText } from 'reactstrap';
 
-const options = [
-    { label: "Option 1", value: "opt1" },
-    { label: "Option 2", value: "opt2" },
-    { label: "Option 3", value: "opt3" },
-];
+
 
 class AddCandidate extends Component {
     constructor(props) {
@@ -37,10 +33,20 @@ class AddCandidate extends Component {
                     <h2>Job Information </h2>
                     <div className="row">
                         <Form>
-                            <div className="col-md-4 form-group">
-                                <label>Job Requisition </label>
-                                <SelectField className="form-control" name="category" options={options} />
-                            </div>
+
+                        <FormGroup  className="col-md-4">
+                                    <Label for="State">Job Requisition</Label>
+                                    <Input type="select" name="select" id="State">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>                        
+                                            
+                                        </FormGroup> 
+
+                         
                         </Form>
                     </div>
 
@@ -52,20 +58,23 @@ class AddCandidate extends Component {
                                 </AccordionItemTitle>
                                 <AccordionItemBody>
                                     <div className="row">
-                                        <Form>
-                                            <div className="col-md-4 form-group">
-                                                <label>Name  </label>
-                                                <TextField className="form-control" name="name" />
-                                            </div>
-                                            <div className="col-md-4 form-group">
-                                                <label>Email  </label>
-                                                <TextField className="form-control" name="Email" />
-                                            </div>
-                                            <div className="col-md-4 form-group">
-                                                <label>Phone  </label>
-                                                <TextField className="form-control" name="Phone" />
-                                            </div>
-                                        </Form>
+                                     <Form>
+                                    <FormGroup className="col-md-4">
+                                    <Label for="Name">Name</Label>
+                                    <Input type="text" id="Name" placeholder="" />
+                                    </FormGroup>
+                                    <FormGroup  className="col-md-4">
+                                    <Label for="Email">Email</Label>
+                                    <Input type="Email"  id="Email" placeholder="" />
+                                    </FormGroup> 
+                                    <FormGroup  className="col-md-4">
+                                    <Label for="Phone">Phone</Label>
+                                    <Input type="tel" id="Phone" placeholder="" />
+                                    </FormGroup> 
+                                    </Form>
+
+
+
                                     </div>
                                 </AccordionItemBody>
                             </AccordionItem>
@@ -75,28 +84,61 @@ class AddCandidate extends Component {
                                 </AccordionItemTitle>
                                 <AccordionItemBody>
                                     <div className="row">
-                                        <Form>
-                                            <div className="col-md-8 form-group">
-                                                <label>Address  </label>
-                                                <TextField className="form-control" name="name" />
-                                            </div>
-                                            <div className="col-md-4 form-group">
-                                                <label>State </label>
-                                                <SelectField className="form-control" name="category" options={options} />
-                                            </div>
-                                            <div className="col-md-4 form-group">
-                                                <label>City </label>
-                                                <SelectField className="form-control" name="category" options={options} />
-                                            </div>
-                                            <div className="col-md-4 form-group">
-                                                <label>City </label>
-                                                <SelectField className="form-control" name="category" options={options} />
-                                            </div>
-                                            <div className="col-md-4 form-group">
-                                                <label>Postal Code </label>
-                                                <TextField className="form-control" name="Phone" />
-                                            </div>
-                                        </Form>
+
+                                    <Form>
+                                    <FormGroup className="col-md-8">
+                                    <Label for="Address">Address</Label>
+                                    <Input type="textarea" name="text" id="Address" />
+
+                                    </FormGroup>
+                                    <FormGroup  className="col-md-4">
+                                    <Label for="State">State</Label>
+                                    <Input type="select" name="select" id="State">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>                        
+                                            
+                                        </FormGroup> 
+
+                                        <FormGroup  className="col-md-4">
+                                    <Label for="City">City</Label>
+                                    <Input type="select" name="select" id="City">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>                        
+                                            
+                                        </FormGroup> 
+
+                                        <FormGroup  className="col-md-4">
+                                    <Label for="City">City</Label>
+                                    <Input type="select" name="select" id="City">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>                        
+                                            
+                                        </FormGroup> 
+                                        <FormGroup  className="col-md-4">
+                                    <Label for="postalcode">Postal Code</Label>
+                                    <Input type="select" name="select" id="postalcode">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>                        
+                                            
+                                        </FormGroup> 
+                                    </Form>
+                                    
                                     </div>
                                 </AccordionItemBody>
                             </AccordionItem>
@@ -107,12 +149,14 @@ class AddCandidate extends Component {
                                 </AccordionItemTitle>
                                 <AccordionItemBody>
                                     <div className="row">
-                                        <Form>
-                                            <div className="col-md-12 form-group">
-                                                <label>Summary/Description  </label>
-                                                <TextareaField className="form-control" name="description" />
-                                            </div>
-                                        </Form>
+                                    <Form>
+                                    <FormGroup className="col-md-12">
+                                    <Label for="description">Summary/Description</Label>
+                                    <Input type="textarea" name="description" id="description" />
+
+                                    </FormGroup>
+                                    </Form>
+                                     
                                     </div>
                                 </AccordionItemBody>
                             </AccordionItem>
@@ -123,43 +167,90 @@ class AddCandidate extends Component {
                                 <AccordionItemBody>
                                     <div className="row">
                                         <Form>
-                                            <div className="col-md-4 form-group">
-                                                <label>Highest Degree </label>
-                                                <SelectField className="form-control" name="category" options={options} />
-                                            </div>
-                                            <div className="col-md-4 form-group">
-                                                <label>Specialization </label>
-                                                <TextField className="form-control" name="Phone" />
-                                            </div>
-                                            <div className="col-md-2 form-group">
-                                                <label> Year of Passing </label>
-                                                <SelectField className="form-control" name="category" options={options} />
-                                            </div>
-                                            <div className="col-md-2 form-group">
-                                                <label>&nbsp; </label>
-                                                <SelectField className="form-control" name="category" options={options} />
-                                            </div>
-                                            <div className="col-md-4 form-group">
-                                                <label>Highest Degree </label>
-                                                <SelectField className="form-control" name="category" options={options} />
-                                            </div>
-                                            <div className="col-md-4 form-group">
-                                                <label>Specialization </label>
-                                                <TextField className="form-control" name="Phone" />
-                                            </div>
-                                            <div className="col-md-2 form-group">
-                                                <label> Year of Passing </label>
-                                                <SelectField className="form-control" name="category" options={options} />
-                                            </div>
-                                            <div className="col-md-2 form-group">
-                                                <label>&nbsp; </label>
-                                                <SelectField className="form-control" name="category" options={options} />
-                                            </div>
+                                        <FormGroup  className="col-md-4">
+                                    <Label for="postalcode">Highest Degree </Label>
+                                    <Input type="select" name="select" id="postalcode">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>                        
+                                            
+                                        </FormGroup> 
+                                        <FormGroup  className="col-md-4">
+                                    <Label for="Phone">Specialization</Label>
+                                    <Input type="tel" id="Phone" placeholder="" />
+                                    </FormGroup> 
+                                    <FormGroup  className="col-md-2">
+                                    <Label for="postalcode">Year of Passing </Label>
+                                    <Input type="select" name="select" id="postalcode">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>                        
+                                            
+                                        </FormGroup> 
 
+                                        <FormGroup  className="col-md-2">
+                                    <Label for="postalcode">&nbsp;  </Label>
+                                    <Input type="select" name="select" id="postalcode">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>                        
+                                            
+                                        </FormGroup> 
+                                        </Form>
+                                        <Form>
+                                        <FormGroup  className="col-md-4">
+                                    <Label for="postalcode">Highest Degree </Label>
+                                    <Input type="select" name="select" id="postalcode">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>                        
+                                            
+                                        </FormGroup> 
+                                        <FormGroup  className="col-md-4">
+                                    <Label for="Phone">Specialization</Label>
+                                    <Input type="tel" id="Phone" placeholder="" />
+                                    </FormGroup> 
+                                    <FormGroup  className="col-md-2">
+                                    <Label for="postalcode">Year of Passing </Label>
+                                    <Input type="select" name="select" id="postalcode">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>                        
+                                            
+                                        </FormGroup> 
+
+                                        <FormGroup  className="col-md-2">
+                                    <Label for="postalcode">&nbsp;  </Label>
+                                    <Input type="select" name="select" id="postalcode">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>                        
+                                            
+                                        </FormGroup> 
+                                        </Form>
+                                            
                                             <div className="col-md-2">
                                                 <a href="#"> + Add </a>
                                             </div>
-                                        </Form>
+                                       
                                     </div>
                                 </AccordionItemBody>
                             </AccordionItem>
@@ -172,15 +263,31 @@ class AddCandidate extends Component {
                                 <AccordionItemBody>
                                     <div className="row">
                                         <Form>
-                                            <div className="col-md-2 form-group">
-                                                <label> From </label>
-                                                <SelectField className="form-control" name="category" options={options} />
-                                            </div>
-                                            <div className="col-md-2 form-group">
-                                                <label>To </label>
-                                                <SelectField className="form-control" name="category" options={options} />
-                                            </div>
+                                        <FormGroup  className="col-md-2">
+                                    <Label for="postalcode">From  </Label>
+                                    <Input type="select" name="select" id="postalcode">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>                        
+                                            
+                                        </FormGroup> 
+
+                                        <FormGroup  className="col-md-2">
+                                    <Label for="postalcode">To  </Label>
+                                    <Input type="select" name="select" id="postalcode">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>                        
+                                            
+                                        </FormGroup> 
                                         </Form>
+                                            
                                     </div>
                                 </AccordionItemBody>
                             </AccordionItem>
@@ -193,18 +300,32 @@ class AddCandidate extends Component {
                                 <AccordionItemBody>
                                     <div className="row">
                                         <Form>
-                                            <div className="col-md-4 form-group">
-                                                <label> Nationality </label>
-                                                <SelectField className="form-control" name="category" options={options} />
-                                            </div>
-                                            <div className="col-md-4 form-group">
-                                                <label> Work Status for </label>
-                                                <TextField className="form-control" name="Phone" />
-                                            </div>
-                                            <div className="col-md-4 form-group">
-                                                <label> Work Permit for </label>
-                                                <TextField className="form-control" name="Phone" />
-                                            </div>
+                                        <FormGroup  className="col-md-4">
+                                    <Label for="postalcode">Nationality  </Label>
+                                    <Input type="select" name="select" id="postalcode">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>                        
+                                            
+                                        </FormGroup> 
+                                        <FormGroup  className="col-md-4">
+                                    <Label for="postalcode">Work Status for  </Label>
+                                    <Input type="tel" id="Phone" placeholder="" />
+                       
+                                            
+                                        </FormGroup> 
+                                        <FormGroup  className="col-md-4">
+                                    <Label for="postalcode">Work Permit for  </Label>
+                                    <Input type="tel" id="Phone" placeholder="" />
+                      
+                                            
+                                        </FormGroup> 
+
+
+                                         
                                         </Form>
                                     </div>
                                 </AccordionItemBody>
@@ -217,29 +338,43 @@ class AddCandidate extends Component {
                                 <AccordionItemBody>
                                     <div className="row">
                                         <Form>
-                                            <div className="col-md-4 form-group">
-                                                <label> Source of Candidate  </label>
-                                                <TextField className="form-control" name="Phone" />
-                                            </div>
-                                            <div className="col-md-4 form-group">
-                                                <label> LinkedIn Profile URL</label>
-                                                <TextField className="form-control" name="Phone" />
-                                            </div>
-                                            <div className="col-md-4 form-group">
-                                                <label> Who reffered to the position </label>
-                                                <TextField className="form-control" name="Phone" />
-                                            </div>
-                                            <div className="col-md-4 form-group">
-                                                <label> Website, Blog or Portfolio </label>
-                                                <TextField className="form-control" name="Phone" />
-                                            </div>
-                                            <div className="col-md-4 form-group">
-                                                <label> Earliest start date</label>
-                                                <TextField className="form-control" name="Phone" />
-                                            </div> <div className="col-md-4 form-group">
-                                                <label> Willing to relocate</label>
-                                                <TextField className="form-control" name="Phone" />
-                                            </div>
+                                        <FormGroup  className="col-md-4">
+                                    <Label for="postalcode">Source of Candidate  </Label>
+                                    <Input type="tel" id="Phone" placeholder="" />
+                      
+                                            
+                                        </FormGroup> 
+                                        <FormGroup  className="col-md-4">
+                                    <Label for="postalcode">LinkedIn Profile URL  </Label>
+                                    <Input type="tel" id="Phone" placeholder="" />
+                      
+                                            
+                                        </FormGroup> 
+                                        <FormGroup  className="col-md-4">
+                                    <Label for="postalcode">Who reffered to the position </Label>
+                                    <Input type="tel" id="Phone" placeholder="" />
+                      
+                                            
+                                        </FormGroup> 
+
+                                        <FormGroup  className="col-md-4">
+                                    <Label for="postalcode">Website, Blog or Portfolio </Label>
+                                    <Input type="tel" id="Phone" placeholder="" />
+                      
+                                            
+                                        </FormGroup>   <FormGroup  className="col-md-4">
+                                    <Label for="postalcode">Earliest start date </Label>
+                                    <Input type="tel" id="Phone" placeholder="" />
+                      
+                                            
+                                        </FormGroup>   <FormGroup  className="col-md-4">
+                                    <Label for="postalcode">Willing to relocate </Label>
+                                    <Input type="tel" id="Phone" placeholder="" />
+                      
+                                            
+                                        </FormGroup> 
+
+                                          
                                         </Form>
                                     </div>
                                 </AccordionItemBody>
@@ -247,8 +382,8 @@ class AddCandidate extends Component {
                         </Accordion>
                         <div className="col-md-12">
                             <div className="float-right">
-                                <button class="btn btn-secondary mr10 pull-right">Cancel</button>
-                                <button class="btn btn-primary pull-right">Submit Candidate</button>
+                            <Button class="btn btn-secondary mr10 pull-right">Cancel</Button>
+                            <Button class="btn btn-primary pull-right">Submit Candidate</Button>                              
                             </div>
                         </div>
                     </div>

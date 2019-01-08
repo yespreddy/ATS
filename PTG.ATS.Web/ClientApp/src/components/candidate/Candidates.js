@@ -3,9 +3,9 @@ import '../../styles/candidates.css';
 import Candidatestable from "../common/candidatestable";
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { Accordion, AccordionItem, AccordionItemTitle, AccordionItemBody, } from 'react-accessible-accordion';
-import { Form, CheckboxField } from 'react-components-form';
 import { Link } from "react-router-dom";
 import Breadcrumbs from "../common/breadcrumb";
+import {Form, FormGroup, Label, Input } from 'reactstrap';
 
 class Candidates extends Component {
     constructor(props) {
@@ -33,143 +33,169 @@ class Candidates extends Component {
 
                 <div className="candidates row">
                     <div className="candidates-left col-md-3">
-                        <h2>Filters </h2>
-                        <Accordion>
-                            <AccordionItem expanded="true">
-                                <AccordionItemTitle>
-                                    <h3>By Job</h3>
-                                </AccordionItemTitle>
-                                <AccordionItemBody>
-                                    <div className="filter">
-                                        <div className="filter-each">
-                                            <Form>
-                                                <CheckboxField />
-                                            </Form>
-                                            <label>ASP .Net </label>
-                                            <span className="badge">5</span>
+                        <div className="candidates-left-inner">
+                            <h2>Filters </h2>
+                            <Accordion>
+                                <AccordionItem expanded="true">
+                                    <AccordionItemTitle>
+                                        <h3>By Job</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <div className="filter">
+                                            <div className="filter-each">
+                                                <Form>
+                                                    <FormGroup check>
+                                                        <Label check>
+                                                            <Input type="checkbox" />{' '}
+                                                            ASP .Net
+                                                                                        </Label>
+                                                        <span className="badge">5</span>
+                                                    </FormGroup>
+                                                    <FormGroup check>
+                                                        <Label check>
+                                                            <Input type="checkbox" />{' '}
+                                                            React
+                                                                                        </Label>
+                                                        <span className="badge">10</span>
+                                                    </FormGroup>
+                                                    <FormGroup check>
+                                                        <Label check>
+                                                            <Input type="checkbox" />{' '}
+                                                            Java
+                                                                                        </Label>
+                                                        <span className="badge">15</span>
+                                                    </FormGroup>
+                                                </Form>
+
+                                            </div>
+
+
+
                                         </div>
-                                        <div className="filter-each">
-                                            <Form>
-                                                <CheckboxField />
-                                            </Form>
 
-                                            <label>ASP .Net </label>
-                                            <span className="badge">10</span>
-                                        </div> <div className="filter-each">
-                                            <Form>
-                                                <CheckboxField />
-                                            </Form>
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                                            <label>ASP .Net </label>
-                                            <span className="badge">25</span>
+                                <AccordionItem expanded="true">
+                                    <AccordionItemTitle>
+                                        <h3>By Stage</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <div className="filter">
+                                            <div className="filter-each">
+                                                <Form>
+                                                    <FormGroup check>
+                                                        <Label check>
+                                                            <Input type="checkbox" />{' '}
+                                                          Applied
+                                                                                        </Label>
+                                                        <span className="badge">5</span>
+                                                    </FormGroup>
+                                                    <FormGroup check>
+                                                        <Label check>
+                                                            <Input type="checkbox" />{' '}
+                                                            Sourced
+                                                                                        </Label>
+                                                        <span className="badge">10</span>
+                                                    </FormGroup>
+                                                    <FormGroup check>
+                                                        <Label check>
+                                                            <Input type="checkbox" />{' '}
+                                                            New
+                                                                                        </Label>
+                                                        <span className="badge">15</span>
+                                                    </FormGroup>
+                                                </Form>
+
+                                            </div>
+
+
+
                                         </div>
-                                    </div>
 
-                                </AccordionItemBody>
-                            </AccordionItem>
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem expanded="true">
+                                    <AccordionItemTitle>
+                                        <h3>By Consideration</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <div className="filter">
+                                            <div className="filter-each">
+                                                <Form>
+                                                    <FormGroup check>
+                                                        <Label check>
+                                                            <Input type="checkbox" />{' '}
+                                                            ASP .Net
+                                                                                        </Label>
+                                                        <span className="badge">5</span>
+                                                    </FormGroup>
+                                                    <FormGroup check>
+                                                        <Label check>
+                                                            <Input type="checkbox" />{' '}
+                                                            React
+                                                                                        </Label>
+                                                        <span className="badge">10</span>
+                                                    </FormGroup>
+                                                    <FormGroup check>
+                                                        <Label check>
+                                                            <Input type="checkbox" />{' '}
+                                                            Java
+                                                                                        </Label>
+                                                        <span className="badge">15</span>
+                                                    </FormGroup>
+                                                </Form>
 
-                            <AccordionItem expanded="true">
-                                <AccordionItemTitle>
-                                    <h3>By Stage</h3>
-                                </AccordionItemTitle>
-                                <AccordionItemBody>
-                                    <div className="filter">
-                                        <div className="filter-each">
-                                            <Form>
-                                                <CheckboxField />
-                                            </Form>
+                                            </div>
 
-                                            <label>ASP .Net </label>
-                                            <span className="badge">5</span>
+
+
                                         </div>
-                                        <div className="filter-each">
-                                            <Form>
-                                                <CheckboxField />
-                                            </Form>
 
-                                            <label>ASP .Net </label>
-                                            <span className="badge">10</span>
-                                        </div> <div className="filter-each">
-                                            <Form>
-                                                <CheckboxField />
-                                            </Form>
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                                            <label>ASP .Net </label>
-                                            <span className="badge">25</span>
+                                <AccordionItem expanded="true">
+                                    <AccordionItemTitle>
+                                        <h3>By Application Date</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <div className="filter">
+                                            <div className="filter-each">
+                                                <Form>
+                                                    <FormGroup check>
+                                                        <Label check>
+                                                            <Input type="checkbox" />{' '}
+                                                            ASP .Net
+                                                                                        </Label>
+                                                        <span className="badge">5</span>
+                                                    </FormGroup>
+                                                    <FormGroup check>
+                                                        <Label check>
+                                                            <Input type="checkbox" />{' '}
+                                                            React
+                                                                                        </Label>
+                                                        <span className="badge">10</span>
+                                                    </FormGroup>
+                                                    <FormGroup check>
+                                                        <Label check>
+                                                            <Input type="checkbox" />{' '}
+                                                            Java
+                                                                                        </Label>
+                                                        <span className="badge">15</span>
+                                                    </FormGroup>
+                                                </Form>
+
+                                            </div>
+
+
+
                                         </div>
-                                    </div>
 
-                                </AccordionItemBody>
-                            </AccordionItem>
-                            <AccordionItem expanded="true">
-                                <AccordionItemTitle>
-                                    <h3>By Consideration</h3>
-                                </AccordionItemTitle>
-                                <AccordionItemBody>
-                                    <div className="filter">
-                                        <div className="filter-each">
-                                            <Form>
-                                                <CheckboxField />
-                                            </Form>
-
-                                            <label>ASP .Net </label>
-                                            <span className="badge">5</span>
-                                        </div>
-                                        <div className="filter-each">
-                                            <Form>
-                                                <CheckboxField />
-                                            </Form>
-
-                                            <label>ASP .Net </label>
-                                            <span className="badge">10</span>
-                                        </div> <div className="filter-each">
-                                            <Form>
-                                                <CheckboxField />
-                                            </Form>
-
-                                            <label>ASP .Net </label>
-                                            <span className="badge">25</span>
-                                        </div>
-                                    </div>
-
-                                </AccordionItemBody>
-                            </AccordionItem>
-
-                            <AccordionItem expanded="true">
-                                <AccordionItemTitle>
-                                    <h3>By Application Date</h3>
-                                </AccordionItemTitle>
-                                <AccordionItemBody>
-                                    <div className="filter">
-                                        <div className="filter-each">
-                                            <Form>
-                                                <CheckboxField />
-                                            </Form>
-
-                                            <label>ASP .Net </label>
-                                            <span className="badge">5</span>
-                                        </div>
-                                        <div className="filter-each">
-                                            <Form>
-                                                <CheckboxField />
-                                            </Form>
-
-                                            <label>ASP .Net </label>
-                                            <span className="badge">10</span>
-                                        </div> <div className="filter-each">
-                                            <Form>
-                                                <CheckboxField />
-                                            </Form>
-
-                                            <label>ASP .Net </label>
-                                            <span className="badge">25</span>
-                                        </div>
-                                    </div>
-                                </AccordionItemBody>
-                            </AccordionItem>
-
-
-                        </Accordion>
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                            </Accordion>
+                        </div>
                     </div>
                     <div className="candidates-right  col-md-9">
                         <Candidatestable />
