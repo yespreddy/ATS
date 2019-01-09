@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-import Jobstable from "../components/common/jobstable"
+import Jobstable from "../../components/Common/AllJobsTable"
 import { Pie } from 'react-d3-pie';
 
 class Recruiterdashboard extends React.Component {

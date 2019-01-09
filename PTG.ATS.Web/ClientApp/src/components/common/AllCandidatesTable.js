@@ -2,14 +2,12 @@ import React from "react";
 import { Table } from 'reactstrap';
 import { Link } from "react-router-dom";
 import { Form, CheckboxField } from 'react-components-form';
-//import CircularProgressbar from 'react-circular-progressbar';
-import SegmentedProgressbar from '../common/SegmentedProgressbar';
+import SegmentedProgressbar from './SegmentedProgressbar';
 
 class Candidatestable extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            // tabIndex: 0,
             CandidatesData: [
                 { name: "Aneel Kaushik", location: "Hyderabad", contact: "9700078025", source: "Linkedin", profilematch: "05", status: "New", rating: "N/A", receivedon: "21/12/2018" },
                 { name: "Sudhir Manne", location: "Redmond", contact: "9848012345", source: "Monster", profilematch: "01", status: "Active", rating: "2", receivedon: "24/1/2019" },
@@ -50,7 +48,7 @@ class Candidatestable extends React.Component {
                                     <CheckboxField name="selectallcandidates" />
                                 </Form>
                             </td>
-                            <td><i class="fa fa-eye"></i></td>
+                            <td><i className="fa fa-eye"></i></td>
                             <td>
                                 <div className="bluetext"><Link to="/candidatesDetailed">{candidate.name}</Link></div>
                                 <div className="smalltext">{candidate.location} - <i className="fa fa-phone"></i> {candidate.contact}</div>

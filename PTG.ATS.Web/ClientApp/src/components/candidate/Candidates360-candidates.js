@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import '../../node_modules/react-tabs/style/react-tabs.css';
-import '../styles/candidates.css';
-import '../styles/tabs.css';
-import Candidatestable from "./common/candidatestable"
+import '../../../node_modules/react-tabs/style/react-tabs.css';
+import '../../styles/Candidates.css';
+import '../../styles/Tabs.css';
+import Candidatestable from "../Common/AllCandidatesTable"
 import { Link } from 'react-router-dom'
 
-
-class CandidatesDetailed extends Component {
+class Candidates360Candidates extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -56,4 +55,4 @@ class CandidatesDetailed extends Component {
     }
 }
 
-export default CandidatesDetailed;
+export default Candidates360Candidates;

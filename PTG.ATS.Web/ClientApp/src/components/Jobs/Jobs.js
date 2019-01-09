@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import '../styles/candidates.css';
-import '../styles/tabs.css';
+import '../../styles/Candidates.css';
+import '../../styles/Tabs.css';
 import { Link } from 'react-router-dom'
-import Jobstable from "../components/common/jobstable"
+import Jobstable from "../Common/AllJobsTable"
 
 class Jobs extends Component {
     render() {
