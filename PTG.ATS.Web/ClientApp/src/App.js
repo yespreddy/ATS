@@ -6,7 +6,7 @@ import Jobs from "./components/Jobs/Jobs";
 import Header from "./components/Common/Header";
 import JobsdetailedCandidate from "./components/Jobs/Jobdetailed-candidates";
 import JobdetailedOverview from "./components/Jobs/Jobdetailed-overview";
-import AddCandidate from "./components/candidate/AddCandidate";
+import AddCandidate from "./components/Candidate/AddCandidate";
 import Candidates360Candidates from "./components/Candidate/Candidates360-candidates";
 import HiringManagerDashboard from "./components/HiringManager/HiringManagerDashboard";
 import NewRequisition from "./components/HiringManager/NewRequisition";
