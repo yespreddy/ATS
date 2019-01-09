@@ -1,94 +1,80 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-import Jobstable from "../common/jobstable"
-import { Pie } from 'react-d3-pie';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+import '../../styles/HiringManager.css';
+import '../../styles/Tabs.css';
+import InterviewsScheduledTable from "../HiringManager/InterviewsScheduledTable";
 
 class HiringManagerDashboard extends React.Component {
-    render() {
-        const acceptencedata = [
-            { name: 'Accepted', value: 1 },
-            { name: 'Rejected', value: 2 }
-        ];
-        return (
-            <div className="dashboard">
-                <div className="dashboard-headtitle">
-                    Welcome Aneel! Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </div>
+    constructor(props) {
+        super(props);
+        this.state = {
+            tabIndex: 0,
+        }
+    }
 
-                <div className="dashboard-headtiles">
-                    <div className="dashboard-headtiles-each">
-                        <h3>Active Job Requisitions</h3>
-                        <h1>05</h1>
-                    </div>
-                    <div className="dashboard-headtiles-each">
-                        <h3>Total Applicants</h3>
-                        <h1>110</h1>
-                    </div>
-                    <div className="dashboard-headtiles-each">
-                        <h3>Interviews</h3>
-                        <h1>06</h1>
-                    </div>
-                    <div className="dashboard-headtiles-each">
-                        <h3>Offers Released</h3>
-                        <h1>01</h1>
-                    </div>
-                    <div className="dashboard-headtiles-each">
-                        <h3>Hires</h3>
-                        <h1>02</h1>
-                    </div>
-                    <div className="dashboard-headtiles-each">
-                        <h3>Closed Jobs</h3>
-                        <h1>02</h1>
-                    </div>
+    render() {
+        return (
+            <div className="hiringdashboard">
+                <div className="hiringdashboard-headtitle">
+                    <div className="hiringdashboard-headtitle-left">Welcome Aneel! Clouds are clearing today in Hyderabad City. Enjoy the Sunshine!</div>
+                    <div className="hiringdashboard-headtitle-right"><Link to="/NewRequisition"><i className="fa fa-plus"></i> Create New Requisition</Link></div>
                 </div>
 
                 <div className="row">
-                    <div className="col-md-8 dashboard-left">
-                        <div className="tablehead">
-                            <h3>Open Job Summary <Link to="/jobs">View all</Link></h3>
+                    <div className="col-md-8 hiringdashboard-left">
+                        <div className="hiringdashboard-headtiles">
+                            <div className="hiringdashboard-headtiles-each">
+                                <h3>My Candidate Pipeline</h3>
+                                <div className="hiringdashboard-headtiles-each-sub">
+                                    <h1>15</h1>
+                                    <h4>Submitted</h4>
+                                </div>
+                                <div className="hiringdashboard-headtiles-each-sub">
+                                    <h1>3</h1>
+                                    <h4>Scheduled</h4>
+                                </div>
+                            </div>
+                            <div className="hiringdashboard-headtiles-each">
+                                <h3>My Requisitions</h3>
+                                <div className="hiringdashboard-headtiles-each-sub">
+                                    <h1>2</h1>
+                                    <h4>Today</h4>
+                                </div>
+                                <div className="hiringdashboard-headtiles-each-sub">
+                                    <h1>5</h1>
+                                    <h4>This Week</h4>
+                                </div>
+                            </div>
+                            <div className="hiringdashboard-headtiles-each">
+                                <h3>New Joiners</h3>
+                                <div className="hiringdashboard-headtiles-each-sub">
+                                    <h1>2</h1>
+                                    <h4>This Week</h4>
+                                </div>
+                                <div className="hiringdashboard-headtiles-each-sub">
+                                    <h1>12</h1>
+                                    <h4>This Month</h4>
+                                </div>
+                            </div>
                         </div>
-                        <Jobstable />
+                        <div className="tabhead">
+                            <h3>Interviews Scheduled <Link to="/jobs">Past Interviews (25)</Link> <Link to="/jobs" className="m-r-10">View My Calendar</Link>  </h3>
+                        </div>
+                        <Tabs selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })}>
+                            <TabList>
+                                <Tab>Today (14)</Tab>
+                                <Tab>This Week (05)</Tab>
+                                <Tab>This Month (30)</Tab>
+                            </TabList>
+                            <TabPanel> <InterviewsScheduledTable /> </TabPanel>
+                            <TabPanel> <InterviewsScheduledTable /> </TabPanel>
+                            <TabPanel> <InterviewsScheduledTable /> </TabPanel>
+                        </Tabs>
                     </div>
-                    <div className="col-md-4 dashboard-right">
-                        <div className="snippets">
-                            <h3>Offer Acceptance</h3>
-                            <Pie width={150}
-                                height={150}
-                                data={acceptencedata}
-                                colors={['lightgreen', 'skyblue']}
-                                innerRadius={0.4}
-                                outerRadius={0.8}
-                            />
-                        </div>
 
-                        <div className="snippets newjoiners">
-                            <h3>New Joiners</h3>
-                            <div className="row">
-                                <div className="col-md-4">
-                                    <h4>01</h4>
-                                </div>
-                                <div className="col-md-8 nopad">
-                                    <p>Today</p>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-md-4">
-                                    <h4>04</h4>
-                                </div>
-                                <div className="col-md-8 nopad">
-                                    <p>This week</p>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-md-4">
-                                    <h4>05</h4>
-                                </div>
-                                <div className="col-md-8 nopad">
-                                    <p>This month</p>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div className="col-md-4 hiringdashboard-right">
                         <div className="snippets flex100 mytasks">
                             <h3>My Tasks <Link to="/mytasks">View all</Link></h3>
                             <h5>Today 21 Aug, 2018 </h5>

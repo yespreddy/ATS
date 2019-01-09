@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <nav className="header navbar navbar-expand-lg">
             <div className="navbar-brand">
-                <Link to="/"> <img src={Logo} /></Link>
+                <Link to="/"> <img src={Logo} alt="ATS Logo" /></Link>
             </div> 
             <button
                 className="navbar-toggler"

@@ -185,10 +185,6 @@ a:hover {
   margin: 0 10px;
 }
 
-.header.navbar .nav-link i {
-  margin: 0 5px 0 0;
-}
-
 .header.navbar .nav-link.active {
   border-bottom: 2px solid yellow;
 }
@@ -358,26 +354,6 @@ a:hover {
 }
 
 /**SORT TABLE**/
-.ag-theme-balham .ag-cell {
-  font-size: 13px;
-  color: #282828;
-}
-
-.ag-theme-balham .ag-header-container {
-  background: #fff;
-}
-
-.ag-theme-balham .ag-header-row {
-  border: 1px solid #fff;
-  background: #fff;
-}
-
-.ag-theme-balham .ag-header-cell-text {
-  font-size: 13px;
-  color: #999;
-  font-weight: 600;
-}
-
 .thetable.candtable {
   background: #fff;
 }
@@ -497,4 +473,4 @@ a:hover {
   background: #a71f37;
   color: #fff;
 }
-/*# sourceMappingURL=layout.css.map */
+/*# sourceMappingURL=Layout.css.map */

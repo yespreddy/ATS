@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import '../../styles/candidates.css';
+import '../../styles/Candidates.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { Accordion, AccordionItem, AccordionItemTitle, AccordionItemBody, } from 'react-accessible-accordion';
-import Breadcrumbs from "../common/breadcrumb";
+import Breadcrumbs from "../Common/Breadcrumb";
 import { Form, Button, FormGroup, Label, Input, FormText } from 'reactstrap';
-
-
 
 class AddCandidate extends Component {
     constructor(props) {
@@ -382,8 +380,8 @@ class AddCandidate extends Component {
                         </Accordion>
                         <div className="col-md-12">
                             <div className="float-right">
-                            <Button class="btn btn-secondary mr10 pull-right">Cancel</Button>
-                            <Button class="btn btn-primary pull-right">Submit Candidate</Button>                              
+                            <Button className="btn btn-secondary mr10 pull-right">Cancel</Button>
+                                <Button className="btn btn-primary pull-right">Submit Candidate</Button>                              
                             </div>
                         </div>
                     </div>

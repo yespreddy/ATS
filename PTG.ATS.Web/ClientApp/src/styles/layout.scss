@@ -18,7 +18,6 @@ a{
        color:#fff !important;
      }
  }
-
 .nopad{
     padding:0 !important;
 }
@@ -155,12 +154,6 @@ a{
                 color:#fff;
                 padding: 0 !important; 
                 margin: 0 10px;
-
-                i{
-                    margin: 0 5px 0 0;
-
-                }
-
                 &.active{
                     border-bottom:2px solid yellow;
                 }
@@ -280,33 +273,7 @@ a{
       }
 }
 
-
 /**SORT TABLE**/
-
-.ag-theme-balham{
-    & .ag{
-        &-cell{
-            font-size: 13px;
-            color: #282828;
-        }
-     &-header{
-         &-container{
-             background:#fff;
-         }
-         &-row{
-           border:1px solid #fff;
-           background: #fff;
-         }
-         &-cell{
-             &-text{
-                font-size: 13px;
-                color:#999;
-                font-weight: 600;
-             }
-         }
-     }
-    }
-} 
 
 .thetable{
     &.candtable{
@@ -370,7 +337,6 @@ a{
         }
     }
 }
-
 
 /*******************
 	HiringManager	

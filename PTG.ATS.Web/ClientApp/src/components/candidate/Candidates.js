@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import '../../styles/candidates.css';
-import Candidatestable from "../common/candidatestable";
+import '../../styles/Candidates.css';
+import Candidatestable from "../Common/AllCandidatesTable";
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { Accordion, AccordionItem, AccordionItemTitle, AccordionItemBody, } from 'react-accessible-accordion';
 import { Link } from "react-router-dom";
-import Breadcrumbs from "../common/breadcrumb";
+import Breadcrumbs from "../Common/Breadcrumb";
 import {Form, FormGroup, Label, Input } from 'reactstrap';
 
 class Candidates extends Component {

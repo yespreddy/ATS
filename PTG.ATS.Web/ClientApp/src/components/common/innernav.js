@@ -6,8 +6,8 @@ export default class Innernav extends React.Component {
         return (
             <React.Fragment>
                 <Nav>
-                    <NavLink href="#">Overview</NavLink>
-                    <NavLink href="#">Candidates</NavLink>
+                    <NavLink href="/jobdetailed-overview">Overview</NavLink>
+                    <NavLink href="/jobdetailed-candidate">Candidates</NavLink>
                     <NavLink href="#">Pipeline</NavLink>
                     <NavLink href="#">Job Boards</NavLink>
                     <NavLink href="#">Refer</NavLink>

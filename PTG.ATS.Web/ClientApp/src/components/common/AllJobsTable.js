@@ -36,7 +36,7 @@ class Jobstable extends React.Component {
                     {this.state.jobData.map((job, index) => (
                         <tr key={index}>
                             <td>
-                                <div className="bluetext"><Link to="/jobdetailed">{job.role}</Link></div>
+                                <div className="bluetext"><Link to="/jobdetailed-overview">{job.role}</Link></div>
                                 <div className="smalltext">{job.location}</div>
                             </td>
                             <td>{job.manager}</td>

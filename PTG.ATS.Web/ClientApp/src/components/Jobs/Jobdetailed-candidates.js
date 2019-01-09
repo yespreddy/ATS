@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import '../../node_modules/react-tabs/style/react-tabs.css';
-import '../styles/candidates.css';
-import '../styles/tabs.css';
-import Candidatestable from "./common/candidatestable"
-import Innernav from '../components/common/innernav';
+import '../../../node_modules/react-tabs/style/react-tabs.css';
+import '../../styles/Candidates.css';
+import '../../styles/Tabs.css';
+import Candidatestable from "../Common/AllCandidatesTable"
+import Innernav from '../Common/InnerNav';
 import { Link } from 'react-router-dom'
 
 
-class JobDetailed extends Component {
+class JobsdetailedCandidate extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -65,4 +65,4 @@ class JobDetailed extends Component {
     }
 }
 
-export default JobDetailed;
+export default JobsdetailedCandidate;

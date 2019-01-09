@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import '../../styles/candidates.css';
+import '../../styles/Candidates.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { Accordion, AccordionItem, AccordionItemTitle, AccordionItemBody, } from 'react-accessible-accordion';
 import { Form, TextField, SelectField, TextareaField, CheckboxField } from 'react-components-form';
-import Breadcrumbs from "../common/breadcrumb";
+import Breadcrumbs from "../Common/Breadcrumb";
 
 const options = [
     { label: "Option 1", value: "opt1" },
