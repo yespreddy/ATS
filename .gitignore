@@ -4,3 +4,5 @@
 
 /PTG.ATS.Web/ClientApp/node_modules
 /.vs
+/PTG.ATS.DAL
+/PTG.ATS.Services
