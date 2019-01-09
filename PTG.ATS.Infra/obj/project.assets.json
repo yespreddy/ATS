@@ -688,26 +688,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\shiva\\.nuget\\packages\\": {},
+    "C:\\Users\\Rakesh\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "D:\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
+      "projectUniqueName": "E:\\ATS\\React\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
       "projectName": "PTG.ATS.Infra",
-      "projectPath": "D:\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
-      "packagesPath": "C:\\Users\\shiva\\.nuget\\packages\\",
-      "outputPath": "D:\\ATS\\PTG.ATS.Infra\\obj\\",
+      "projectPath": "E:\\ATS\\React\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
+      "packagesPath": "C:\\Users\\Rakesh\\.nuget\\packages\\",
+      "outputPath": "E:\\ATS\\React\\PTG.ATS.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\shiva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Rakesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

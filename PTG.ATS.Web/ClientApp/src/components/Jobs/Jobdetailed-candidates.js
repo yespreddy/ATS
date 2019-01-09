@@ -3,7 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import '../../../node_modules/react-tabs/style/react-tabs.css';
 import '../../styles/Candidates.css';
 import '../../styles/Tabs.css';
-import Candidatestable from "../Common/AllCandidatesTable"
+import AllCandidatesTable from "../Common/AllCandidatesTable"
 import Innernav from '../Common/InnerNav';
 import { Link } from 'react-router-dom'
 
@@ -52,11 +52,11 @@ class JobsdetailedCandidate extends Component {
                                 <Tab>Hired(5)</Tab>
                                 <Tab>Not Hired (25)</Tab>
                             </TabList>
-                            <TabPanel><Candidatestable /></TabPanel>
-                            <TabPanel> <Candidatestable /></TabPanel>
-                            <TabPanel> <Candidatestable /></TabPanel>
-                            <TabPanel> <Candidatestable /></TabPanel>
-                            <TabPanel> <Candidatestable /></TabPanel>
+                            <TabPanel><AllCandidatesTable /></TabPanel>
+                            <TabPanel> <AllCandidatesTable /></TabPanel>
+                            <TabPanel> <AllCandidatesTable /></TabPanel>
+                            <TabPanel> <AllCandidatesTable /></TabPanel>
+                            <TabPanel> <AllCandidatesTable /></TabPanel>
                         </Tabs>
                     </div>
                 </div>

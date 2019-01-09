@@ -736,26 +736,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\shiva\\.nuget\\packages\\": {},
+    "C:\\Users\\Rakesh\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "D:\\ATS\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj",
+      "projectUniqueName": "E:\\ATS\\React\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj",
       "projectName": "PTG.ATS.BLL",
-      "projectPath": "D:\\ATS\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj",
-      "packagesPath": "C:\\Users\\shiva\\.nuget\\packages\\",
-      "outputPath": "D:\\ATS\\PTG.ATS.BLL\\obj\\",
+      "projectPath": "E:\\ATS\\React\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj",
+      "packagesPath": "C:\\Users\\Rakesh\\.nuget\\packages\\",
+      "outputPath": "E:\\ATS\\React\\PTG.ATS.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\shiva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Rakesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -768,14 +765,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj": {
-              "projectPath": "D:\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj"
+            "E:\\ATS\\React\\PTG.ATS.DAL\\PTG.ATS.DAL.csproj": {
+              "projectPath": "E:\\ATS\\React\\PTG.ATS.DAL\\PTG.ATS.DAL.csproj"
             },
-            "D:\\ATS\\PTG.ATS.DAL\\PTG.ATS.DAL.csproj": {
-              "projectPath": "D:\\ATS\\PTG.ATS.DAL\\PTG.ATS.DAL.csproj"
+            "E:\\ATS\\React\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj": {
+              "projectPath": "E:\\ATS\\React\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj"
             },
-            "D:\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj": {
-              "projectPath": "D:\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj"
+            "E:\\ATS\\React\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj": {
+              "projectPath": "E:\\ATS\\React\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj"
             }
           }
         }

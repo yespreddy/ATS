@@ -1,16 +1,17 @@
 import React from 'react';
 import { Nav, NavLink } from 'reactstrap';
+import { NavLink as RRNavLink } from 'react-router-dom';
 
 export default class Innernav extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Nav>
-                    <NavLink href="/jobdetailed-overview">Overview</NavLink>
-                    <NavLink href="/jobdetailed-candidate">Candidates</NavLink>
-                    <NavLink href="#">Pipeline</NavLink>
-                    <NavLink href="#">Job Boards</NavLink>
-                    <NavLink href="#">Refer</NavLink>
+                <Nav>                
+                    <NavLink tag={RRNavLink} className="nav-link" activeClassName="active" to="/jobdetailed-overview">Overview</NavLink>
+                    <NavLink tag={RRNavLink} className="nav-link" activeClassName="active" to="/jobdetailed-candidate">Candidates</NavLink>
+                    <NavLink>Pipeline</NavLink>
+                    <NavLink>Job Boards</NavLink>
+                    <NavLink>Refer</NavLink>
                 </Nav>
             </React.Fragment>
         );
