@@ -4,11 +4,63 @@ body{
     background:#f4f4f4 !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 *{outline:none;}
+
 a{
     color:#0073c6;
     &:hover{
         text-decoration: none;
+    }
+}
+.nopad{
+    padding:0 !important;
+}
+.flex100{
+    flex:0 0 100% !important; 
+}
+.flexy {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+.m-r-10{
+    margin-right:10px !important;
+}
+.m-tb-10{
+    margin-top:10px !important;
+    margin-bottom:10px !important;
+}
+textarea{
+    &.form-control{
+        height:120px;
+        resize: none;
+    }
+}
+
+.primary-btn{
+    background: #0073c6;
+    padding: 8px 15px;
+    color:#fff;
+    font-weight: 500;
+    font-size: 13px;
+    border:2px solid #0073c6;
+    &:hover{
+        color:#fff;
+        background:darken(#0073c6, 10%);
+    }
+}
+.secondary-btn{
+    background: none;
+    padding: 8px 15px;
+    color:#0073c6;
+    font-weight: 500;
+    font-size: 13px;
+    border:2px solid #0073c6;
+    &:hover{
+        color:#0073c6;
+        background:darken(#0073c6, 10%);
+        border:2px solid darken(#0073c6, 10%);
     }
 }
 
@@ -18,12 +70,7 @@ a{
        color:#fff !important;
      }
  }
-.nopad{
-    padding:0 !important;
-}
-.flex100{
-    flex:0 0 100% !important; 
-}
+
 .page-white-block{
     margin-bottom: 20px;
     &-header{

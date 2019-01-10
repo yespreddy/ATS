@@ -75,7 +75,7 @@
 .addcandidates{
     background: #fff;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
 
     h2{
         font-weight: 600;
@@ -85,22 +85,25 @@
     .accordion{       
         width: 100%;
         border: 0px;
-
         &__title{
             background: none;
+            position: relative;
+            padding: 15px;
             &:hover{
                 background:none;
             }
             h3{
                 font-size: 16px;
+                margin:0;
                 font-weight:500;
             }
         }
-        &__body{
-            font-size: 15px;
-        
+        &__arrow {
+           right: 15px;
         }
-
+        &__body{
+            font-size: 15px;        
+        }
     }
 
     &-each{
@@ -114,5 +117,24 @@
         display: flex;
         width:100%;
         flex-wrap:wrap;
+        label{
+            text-transform:uppercase;
+            font-size:11px;
+            font-weight:500;
+            input{
+                margin-right:5px;  
+                 display: inline-block;
+                vertical-align: middle;
+            }
+            sup{
+                color:red;
+                font-size: 11px;
+            }
+        }
+    
+        & .form-control{
+          font-size: 13px;
+        }
     }
+
 }

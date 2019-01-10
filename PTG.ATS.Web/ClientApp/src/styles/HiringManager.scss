@@ -126,10 +126,20 @@
                     }
 
                     & .status {
-                        color: #282828;
-                        background: #A2E28B;
+                        background: #DDD;
                         padding: 3px;
+                        color:#fff;
                         text-align: center;
+
+                        &.scheduled {
+                            color: #282828;
+                            background: #A2E28B;
+                        }
+
+                        &.pending {
+                            color: #282828;
+                            background: #F1BE13;
+                        }
                     }
 
                     & .bluetext {

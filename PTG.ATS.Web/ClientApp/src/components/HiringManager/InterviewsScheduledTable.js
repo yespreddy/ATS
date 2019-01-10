@@ -39,7 +39,7 @@ class InterviewsScheduledTable extends React.Component {
                                 <div className="smalltext">{scheduled.Pocation}</div>
                             </td>
                             <td><Link to="/jobdetailed">{scheduled.Position}</Link></td>
-                            <td><div className="status">{scheduled.Status}</div></td>
+                            <td><div className="status scheduled">{scheduled.Status}</div></td>
                             <td>{scheduled.Time}</td>
                             <td>{scheduled.InterviewStage}</td>
                             <td>{scheduled.ModeOfInterview}</td>
