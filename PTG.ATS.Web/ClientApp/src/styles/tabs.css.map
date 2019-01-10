@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AACK,AAAD,qBAAW,CAAA;EACP,MAAM,EAAE,YAAY;EACpB,aAAa,EAAE,iBAAiB;EAChC,UAAU,EAAE,OAAO;CAMtB;;AATA,AAIG,qBAJO,CAIP,EAAE,CAAA;EACE,aAAa,EAAC,GAAG;EACjB,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,IAAI;CAChB;;AAEJ,AAAD,sBAAY,CAAA;EACT,UAAU,EAAC,IAAI;EACf,WAAW,EAAE,IAAI;CACnB",
     "sources": [
-        "Tabs.scss"
+        "tabs.scss"
     ],
     "names": [],
-    "file": "Tabs.css"
+    "file": "tabs.css"
 }

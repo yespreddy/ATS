@@ -4,7 +4,7 @@ import '../../../node_modules/react-tabs/style/react-tabs.css';
 import '../../styles/Candidates.css';
 import '../../styles/Tabs.css';
 import AllCandidatesTable from "../Common/AllCandidatesTable"
-import Innernav from '../Common/InnerNav';
+import InnerNav from '../Common/InnerNav';
 import { Link } from 'react-router-dom'
 
 
@@ -25,7 +25,7 @@ class JobsdetailedCandidate extends Component {
                         UX Designer
                     </div>
                     <div className="innermenu-nav">
-                        <Innernav />
+                        <InnerNav />
                     </div>
                     <div className="innermenu-actions">
                         <button className="btn btn-primary">Edit Job</button>
