@@ -246,7 +246,7 @@ class AddCandidate extends Component {
                                         </Form>
                                             
                                             <div className="col-md-2">
-                                                <a href="#"> + Add </a>
+                                                <link to="#"> + Add </link>
                                             </div>
                                        
                                     </div>

@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import Innernav from '../Common/InnerNav';
+import { Button } from 'reactstrap';
+import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import '../../../node_modules/react-tabs/style/react-tabs.css';
 import '../../styles/Candidates.css';
 import '../../styles/Tabs.css';
-import Candidatestable from "../Common/AllCandidatesTable"
-import { Link } from 'react-router-dom'
+import AllCandidatesTable from "../Common/AllCandidatesTable";
+import { Link } from 'react-router-dom';
 
 class Candidates360Candidates extends Component {
     constructor(props) {
@@ -17,36 +20,60 @@ class Candidates360Candidates extends Component {
     render() {
         return (
             <div>
-                <div className="row page-white-block" >
+                {/* <div className="row page-white-block" >
                     <div className="page-white-block-header">
                     </div>
+                </div> */}
+
+                <div className="row innermenu">
+                    <div className="innermenu-head">
+                        <i className="fa fa-chevron-left"></i>
+                        UX Designer
+                    </div>
+                    <div className="innermenu-nav">
+                        <Innernav />
+                    </div>
+                    <div className="innermenu-actions ml-auto d-flex">
+                        {/* <button className="btn btn-primary">Edit Job</button> */}
+                        <div className="ml-auto">
+                        <Button outline color="primary">Edit Job</Button>
+                        </div> 
+                        <div className="ml-3">
+                        <UncontrolledDropdown>
+                        <DropdownToggle caret outline color="primary">
+                            More Actions
+                        </DropdownToggle>
+                        <DropdownMenu>
+                            <DropdownItem header>Header</DropdownItem>
+                            <DropdownItem disabled>Action</DropdownItem>
+                            <DropdownItem>Another Action</DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem>Another Action</DropdownItem>
+                        </DropdownMenu>
+                        </UncontrolledDropdown></div>                                               
+                    </div>
                 </div>
+
 
                 <div className="candidates">
                     <div className="candidates-main">
                         <div className="candidates-main-header row">
                             <div className="col-md-6">
-                                <h3>Candidates </h3>
+                                <h3>Candidates > <span>Dheerendra Sathyanarayana</span></h3>
                             </div>
                             <div className="col-md-6">
-                                <Link to="/addcandidate" type="button" className="btn btn-primary float-right">Add Candidate</Link>
-                                <input className="form-control mr-sm-4 col-md-4 float-right" type="text" placeholder="Search" aria-label="Search"></input>
+                            <div className=" float-right candidateChevron">
+                            <Link to="#"><i className="fa fa-chevron-left" aria-hidden="true"></i></Link>
+                            <Link to="#"><i className="fa fa-chevron-right" aria-hidden="true"></i></Link>
+                                </div>
                             </div>
                         </div>
 
                         <Tabs selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })}>
                             <TabList>
                                 <Tab>A11(140)</Tab>
-                                <Tab>New(10)</Tab>
-                                <Tab>Active(100)</Tab>
-                                <Tab>Hired(5)</Tab>
-                                <Tab>Not Hired (25)</Tab>
                             </TabList>
-                            <TabPanel><Candidatestable /></TabPanel>
-                            <TabPanel> <Candidatestable /></TabPanel>
-                            <TabPanel> <Candidatestable /></TabPanel>
-                            <TabPanel> <Candidatestable /></TabPanel>
-                            <TabPanel> <Candidatestable /></TabPanel>
+                            <TabPanel><AllCandidatesTable /></TabPanel>
                         </Tabs>
                     </div>
                 </div>

@@ -50,7 +50,7 @@ class Candidatestable extends React.Component {
                             </td>
                             <td><i className="fa fa-eye"></i></td>
                             <td>
-                                <div className="bluetext"><Link to="/candidatesDetailed">{candidate.name}</Link></div>
+                                <div className="bluetext"><Link to="/candidates360-candidates">{candidate.name}</Link></div>
                                 <div className="smalltext">{candidate.location} - <i className="fa fa-phone"></i> {candidate.contact}</div>
                             </td>
                             <td>{candidate.receivedon}</td>
