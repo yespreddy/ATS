@@ -1,0 +1,182 @@
+.hiringdashboard-headtitle {
+  padding: 20px 0;
+  display: flex;
+  flex-flow: row wrap; }
+  .hiringdashboard-headtitle-left {
+    font-size: 16px;
+    color: #282828;
+    font-weight: 400;
+    flex: 0 0 75%; }
+  .hiringdashboard-headtitle-right {
+    flex: 0 0 25%;
+    text-align: right; }
+    .hiringdashboard-headtitle-right a {
+      color: #fff;
+      text-align: center;
+      padding: 8px 15px;
+      font-size: 14px;
+      background: #0073c6;
+      border-radius: 3px; }
+      .hiringdashboard-headtitle-right a i {
+        margin-right: 5px; }
+.hiringdashboard-headtiles {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 0 25px 0;
+  justify-content: space-between;
+  flex: 1 0 auto; }
+  .hiringdashboard-headtiles-each {
+    padding: 15px;
+    background: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 32%;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12); }
+    .hiringdashboard-headtiles-each h3 {
+      font-weight: 600;
+      margin: 0 0 5px 0;
+      color: #282828;
+      font-size: 14px;
+      flex: 0 0 100%; }
+    .hiringdashboard-headtiles-each-sub {
+      margin-right: 25px; }
+      .hiringdashboard-headtiles-each-sub h4 {
+        font-weight: 400;
+        margin: 0 0 5px 0;
+        color: #999;
+        font-size: 12px; }
+      .hiringdashboard-headtiles-each-sub h1 {
+        font-weight: 300;
+        font-size: 3rem;
+        margin: 0;
+        color: #000; }
+.hiringdashboard-left .tabhead {
+  background: #fff;
+  padding: 15px;
+  border-bottom: 2px solid #ddd; }
+  .hiringdashboard-left .tabhead h3 {
+    color: #282828;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 400; }
+  .hiringdashboard-left .tabhead a {
+    float: right;
+    font-size: 13px;
+    color: #0073c6;
+    font-weight: 400; }
+.hiringdashboard-left .interviewScheduleTable thead th {
+  background: #282828;
+  color: #fff;
+  font-size: 12px;
+  vertical-align: top !important;
+  font-weight: 500; }
+.hiringdashboard-left .interviewScheduleTable tr td {
+  font-size: 13px;
+  min-width: 20px;
+  padding: 10px;
+  vertical-align: middle; }
+  .hiringdashboard-left .interviewScheduleTable tr td label {
+    margin-bottom: 0; }
+  .hiringdashboard-left .interviewScheduleTable tr td i {
+    color: #0073c6; }
+  .hiringdashboard-left .interviewScheduleTable tr td a {
+    color: #0073c6; }
+  .hiringdashboard-left .interviewScheduleTable tr td .status {
+    background: #DDD;
+    padding: 3px;
+    color: #fff;
+    text-align: center; }
+    .hiringdashboard-left .interviewScheduleTable tr td .status.scheduled {
+      color: #282828;
+      background: #A2E28B; }
+    .hiringdashboard-left .interviewScheduleTable tr td .status.pending {
+      color: #282828;
+      background: #F1BE13; }
+  .hiringdashboard-left .interviewScheduleTable tr td .bluetext {
+    color: #0073c6;
+    font-size: 14px;
+    font-weight: 600; }
+  .hiringdashboard-left .interviewScheduleTable tr td .smalltext {
+    color: #999;
+    font-size: 12px;
+    font-weight: 400; }
+    .hiringdashboard-left .interviewScheduleTable tr td .smalltext i {
+      color: #999;
+      margin-right: 4px; }
+.hiringdashboard-right {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .hiringdashboard-right .snippets {
+    padding: 15px;
+    background: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 0 48%;
+    margin: 0 0 25px 0;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12); }
+    .hiringdashboard-right .snippets h3 {
+      font-weight: 600;
+      margin: 0 0 5px 0;
+      color: #282828;
+      font-size: 14px; }
+      .hiringdashboard-right .snippets h3 a {
+        float: right;
+        font-size: 12px;
+        color: #0073c6;
+        font-weight: 400; }
+    .hiringdashboard-right .snippets .Pie__container {
+      margin: 0 auto; }
+    .hiringdashboard-right .snippets.newjoiners {
+      display: flex;
+      flex-flow: column nowrap;
+      line-height: 30px; }
+      .hiringdashboard-right .snippets.newjoiners .row {
+        align-items: center; }
+      .hiringdashboard-right .snippets.newjoiners h3 {
+        margin-bottom: 15px; }
+      .hiringdashboard-right .snippets.newjoiners h4 {
+        color: #000;
+        font-size: 2.5rem;
+        font-weight: 400; }
+      .hiringdashboard-right .snippets.newjoiners p {
+        font-weight: 400;
+        color: #666;
+        font-size: 1rem;
+        margin: 0; }
+
+.processStage {
+  display: flex;
+  overflow: hidden;
+  padding: 30px;
+  background: #efefef; }
+  .processStage .Step {
+    display: inline-flex;
+    flex: 1 auto;
+    justify-content: center;
+    position: relative; }
+    .processStage .Step span {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 3px solid #ddd;
+      text-align: center;
+      line-height: 32px; }
+      .processStage .Step span:after {
+        content: '';
+        border-top: 3px solid #ddd;
+        width: calc(100% - 60px);
+        position: absolute;
+        top: 20px;
+        margin-left: 25px; }
+    .processStage .Step:last-child span:after {
+      display: none; }
+    .processStage .Step.active span {
+      border: 3px solid #a71f37;
+      color: #a71f37; }
+    .processStage .Step.completed span {
+      border: 3px solid #a71f37;
+      background: #a71f37;
+      color: #fff; }
+
+/*# sourceMappingURL=HiringManager.css.map */
