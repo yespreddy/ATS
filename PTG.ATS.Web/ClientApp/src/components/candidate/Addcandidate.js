@@ -5,7 +5,7 @@ import { Accordion, AccordionItem, AccordionItemTitle, AccordionItemBody, } from
 import Breadcrumbs from "../Common/Breadcrumb";
 import { Form, Button, FormGroup, Label, Input, FormText } from 'reactstrap';
 
-class AddCandidate extends Component {
+class AddCandidate extends Component { 
     constructor(props) {
         super(props);
         this.state = {
