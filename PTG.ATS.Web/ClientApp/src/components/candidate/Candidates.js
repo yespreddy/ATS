@@ -4,10 +4,10 @@ import Candidatestable from "../Common/AllCandidatesTable";
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { Accordion, AccordionItem, AccordionItemTitle, AccordionItemBody, } from 'react-accessible-accordion';
 import { Link } from "react-router-dom";
-import Breadcrumbs from "../Common/Breadcrumb";
+import Breadcrumbs from "../Common/Breadcrumb"; 
 import {Form, FormGroup, Label, Input } from 'reactstrap';
 
-class Candidates extends Component {
+class Candidates extends Component { 
     constructor(props) {
         super(props);
         this.state = {

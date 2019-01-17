@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-import Jobstable from "../../components/Common/AllJobsTable"
+import Jobstable from "../Common/AllJobsTable"
 import { Pie } from 'react-d3-pie';
 
 class Recruiterdashboard extends React.Component {
     render() {
         const acceptencedata = [
             { name: 'Accepted', value: 1 },
-            { name: 'Rejected', value: 2 }
+            { name: 'Rejected', value: 2 } 
         ];
         return (
             <div className="dashboard">
