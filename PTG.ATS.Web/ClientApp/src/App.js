@@ -11,6 +11,7 @@ import Candidates360Candidates from "./components/Candidate/Candidates360-candid
 import HiringManagerDashboard from "./components/HiringManager/HiringManagerDashboard";
 import NewRequisition from "./components/HiringManager/NewRequisition";
 import Preliminary from "./components/HiringManager/Preliminary"; 
+import AdvanceSearch from "./components/Search/AdvanceSearch"; 
 
 class App extends Component {
 	render() {
@@ -29,6 +30,7 @@ class App extends Component {
 						<Route path="/hiringmanagerdashboard" component={HiringManagerDashboard} activeClassName='active' />
 						<Route path="/NewRequisition" component={NewRequisition} activeClassName='active' />
 						<Route path="/Preliminary" component={Preliminary} activeClassName='active' />
+						<Route path="/AdvanceSearch" component={AdvanceSearch} />
 						<Redirect from="/" exact to="/hiringmanagerdashboard" activeClassName='active' />
 					</Switch>
 				</main>

@@ -1,6 +1,6 @@
 import React from "react";
-import { ListGroup, ListGroupItem, Button } from 'reactstrap';
-import { Link } from "react-router-dom";
+import { ListGroup, ListGroupItem } from 'reactstrap';
+//import { Link } from "react-router-dom";
 
 class Candidatesquestionnaire extends React.Component {
 
