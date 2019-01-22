@@ -151,17 +151,20 @@
   padding: 30px;
   background: #efefef; }
   .processStage .Step {
-    display: inline-flex;
-    flex: 1 auto;
+    display: flex;
+    flex: 0 0 25%;
     justify-content: center;
-    position: relative; }
+    position: relative;
+    flex-flow: column wrap;
+    align-items: center; }
     .processStage .Step span {
       width: 40px;
       height: 40px;
       border-radius: 50%;
       border: 3px solid #ddd;
       text-align: center;
-      line-height: 32px; }
+      line-height: 32px;
+      color: #ddd; }
       .processStage .Step span:after {
         content: '';
         border-top: 3px solid #ddd;
@@ -169,10 +172,15 @@
         position: absolute;
         top: 20px;
         margin-left: 25px; }
+    .processStage .Step p {
+      font-weight: 500;
+      margin-top: 5px; }
     .processStage .Step:last-child span:after {
       display: none; }
     .processStage .Step.active span {
       border: 3px solid #a71f37;
+      color: #a71f37; }
+    .processStage .Step.active p {
       color: #a71f37; }
     .processStage .Step.completed span {
       border: 3px solid #a71f37;

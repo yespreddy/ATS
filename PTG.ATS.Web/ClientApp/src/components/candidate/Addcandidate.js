@@ -3,7 +3,7 @@ import '../../styles/Candidates.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { Accordion, AccordionItem, AccordionItemTitle, AccordionItemBody, } from 'react-accessible-accordion';
 import Breadcrumbs from "../Common/Breadcrumb";
-import { Form, Button, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Form, Button, FormGroup, Label, Input } from 'reactstrap';
 
 class AddCandidate extends Component {
     constructor(props) {

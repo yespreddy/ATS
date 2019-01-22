@@ -34,16 +34,20 @@ class NewRequisition extends Component {
 
                 <div className="processStage">
                     <div className="Step active">
-                        <span>1</span>
+						<span>1</span>
+						<p>New Requisition</p>
                     </div>
                     <div className="Step">
-                        <span>2</span>
+						<span>2</span>
+						<p>Preliminary Questionnaire</p>
                     </div>
                     <div className="Step">
-                        <span>3</span>
+						<span>3</span>
+						<p>Workflow</p>
                     </div>
                     <div className="Step">
-                        <span>4</span>
+						<span>4</span>
+						<p>Interview Panel</p>
                     </div>
                 </div>
 
