@@ -41,6 +41,11 @@ const Header = () => {
                      </NavLink>
                 </div>
             </div>
+            <div>
+            <NavLink className="nav-item nav-link" to="/AdvanceSearch">
+                        <i className="fa fa-search"></i> 
+                    </NavLink>
+                 </div>
         </nav>
     );
 };

@@ -4,8 +4,9 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 import { Accordion, AccordionItem, AccordionItemTitle, AccordionItemBody, } from 'react-accessible-accordion';
 import Breadcrumbs from "../Common/Breadcrumb";
 import { Form, Button, FormGroup, Label, Input} from 'reactstrap';
+// eslint-disable-next-line
 
-class AddCandidate extends Component { 
+class AdvanceSearch extends Component { 
     constructor(props) {
         super(props);
         this.state = {
@@ -20,53 +21,37 @@ class AddCandidate extends Component {
                     <Breadcrumbs />
                     <div className="page-title-header row">
                         <div className="col-md-12">
-                            <h3>Add Candidate</h3>
+                            <h3>Advance Search</h3>
                         </div>
                     </div>
                 </div>
                 <div className="addcandidates col-md-12">
-                    <p> You can add candidate resume with the form below.</p>
-                    <p>'*' marked fields are mandatory</p>
+                  
                     <h2>Job Information </h2>
                     <div className="row">
-                        <Form>
-
-                        <FormGroup  className="col-md-4">
-                                    <Label for="State">Job Requisition</Label>
-                                    <Input type="select" name="select" id="State">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </Input>                        
-                                            
-                                        </FormGroup> 
-
-                         
-                        </Form>
+                   
                     </div>
                     
                     <div className="row">
                     
                     <Accordion>
-                            <AccordionItem expanded="true">
+                    <AccordionItem expanded="true">
                                 <AccordionItemTitle>
-                                    <h3>Candidate details</h3>
+                                    <h3>Skills / Keywords</h3>
                                 </AccordionItemTitle>
                                 <AccordionItemBody>
                                     <div className="row">
                                      <Form>
                                     <FormGroup className="col-md-4">
-                                    <Label for="Name">Name</Label>
+                                    <Label for="Name">Required Skills / Keywords</Label>
                                     <Input type="text" id="Name" placeholder="" />
                                     </FormGroup>
                                     <FormGroup  className="col-md-4">
-                                    <Label for="Email">Email</Label>
+                                    <Label for="Email">Optional Skills / Keywords</Label>
                                     <Input type="Email"  id="Email" placeholder="" />
                                     </FormGroup> 
                                     <FormGroup  className="col-md-4">
-                                    <Label for="Phone">Phone</Label>
+                                    <Label for="Phone">Excluded Skills / Keywords</Label>
                                     <Input type="tel" id="Phone" placeholder="" />
                                     </FormGroup> 
                                     </Form>
@@ -78,54 +63,14 @@ class AddCandidate extends Component {
                             </AccordionItem>
                             <AccordionItem expanded="true">
                                 <AccordionItemTitle>
-                                    <h3>Address</h3>
+                                    <h3>Experience</h3>
                                 </AccordionItemTitle>
                                 <AccordionItemBody>
                                     <div className="row">
+                                     <Form>
 
-                                    <Form>
-                                    <FormGroup className="col-md-8">
-                                    <Label for="Address">Address</Label>
-                                    <Input type="textarea" name="text" id="Address" />
-
-                                    </FormGroup>
-                                    <FormGroup  className="col-md-4">
-                                    <Label for="State">State</Label>
-                                    <Input type="select" name="select" id="State">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </Input>                        
-                                            
-                                        </FormGroup> 
-
-                                        <FormGroup  className="col-md-4">
-                                    <Label for="City">City</Label>
-                                    <Input type="select" name="select" id="City">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </Input>                        
-                                            
-                                        </FormGroup> 
-
-                                        <FormGroup  className="col-md-4">
-                                    <Label for="City">City</Label>
-                                    <Input type="select" name="select" id="City">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </Input>                        
-                                            
-                                        </FormGroup> 
-                                        <FormGroup  className="col-md-4">
-                                    <Label for="postalcode">Postal Code</Label>
+                                     <FormGroup  className="col-md-2">
+                                    <Label for="postalcode">Total Experience </Label>
                                     <Input type="select" name="select" id="postalcode">
                                                 <option>1</option>
                                                 <option>2</option>
@@ -135,7 +80,91 @@ class AddCandidate extends Component {
                                             </Input>                        
                                             
                                         </FormGroup> 
+
+                                        <FormGroup  className="col-md-2">
+                                    <Label for="postalcode">&nbsp;  </Label>
+                                    <Input type="select" name="select" id="postalcode">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>                        
+                                            
+                                        </FormGroup>
+
+                                 
+                                    <FormGroup  className="col-md-4">
+                                    <Label for="Email">Functional Area</Label>
+                                    <Input type="Email"  id="Email" placeholder="" />
+                                    </FormGroup> 
+                                    <FormGroup  className="col-md-4">
+                                    <Label for="Phone">Industry</Label>
+                                    <Input type="tel" id="Phone" placeholder="" />
+                                    </FormGroup> 
                                     </Form>
+
+                                    <Form>
+
+<FormGroup  className="col-md-2">
+<Label for="postalcode">Salary  </Label>
+<Input type="select" name="select" id="postalcode">
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+           <option>5</option>
+       </Input>                        
+       
+   </FormGroup> 
+
+   <FormGroup  className="col-md-2">
+<Label for="postalcode">&nbsp;  </Label>
+<Input type="select" name="select" id="postalcode">
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+           <option>5</option>
+       </Input>                        
+       
+   </FormGroup>
+
+
+<FormGroup  className="col-md-4">
+<Label for="Email">Title of Last Job</Label>
+<Input type="Email"  id="Email" placeholder="" />
+</FormGroup> 
+<FormGroup  className="col-md-4">
+<Label for="Phone">Title of any Job</Label>
+<Input type="tel" id="Phone" placeholder="" />
+</FormGroup> 
+</Form>
+
+
+
+                                    </div>
+                                </AccordionItemBody>
+                            </AccordionItem>
+                            <AccordionItem expanded="true">
+                                <AccordionItemTitle>
+                                    <h3>Location</h3>
+                                </AccordionItemTitle>
+                                <AccordionItemBody>
+                                    <div className="row">
+
+                                    <Form>
+                                    <FormGroup className="col-md-4">
+                                    <Label for="Name">Current Location</Label>
+                                    <Input type="text" id="Name" placeholder="" />
+                                    </FormGroup>
+
+                                    <FormGroup className="col-md-4">
+                                    <Label for="Name">Preferred Location</Label>
+                                    <Input type="text" id="Name" placeholder="" />
+                                    </FormGroup>
+                                </Form>
+                                   
                                     
                                     </div>
                                 </AccordionItemBody>
@@ -143,23 +172,7 @@ class AddCandidate extends Component {
 
 
                             
-                            <AccordionItem expanded="true">
-                                <AccordionItemTitle>
-                                    <h3>Cover Letter</h3>
-                                </AccordionItemTitle>
-                                <AccordionItemBody>
-                                    <div className="row">
-                                    <Form>
-                                    <FormGroup className="col-md-12">
-                                    <Label for="description">Summary/Description</Label>
-                                    <Input type="textarea" name="description" id="description" />
-
-                                    </FormGroup>
-                                    </Form>
-                                     
-                                    </div>
-                                </AccordionItemBody>
-                            </AccordionItem>
+                        
 
 
                             
@@ -251,7 +264,7 @@ class AddCandidate extends Component {
                                         </Form>
                                             
                                             <div className="col-md-2">
-                                              Add 
+                                               Add 
                                             </div>
                                        
                                     </div>
@@ -262,34 +275,27 @@ class AddCandidate extends Component {
 
                             <AccordionItem expanded="true">
                                 <AccordionItemTitle>
-                                    <h3>Expected Salary</h3>
+                                    <h3>Company</h3>
                                 </AccordionItemTitle>
                                 <AccordionItemBody>
                                     <div className="row">
                                         <Form>
-                                        <FormGroup  className="col-md-2">
-                                    <Label for="postalcode">From  </Label>
-                                    <Input type="select" name="select" id="postalcode">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </Input>                        
+                                        <FormGroup  className="col-md-4">
+                                    <Label for="postalcode">Current Company</Label>
+                                    <Input type="tel" id="Phone" placeholder="" />                    
                                             
                                         </FormGroup> 
 
-                                        <FormGroup  className="col-md-2">
-                                    <Label for="postalcode">To  </Label>
-                                    <Input type="select" name="select" id="postalcode">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </Input>                        
+                                           <FormGroup  className="col-md-4">
+                                    <Label for="postalcode">Excludes Companies</Label>
+                                    <Input type="tel" id="Phone" placeholder="" />                    
                                             
-                                        </FormGroup> 
+                                        </FormGroup>                                        
+                                        <FormGroup  className="col-md-4">
+                                    <Label for="postalcode">Notice Period</Label>
+                                    <Input type="tel" id="Phone" placeholder="" />                    
+                                            
+                                        </FormGroup>   
                                         </Form>
                                             
                                     </div>
@@ -336,7 +342,7 @@ class AddCandidate extends Component {
 
                             <AccordionItem expanded="true">
                                 <AccordionItemTitle>
-                                    <h3>More information</h3>
+                                    <h3>Additional Crieria</h3>
                                 </AccordionItemTitle>
                                 <AccordionItemBody>
                                     <div className="row">
@@ -388,8 +394,8 @@ class AddCandidate extends Component {
 
                              <div className="col-md-12">
                             <div className="float-right">
-                            <Button className="btn btn-secondary  pull-right">Cancel</Button>
-                                <Button className="btn btn-primary m-r-10 pull-right">Submit Candidate</Button>                              
+                            <Button className="btn btn-secondary  pull-right">Clear All</Button>
+                                <Button className="btn btn-primary m-r-10 pull-right">Search</Button>                              
                             </div>
                         </div>
                     </div>
@@ -402,4 +408,4 @@ class AddCandidate extends Component {
     }
 }
 
-export default AddCandidate;
+export default AdvanceSearch;

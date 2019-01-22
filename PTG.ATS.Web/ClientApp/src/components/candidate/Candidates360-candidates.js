@@ -7,6 +7,7 @@ import '../../../node_modules/react-tabs/style/react-tabs.css';
 import '../../styles/Candidates.css';
 import '../../styles/Tabs.css';
 import AllCandidatesTable from "../Common/AllCandidatesTable";
+import CandidatesQuestionnaires from "./CandidatesQuestionnaires";
 import { Link } from 'react-router-dom';
 
 class Candidates360Candidates extends Component {
@@ -72,7 +73,17 @@ class Candidates360Candidates extends Component {
                         <Tabs selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })}>
                             <TabList>
                                 <Tab>A11(140)</Tab>
+                                <Tab>Questionnaires</Tab>
+                                <Tab>Discussions</Tab>
+                                <Tab>Assessments</Tab>
+                                <Tab>Emails</Tab>
+                                <Tab>Documents</Tab>
                             </TabList>
+                            <TabPanel><AllCandidatesTable /></TabPanel>
+                            <TabPanel><CandidatesQuestionnaires /></TabPanel>
+                            <TabPanel><AllCandidatesTable /></TabPanel>
+                            <TabPanel><AllCandidatesTable /></TabPanel>
+                            <TabPanel><AllCandidatesTable /></TabPanel>
                             <TabPanel><AllCandidatesTable /></TabPanel>
                         </Tabs>
                     </div>
