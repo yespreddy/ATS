@@ -8,6 +8,9 @@ import '../../styles/Candidates.css';
 import '../../styles/Tabs.css';
 import AllCandidatesTable from "../common/AllCandidatesTable";
 import CandidatesQuestionnaires from "./CandidatesQuestionnaires";
+import CandidatesDiscussion from "./CandidatesDiscussion";
+import CandidatesEmails from "./CandidatesEmails";
+import CandidatesAssessment from "./CandidatesAssessment";
 import { Link } from 'react-router-dom';
 
 class Candidates360Candidates extends Component {
@@ -81,9 +84,9 @@ class Candidates360Candidates extends Component {
                             </TabList>
                             <TabPanel><AllCandidatesTable /></TabPanel>
                             <TabPanel><CandidatesQuestionnaires /></TabPanel>
-                            <TabPanel><AllCandidatesTable /></TabPanel>
-                            <TabPanel><AllCandidatesTable /></TabPanel>
-                            <TabPanel><AllCandidatesTable /></TabPanel>
+                            <TabPanel><CandidatesDiscussion /></TabPanel>
+                            <TabPanel><CandidatesAssessment /></TabPanel>
+                            <TabPanel><CandidatesEmails /></TabPanel>
                             <TabPanel><AllCandidatesTable /></TabPanel>
                         </Tabs>
                     </div>
