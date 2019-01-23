@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import Innernav from '../common/innernav';
+import Innernav from '../Common/InnerNav';
 import { Button } from 'reactstrap';
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import '../../../node_modules/react-tabs/style/react-tabs.css';
 import '../../styles/Candidates.css';
 import '../../styles/Tabs.css';
-import AllCandidatesTable from "../common/AllCandidatesTable";
+import AllCandidatesTable from "../Common/AllCandidatesTable";
 import CandidatesQuestionnaires from "./CandidatesQuestionnaires";
 import CandidatesDiscussion from "./CandidatesDiscussion";
 import CandidatesEmails from "./CandidatesEmails";
