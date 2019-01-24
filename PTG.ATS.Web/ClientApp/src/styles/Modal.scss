@@ -1,0 +1,48 @@
+.modal-wrapper{
+    .modal{
+        &-header, &-footer{
+            padding:1rem 0;
+            margin: 0 1.5rem;
+        }
+        &-content{
+            border-radius:0;          
+        }
+        &-body{
+            padding:1rem 1.5rem;
+
+            label{
+                small{
+                    color: #ccc;
+                }
+            }
+
+            .drop-files{
+                text-align: center;
+                border:1px dashed #eee;
+                padding:15px;   
+
+                .browse-btn-wrapper {
+                    position: relative;
+                    overflow: hidden;
+                    display: inline-block;
+
+                    input[type=file] {
+                        font-size: 100px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        opacity: 0;
+                    }
+                }             
+                
+            }
+        }
+        &-footer{
+            .btn-secondary{
+                background: transparent;
+                color: #007bff;
+                border-color: #007bff;
+            }
+        }
+    }  
+}

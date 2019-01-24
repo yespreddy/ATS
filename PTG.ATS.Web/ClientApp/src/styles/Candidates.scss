@@ -70,6 +70,14 @@
 
             }
       }
+
+      &-action-btns{
+          text-align:right;
+          a, button{
+              display: inline-block;
+              margin-right: 10px;
+          }
+      }
     }
 
 .addcandidates{

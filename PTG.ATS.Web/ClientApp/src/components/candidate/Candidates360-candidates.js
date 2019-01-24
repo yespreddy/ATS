@@ -6,15 +6,20 @@ import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from
 import '../../../node_modules/react-tabs/style/react-tabs.css';
 import '../../styles/Candidates.css';
 import '../../styles/Tabs.css';
+import '../../styles/Popover.css';  
 import AllCandidatesTable from "../Common/AllCandidatesTable";
 import CandidatesQuestionnaires from "./CandidatesQuestionnaires";
+import Documents from "./Documents";
+import ShareCandidate from "../Common/ShareCandidatePopOver";
 import { Link } from 'react-router-dom';
+import AddKeywords from '../Common/AddKeywords';
+import CreateTask from '../Common/CreateTaskPopup';
 
 class Candidates360Candidates extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            tabIndex: 0,
+            tabIndex: 0
         }
     }
 
@@ -68,8 +73,25 @@ class Candidates360Candidates extends Component {
                             <Link to="#"><i className="fa fa-chevron-right" aria-hidden="true"></i></Link>
                                 </div>
                             </div>
-                        </div>
+                            <div className="clearfix"></div>
+                            <div className="col-md-6">
+                                <h3>Dheerendra Sathyanarayana</h3>
+                            </div>
+                            <div className="col-md-6 candidates-action-btns">
+                            <a href="javascript:void(0)" id="Popover1" onClick={()=>{this.refs.sharepopup.toggle();}}>Share Candidate</a>
+                            
+                             <button type="button" className="btn btn-primary"  onClick={()=>{this.refs.keywords.toggle();}} >Add Keywords</button>
 
+                            <button className="btn btn-primary" onClick={()=>{this.refs.createTask.toggle();}}>Create Task</button>
+                            <ShareCandidate ref="sharepopup"></ShareCandidate>   
+                            <AddKeywords ref="keywords"/>
+                            <CreateTask ref="createTask"></CreateTask>                         
+                        </div>
+                        </div>
+                        <div className="createTask-addkeywords-btns m-b-20">
+                        
+                           
+                        </div>
                         <Tabs selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })}>
                             <TabList>
                                 <Tab>A11(140)</Tab>
@@ -84,7 +106,7 @@ class Candidates360Candidates extends Component {
                             <TabPanel><AllCandidatesTable /></TabPanel>
                             <TabPanel><AllCandidatesTable /></TabPanel>
                             <TabPanel><AllCandidatesTable /></TabPanel>
-                            <TabPanel><AllCandidatesTable /></TabPanel>
+                            <TabPanel><Documents /></TabPanel>
                         </Tabs>
                     </div>
                 </div>

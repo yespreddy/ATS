@@ -70,6 +70,15 @@
   font-size: 14px;
 }
 
+.candidates-action-btns {
+  text-align: right;
+}
+
+.candidates-action-btns a, .candidates-action-btns button {
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .addcandidates {
   background: #fff;
   padding: 20px;

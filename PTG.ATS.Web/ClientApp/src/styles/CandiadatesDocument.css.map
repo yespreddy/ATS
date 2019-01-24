@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,MAAM,EAAC,IAAI;CAcd;;AAZI,AAAD,iBAAQ,CAAA;EACJ,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,MAAM;CAKnB;;AARA,AAKG,iBALI,AAKH,MAAM,CAAA;EACH,UAAU,EAAE,IAAI;CACnB;;AAEJ,AAAD,gBAAO,CAAA;EACH,OAAO,EAAE,MAAM;CAClB;;AAGL,AAAA,gBAAgB,GAAG,gBAAgB,CAAC;EAChC,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "CandiadatesDocument.scss"
+    ],
+    "names": [],
+    "file": "CandiadatesDocument.css"
+}

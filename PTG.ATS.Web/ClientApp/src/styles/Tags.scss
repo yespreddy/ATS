@@ -1,0 +1,14 @@
+.react-tagsinput{
+    min-height:100px;
+
+    &--focused{
+        border:1px solid #ccc;
+    }
+
+    &-tag{
+        border-radius:0;
+        background-color: #eee;
+        border:1px solid #eee;
+        color: #333;
+    }
+}

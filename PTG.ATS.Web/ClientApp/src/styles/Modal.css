@@ -1,0 +1,43 @@
+.modal-wrapper .modal-header, .modal-wrapper .modal-footer {
+  padding: 1rem 0;
+  margin: 0 1.5rem;
+}
+
+.modal-wrapper .modal-content {
+  border-radius: 0;
+}
+
+.modal-wrapper .modal-body {
+  padding: 1rem 1.5rem;
+}
+
+.modal-wrapper .modal-body label small {
+  color: #ccc;
+}
+
+.modal-wrapper .modal-body .drop-files {
+  text-align: center;
+  border: 1px dashed #eee;
+  padding: 15px;
+}
+
+.modal-wrapper .modal-body .drop-files .browse-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.modal-wrapper .modal-body .drop-files .browse-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.modal-wrapper .modal-footer .btn-secondary {
+  background: transparent;
+  color: #007bff;
+  border-color: #007bff;
+}
+/*# sourceMappingURL=Modal.css.map */

@@ -1,0 +1,22 @@
+.accordion {
+  border: none;
+}
+
+.accordion__title {
+  background: none;
+  height: 100%;
+  overflow: hidden;
+}
+
+.accordion__title:hover {
+  background: none;
+}
+
+.accordion__body {
+  padding: 0 20px;
+}
+
+.accordion__item + .accordion__item {
+  border-top: none;
+}
+/*# sourceMappingURL=CandiadatesDocument.css.map */

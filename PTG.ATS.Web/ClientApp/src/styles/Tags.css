@@ -1,0 +1,15 @@
+.react-tagsinput {
+  min-height: 100px;
+}
+
+.react-tagsinput--focused {
+  border: 1px solid #ccc;
+}
+
+.react-tagsinput-tag {
+  border-radius: 0;
+  background-color: #eee;
+  border: 1px solid #eee;
+  color: #333;
+}
+/*# sourceMappingURL=Tags.css.map */

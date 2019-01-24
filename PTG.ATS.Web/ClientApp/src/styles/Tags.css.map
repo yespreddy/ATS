@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAA;EACZ,UAAU,EAAC,KAAK;CAYnB;;AAVI,AAAD,yBAAU,CAAA;EACN,MAAM,EAAC,cAAc;CACxB;;AAEA,AAAD,oBAAK,CAAA;EACD,aAAa,EAAC,CAAC;EACf,gBAAgB,EAAE,IAAI;EACtB,MAAM,EAAC,cAAc;EACrB,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "Tags.scss"
+    ],
+    "names": [],
+    "file": "Tags.css"
+}

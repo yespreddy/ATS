@@ -1,0 +1,14 @@
+.popover-wrapper{
+    border-radius: 0 !important; 
+    max-width: 350px !important;
+    .popover{       
+        &-header{
+            border-bottom: 1px solid #ccc;     
+        }
+        &-body{
+            padding:20px;
+            display: block;
+            overflow: hidden;
+        }
+    }
+}

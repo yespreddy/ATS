@@ -1,0 +1,20 @@
+.accordion{
+    border:none;
+
+    &__title{
+        background: none;
+        height: 100%;
+        overflow: hidden;
+
+        &:hover{
+            background: none;
+        }
+    }
+    &__body{
+        padding: 0 20px;
+    }
+}
+
+.accordion__item + .accordion__item {
+    border-top: none;
+}
