@@ -9,6 +9,9 @@ import '../../styles/Tabs.css';
 import '../../styles/Popover.css';  
 import AllCandidatesTable from "../Common/AllCandidatesTable";
 import CandidatesQuestionnaires from "./CandidatesQuestionnaires";
+import CandidatesDiscussion from "./CandidatesDiscussion";
+import CandidatesEmails from "./CandidatesEmails";
+import CandidatesAssessment from "./CandidatesAssessment";
 import Documents from "./Documents";
 import ShareCandidate from "../Common/ShareCandidatePopOver";
 import { Link } from 'react-router-dom';
@@ -103,9 +106,9 @@ class Candidates360Candidates extends Component {
                             </TabList>
                             <TabPanel><AllCandidatesTable /></TabPanel>
                             <TabPanel><CandidatesQuestionnaires /></TabPanel>
-                            <TabPanel><AllCandidatesTable /></TabPanel>
-                            <TabPanel><AllCandidatesTable /></TabPanel>
-                            <TabPanel><AllCandidatesTable /></TabPanel>
+                            <TabPanel><CandidatesDiscussion /></TabPanel>
+                            <TabPanel><CandidatesAssessment /></TabPanel>
+                            <TabPanel><CandidatesEmails /></TabPanel>
                             <TabPanel><Documents /></TabPanel>
                         </Tabs>
                     </div>

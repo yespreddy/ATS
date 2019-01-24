@@ -55,7 +55,6 @@
 }
 
 .candidates-left .accordion__body .filter-each form span.badge {
-  display: inline-block;
   margin: 0 0px 0 0;
   background: #e2e2e4;
   font-size: 14px;
@@ -68,6 +67,275 @@
   display: inline-block;
   margin: 0 10px 0 0;
   font-size: 14px;
+}
+
+.candidates-questionnaire {
+  padding: 30px;
+}
+
+.candidates-questionnaire-header {
+  margin-bottom: 20px;
+}
+
+.candidates-questionnaire .list-group-item {
+  margin-bottom: 10px;
+  background: #F2F2F2;
+}
+
+.candidates-questionnaire .list-group-item .fa {
+  color: #0073c6;
+}
+
+.candidates-questionnaire .list-group-item .fa-list {
+  margin-right: 10px;
+}
+
+.candidates-questionnaire .list-group-item .fa-edit {
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.candidates-discussion {
+  padding: 30px;
+}
+
+.candidates-discussion .user-comment {
+  padding: 20px 20px 20px 40px;
+  background: #F2F2F2;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.candidates-discussion .user-comment-header h5 {
+  position: relative;
+}
+
+.candidates-discussion .user-comment-header h5:before {
+  content: "\f2bd";
+  font: normal normal normal 14px/1 FontAwesome;
+  position: absolute;
+  top: 4px;
+  left: -27px;
+  font-size: 20px;
+}
+
+.candidates-discussion .user-comment-header .fa {
+  margin-left: 10px;
+  color: #0073c6;
+  cursor: pointer;
+}
+
+.candidates-discussion .timeline .list-group {
+  position: relative;
+}
+
+.candidates-discussion .timeline .list-group:after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #525975;
+  left: 17px;
+  top: 2px;
+  bottom: 0;
+  margin-left: -3px;
+  z-index: 1;
+}
+
+.candidates-discussion .timeline .list-group-item {
+  border: none;
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 1.75rem;
+  padding-left: 60px;
+  z-index: inherit;
+}
+
+.candidates-discussion .timeline .list-group-item:last-child {
+  background: #fff;
+  z-index: 2;
+}
+
+.candidates-discussion .timeline .list-group-item:after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 9px;
+  background-color: #525975;
+  /* border: 4px solid #000; */
+  top: 9px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.candidates-discussion .timeline .list-group-item:before {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border: 3px solid #525975;
+  top: -2px;
+  left: -2px;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  z-index: 2;
+  background: #fff;
+}
+
+.candidates-discussion .timeline .list-group-item .fa {
+  color: #0073c6;
+}
+
+.candidates-discussion .timeline .list-group-item .fa-list {
+  margin-right: 10px;
+}
+
+.candidates-discussion .timeline .list-group-item .fa-edit {
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.candidates-email {
+  padding: 30px;
+}
+
+.candidates-email-header {
+  margin-bottom: 20px;
+}
+
+.candidates-email .thetable tbody tr td:first-child {
+  font-weight: 600;
+}
+
+.candidates-assess {
+  padding: 30px;
+}
+
+.candidates-assess-header {
+  margin-bottom: 20px;
+}
+
+.candidates-assess-wrap .overall-rating-left {
+  padding-right: 30px;
+  border-right: 1px solid #a8a8a8;
+}
+
+.candidates-assess-wrap .overall-rating-left h5 {
+  margin-bottom: 0;
+}
+
+.candidates-assess-wrap .overall-rating-left .rating > span {
+  font-size: 36px;
+}
+
+.candidates-assess-wrap .overall-rating-right {
+  padding-left: 30px;
+}
+
+.candidates-assess-wrap .user-badge {
+  background: #767676;
+  color: #fff;
+  border-radius: 50%;
+  text-transform: uppercase;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.candidates-assess-wrap .user-badge span {
+  vertical-align: middle;
+}
+
+.candidates-assess-wrap .user-badge-wrap {
+  margin-top: 15px;
+}
+
+.candidates-assess-wrap .user-traits {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 30px;
+}
+
+.candidates-assess-wrap .user-traits .col h5 {
+  margin-bottom: 20px;
+}
+
+.candidates-assess-wrap .user-traits .col .fa {
+  margin-left: 10px;
+}
+
+.candidates-assess-wrap .rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  display: block;
+  float: none;
+}
+
+.candidates-assess-wrap .rating > span {
+  display: inline-block;
+  position: relative;
+  font-size: 26px;
+}
+
+.candidates-assess-wrap .rating > span:hover ~ span:before, .candidates-assess-wrap .rating > span:hover .active:before {
+  content: "\2605";
+  position: absolute;
+}
+
+.candidates-assess-wrap .rating > span:hover:before {
+  content: "\2605";
+  position: absolute;
+}
+
+.candidates-assess-wrap .bar {
+  width: 50%;
+  height: 18px;
+  background-color: #A71F37;
+  -webkit-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+
+.candidates-assess-wrap .bar-wrap {
+  width: 300px;
+}
+
+.candidates-assess-wrap .bar-wrap .progress {
+  overflow: hidden;
+  height: 18px;
+  background-color: #EBEBEB;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+}
+
+.candidates-assess-wrap .snapshot-item .rating, .candidates-assess-wrap .snapshot-item .bar-wrap, .candidates-assess-wrap .snapshot-item label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.candidates-assess-wrap .snapshot-item label {
+  margin-bottom: 0;
+}
+
+.candidates-assess-wrap .snapshot-wrap {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.candidates-assess-wrap .user-comment {
+  padding: 20px;
+  background: #F2F2F2;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.candidates-assess-wrap .user-comment-header h5 {
+  color: #616471;
 }
 
 .candidates-action-btns {
