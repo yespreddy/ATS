@@ -38,3 +38,43 @@ F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Service
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.csproj.CopyComplete
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.dll
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.pdb
+F:\ATS_Code\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.2\PTG.ATS.Services.deps.json
+F:\ATS_Code\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.2\PTG.ATS.Services.runtimeconfig.json
+F:\ATS_Code\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.2\PTG.ATS.Services.runtimeconfig.dev.json
+F:\ATS_Code\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.2\PTG.ATS.Services.dll
+F:\ATS_Code\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.2\PTG.ATS.Services.pdb
+F:\ATS_Code\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.2\PTG.ATS.Services.Views.dll
+F:\ATS_Code\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.2\PTG.ATS.Services.Views.pdb
+F:\ATS_Code\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.2\PTG.ATS.BLL.dll
+F:\ATS_Code\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.2\PTG.ATS.DAL.dll
+F:\ATS_Code\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.2\PTG.ATS.Entities.dll
+F:\ATS_Code\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.2\PTG.ATS.Infra.dll
+F:\ATS_Code\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.2\PTG.ATS.BLL.pdb
+F:\ATS_Code\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.2\PTG.ATS.Entities.pdb
+F:\ATS_Code\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.2\PTG.ATS.Infra.pdb
+F:\ATS_Code\ATS\PTG.ATS.Services\bin\Debug\netcoreapp2.2\PTG.ATS.DAL.pdb
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.csprojAssemblyReference.cache
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.csproj.CoreCompileInputs.cache
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.RazorAssemblyInfo.cache
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.RazorAssemblyInfo.cs
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.AssemblyInfoInputs.cache
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.AssemblyInfo.cs
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.TagHelpers.input.cache
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.TagHelpers.output.cache
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.RazorCoreGenerate.cache
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\Razor\Views\Home\About.g.cshtml.cs
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\Razor\Views\Home\Contact.g.cshtml.cs
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.RazorTargetAssemblyInfo.cache
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.RazorTargetAssemblyInfo.cs
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.Views.pdb
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.csproj.CopyComplete
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.dll
+F:\ATS_Code\ATS\PTG.ATS.Services\obj\Debug\netcoreapp2.2\PTG.ATS.Services.pdb

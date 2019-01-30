@@ -9,3 +9,14 @@ F:\P T G\GutHub_ATS\ATS\PTG.ATS.DAL\obj\Debug\netcoreapp2.1\PTG.ATS.DAL.pdb
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.DAL\bin\Debug\netcoreapp2.1\PTG.ATS.DAL.runtimeconfig.json
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.DAL\bin\Debug\netcoreapp2.1\PTG.ATS.DAL.runtimeconfig.dev.json
 F:\P T G\GutHub_ATS\ATS\PTG.ATS.DAL\obj\Debug\netcoreapp2.1\PTG.ATS.DAL.csprojAssemblyReference.cache
+F:\ATS_Code\ATS\PTG.ATS.DAL\bin\Debug\netcoreapp2.1\PTG.ATS.DAL.deps.json
+F:\ATS_Code\ATS\PTG.ATS.DAL\bin\Debug\netcoreapp2.1\PTG.ATS.DAL.runtimeconfig.json
+F:\ATS_Code\ATS\PTG.ATS.DAL\bin\Debug\netcoreapp2.1\PTG.ATS.DAL.runtimeconfig.dev.json
+F:\ATS_Code\ATS\PTG.ATS.DAL\bin\Debug\netcoreapp2.1\PTG.ATS.DAL.dll
+F:\ATS_Code\ATS\PTG.ATS.DAL\bin\Debug\netcoreapp2.1\PTG.ATS.DAL.pdb
+F:\ATS_Code\ATS\PTG.ATS.DAL\obj\Debug\netcoreapp2.1\PTG.ATS.DAL.csproj.CoreCompileInputs.cache
+F:\ATS_Code\ATS\PTG.ATS.DAL\obj\Debug\netcoreapp2.1\PTG.ATS.DAL.AssemblyInfoInputs.cache
+F:\ATS_Code\ATS\PTG.ATS.DAL\obj\Debug\netcoreapp2.1\PTG.ATS.DAL.AssemblyInfo.cs
+F:\ATS_Code\ATS\PTG.ATS.DAL\obj\Debug\netcoreapp2.1\PTG.ATS.DAL.dll
+F:\ATS_Code\ATS\PTG.ATS.DAL\obj\Debug\netcoreapp2.1\PTG.ATS.DAL.pdb
+F:\ATS_Code\ATS\PTG.ATS.DAL\obj\Debug\netcoreapp2.1\PTG.ATS.DAL.csprojAssemblyReference.cache
