@@ -688,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rakesh\\.nuget\\packages\\": {},
+    "C:\\Users\\Srikanth\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ATS\\React\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj",
+      "projectUniqueName": "F:\\ATS_Code\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj",
       "projectName": "PTG.ATS.Entities",
-      "projectPath": "E:\\ATS\\React\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj",
-      "packagesPath": "C:\\Users\\Rakesh\\.nuget\\packages\\",
-      "outputPath": "E:\\ATS\\React\\PTG.ATS.Entities\\obj\\",
+      "projectPath": "F:\\ATS_Code\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj",
+      "packagesPath": "C:\\Users\\Srikanth\\.nuget\\packages\\",
+      "outputPath": "F:\\ATS_Code\\ATS\\PTG.ATS.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Rakesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Srikanth\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
