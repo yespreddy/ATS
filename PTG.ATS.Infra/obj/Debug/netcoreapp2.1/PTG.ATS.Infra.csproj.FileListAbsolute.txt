@@ -16,3 +16,12 @@ F:\ATS_Code\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.1\PTG.ATS.Infra.AssemblyInfo
 F:\ATS_Code\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.1\PTG.ATS.Infra.dll
 F:\ATS_Code\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.1\PTG.ATS.Infra.pdb
 F:\ATS_Code\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.1\PTG.ATS.Infra.csprojAssemblyReference.cache
+D:\sudhir\ATS\ATS\PTG.ATS.Infra\bin\Debug\netcoreapp2.1\PTG.ATS.Infra.deps.json
+D:\sudhir\ATS\ATS\PTG.ATS.Infra\bin\Debug\netcoreapp2.1\PTG.ATS.Infra.dll
+D:\sudhir\ATS\ATS\PTG.ATS.Infra\bin\Debug\netcoreapp2.1\PTG.ATS.Infra.pdb
+D:\sudhir\ATS\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.1\PTG.ATS.Infra.csprojAssemblyReference.cache
+D:\sudhir\ATS\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.1\PTG.ATS.Infra.csproj.CoreCompileInputs.cache
+D:\sudhir\ATS\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.1\PTG.ATS.Infra.AssemblyInfoInputs.cache
+D:\sudhir\ATS\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.1\PTG.ATS.Infra.AssemblyInfo.cs
+D:\sudhir\ATS\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.1\PTG.ATS.Infra.dll
+D:\sudhir\ATS\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.1\PTG.ATS.Infra.pdb
