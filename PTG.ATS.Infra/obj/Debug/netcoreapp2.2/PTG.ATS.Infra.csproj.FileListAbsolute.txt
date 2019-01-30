@@ -1,0 +1,9 @@
+F:\ATS_Code\ATS\PTG.ATS.Infra\bin\Debug\netcoreapp2.2\PTG.ATS.Infra.deps.json
+F:\ATS_Code\ATS\PTG.ATS.Infra\bin\Debug\netcoreapp2.2\PTG.ATS.Infra.dll
+F:\ATS_Code\ATS\PTG.ATS.Infra\bin\Debug\netcoreapp2.2\PTG.ATS.Infra.pdb
+F:\ATS_Code\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.csprojAssemblyReference.cache
+F:\ATS_Code\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.csproj.CoreCompileInputs.cache
+F:\ATS_Code\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.AssemblyInfoInputs.cache
+F:\ATS_Code\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.AssemblyInfo.cs
+F:\ATS_Code\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.dll
+F:\ATS_Code\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.pdb
