@@ -7,3 +7,11 @@ F:\ATS_Code\ATS\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.Assemb
 F:\ATS_Code\ATS\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.AssemblyInfo.cs
 F:\ATS_Code\ATS\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.dll
 F:\ATS_Code\ATS\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.pdb
+D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\bin\Debug\netcoreapp2.2\PTG.ATS.Entities.deps.json
+D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\bin\Debug\netcoreapp2.2\PTG.ATS.Entities.dll
+D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\bin\Debug\netcoreapp2.2\PTG.ATS.Entities.pdb
+D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.csproj.CoreCompileInputs.cache
+D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.AssemblyInfoInputs.cache
+D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.AssemblyInfo.cs
+D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.dll
+D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.pdb

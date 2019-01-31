@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PTG.ATS.Entities\PTG.ATS.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
