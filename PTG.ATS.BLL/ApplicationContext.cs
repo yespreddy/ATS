@@ -15,9 +15,9 @@ namespace PTG.ATS.BLL
 {
     public class ApplicationContext
     {
-
-        public atsdevContext db = new atsdevContext();
-        public ATSMasterDTO atsMasterData = new ATSMasterDTO();
+                public atsdevContext db = new atsdevContext();
+                public ATSMasterDTO atsMasterData = new ATSMasterDTO();
+         
         public static ApplicationContext Instance { get; private set; } = null;
         //public SymmetricSecurityKey JwtSecret { get; set; } = null;
         public static void InstanceInit()

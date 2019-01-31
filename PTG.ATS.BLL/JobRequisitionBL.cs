@@ -58,7 +58,7 @@ namespace PTG.ATS.BLL
 
         private List<JobRequisitionHiringDTO> PrepareRequistionObject()
         {
-            return appContext.atsMasterData.JobRequisitionHiringDTOs
+            return appContext.atsMasterData.jobRequisitionHiringDTOs
                         .Select(y => new JobRequisitionHiringDTO
                         {
                                JobRequisition=y.JobRequisition
