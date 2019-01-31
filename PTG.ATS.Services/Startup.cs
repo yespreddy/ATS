@@ -2,12 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PTG.ATS.Infra;
+using PTG.ATS.BLL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Swashbuckle.AspNetCore.Swagger;
+//using Microsoft.AspNet.OData.Extensions;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.AspNetCore.SpaServices.Webpack;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using Microsoft.AspNetCore.Identity;
 
 namespace PTG.ATS.Services
 {
@@ -30,8 +42,16 @@ namespace PTG.ATS.Services
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            //Interface registration
+            services.AddScoped<IJobRequisition, JobRequisitionBL>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            //Swagger implemention
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1.0", new Info { Title = "ATS DEV API", Version = "1.0" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,18 +63,18 @@ namespace PTG.ATS.Services
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseHsts();
             }
 
-            app.UseStaticFiles();
-            app.UseCookiePolicy();
+            app.UseHttpsRedirection();
 
-            app.UseMvc(routes =>
+            //Swagger implemention
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
             {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                c.SwaggerEndpoint("/swagger/v1.0/swagger.json", "ATS DEV API (V 1.0)");
             });
+            app.UseMvc();
         }
     }
 }
