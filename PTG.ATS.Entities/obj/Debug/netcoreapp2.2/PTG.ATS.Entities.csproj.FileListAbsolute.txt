@@ -15,4 +15,3 @@ D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.En
 D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.AssemblyInfo.cs
 D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.dll
 D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.pdb
-D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.csprojAssemblyReference.cache

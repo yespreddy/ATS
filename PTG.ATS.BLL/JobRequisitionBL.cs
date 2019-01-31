@@ -22,7 +22,9 @@ namespace PTG.ATS.BLL
             //return appContext.atsMasterData.jobRequirementDTOs;
             return dbContext.JobRequisition.Select(x => new JobRequisitionDTO
             {
-                JobRequisitionHiring = PrepareRequistionObject(),
+                //JobRequisitionHiring = PrepareRequistionObject(),
+                JobRequisitionId=x.JobRequisitionId,
+                RequisitionTemplateId=x.RequisitionTemplateId
             }).ToList();
 
         }
