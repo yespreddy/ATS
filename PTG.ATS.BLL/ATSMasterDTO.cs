@@ -11,5 +11,11 @@ namespace PTG.ATS.BLL
         public List<JobRequisitionDTO> requisitionDTOs { get; set; } = new List<JobRequisitionDTO>();
 
         public List<JobRequisitionHiringDTO> jobRequisitionHiringDTOs { get; set; } = new List<JobRequisitionHiringDTO>();
+
+        public CityMasterDTO cityMasterDTOs { get; set; } = new CityMasterDTO();
+
+        public List<JobRequisitionInterviewPanelDTO> JobRequisitionInterviewPanelDTOs { get; set; } = new List<JobRequisitionInterviewPanelDTO>();
+
+        public List<JobRequisitionPreliminaryQuestionnaireDTO> JobRequisitionPreliminaryQuestionnaireDTOs { get; set; } = new List<JobRequisitionPreliminaryQuestionnaireDTO>();
     }
 }
