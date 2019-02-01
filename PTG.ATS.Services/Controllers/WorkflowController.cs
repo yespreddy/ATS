@@ -22,6 +22,12 @@ namespace PTG.ATS.Services.Controllers
     [Route("api/Workflow")]
     public class WorkflowController : Controller
     {
+        IJobRequisition _jobRequisition { get; set; }
+
+        public WorkflowController(IJobRequisition jobRequisition)
+        {
+            _jobRequisition = jobRequisition;
+        }
 
         //Get Method for Test
         // GET: /<controller>/
@@ -33,8 +39,22 @@ namespace PTG.ATS.Services.Controllers
             var templist=workflow.GetHiringStages();
             return templist;
         }
+        [HttpPost]
+        [Route("PostHiringstage")]
+        public ActionResult PostHiringstage([FromBody] HiringStageMasterDTO hiringStageMasterDTO)
+        {
+            WorkflowBAL workflow = new WorkflowBAL();
+            if (hiringStageMasterDTO == null)
+                return BadRequest();
 
-      
+            var response = _jobRequisition.PostHiringstage(hiringStageMasterDTO);
+
+            if (response == null)
+                return BadRequest();
+            else
+                return Ok(response);
+        }
+
 
     }
 }

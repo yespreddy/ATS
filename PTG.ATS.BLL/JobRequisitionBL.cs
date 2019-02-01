@@ -93,6 +93,33 @@ namespace PTG.ATS.BLL
                         }).ToList();
         }
 
-       
+        public HiringStageMasterDTO PostHiringstage(HiringStageMasterDTO hiringStageMasterDTO)
+        {
+            try
+            {
+                HiringStageMaster hirings = MapHiring(hiringStageMasterDTO);
+                if (hiringStageMasterDTO != null)
+                {
+                    dbContext.Add(hirings);
+                    dbContext.SaveChanges();
+                    appContext.RefreshClaimMasterDataAsync();
+                }
+                return hiringStageMasterDTO;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private HiringStageMaster MapHiring(HiringStageMasterDTO hiringStageMasterDTO)
+        {
+            HiringStageMaster _hiringStageMasterDTO = new HiringStageMaster();
+            _hiringStageMasterDTO.HiringStageId = hiringStageMasterDTO.HiringStageId;
+            _hiringStageMasterDTO.HiringStageName = hiringStageMasterDTO.HiringStageName;
+            _hiringStageMasterDTO.Description = hiringStageMasterDTO.Description;
+
+            return _hiringStageMasterDTO;
+        }
     }
 }
