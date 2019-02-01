@@ -41,7 +41,7 @@ namespace PTG.ATS.Services
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-
+            ApplicationContext.InstanceInit();
             //Interface registration
             services.AddScoped<IJobRequisition, JobRequisitionBL>();
 

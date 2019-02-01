@@ -24,9 +24,35 @@ namespace PTG.ATS.BLL
             {
                 //JobRequisitionHiring = PrepareRequistionObject(),
                 JobRequisitionId=x.JobRequisitionId,
-                RequisitionTemplateId=x.RequisitionTemplateId
+                RequisitionTemplateId=x.RequisitionTemplateId,
+                JobRequisitionHiring = JobRequisitionHiringObject(),
+                JobRequisitionInterviewPanel= JobRequisitionInterviewPanelObject(),
+                JobRequisitionPreliminaryQuestionnaire= JobRequisitionPreliminaryQuestionnaireObject()
             }).ToList();
 
+        }
+
+        private ICollection<JobRequisitionPreliminaryQuestionnaireDTO> JobRequisitionPreliminaryQuestionnaireObject()
+        {
+            return appContext.atsMasterData.JobRequisitionPreliminaryQuestionnaireDTOs
+                             .Select(y => new JobRequisitionPreliminaryQuestionnaireDTO
+                             { FirstName = y.FirstName }).ToList();
+        }
+
+        private ICollection<JobRequisitionInterviewPanelDTO> JobRequisitionInterviewPanelObject()
+        {
+            return appContext.atsMasterData.JobRequisitionInterviewPanelDTOs
+                             .Select(y => new JobRequisitionInterviewPanelDTO
+                                    { Designation=y.Designation }).ToList();
+        }
+
+        private ICollection<JobRequisitionHiringDTO> JobRequisitionHiringObject()
+        {
+            return appContext.atsMasterData.jobRequisitionHiringDTOs
+                        .Select(y => new JobRequisitionHiringDTO
+                        {
+                            JobRequisition = y.JobRequisition
+                        }).ToList();
         }
 
         public CountryMasterDTO PostCountry(CountryMasterDTO countryDTO)
@@ -66,5 +92,7 @@ namespace PTG.ATS.BLL
                                JobRequisition=y.JobRequisition
                         }).ToList();
         }
+
+       
     }
 }
