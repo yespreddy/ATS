@@ -15,3 +15,12 @@ D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.En
 D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.AssemblyInfo.cs
 D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.dll
 D:\Projects\projects\ATS-DEV\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.pdb
+C:\Users\Vasudev\source\repos\ATS2\PTG.ATS.Entities\bin\Debug\netcoreapp2.2\PTG.ATS.Entities.deps.json
+C:\Users\Vasudev\source\repos\ATS2\PTG.ATS.Entities\bin\Debug\netcoreapp2.2\PTG.ATS.Entities.dll
+C:\Users\Vasudev\source\repos\ATS2\PTG.ATS.Entities\bin\Debug\netcoreapp2.2\PTG.ATS.Entities.pdb
+C:\Users\Vasudev\source\repos\ATS2\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Vasudev\source\repos\ATS2\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.AssemblyInfoInputs.cache
+C:\Users\Vasudev\source\repos\ATS2\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.AssemblyInfo.cs
+C:\Users\Vasudev\source\repos\ATS2\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.dll
+C:\Users\Vasudev\source\repos\ATS2\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.pdb
+C:\Users\Vasudev\source\repos\ATS2\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.csprojAssemblyReference.cache

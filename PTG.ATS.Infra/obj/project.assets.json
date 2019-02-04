@@ -702,23 +702,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bhaskar Ravuri\\.nuget\\packages\\": {},
+    "C:\\Users\\Vasudev\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\projects\\ATS-DEV\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
+      "projectUniqueName": "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
       "projectName": "PTG.ATS.Infra",
-      "projectPath": "D:\\Projects\\projects\\ATS-DEV\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
-      "packagesPath": "C:\\Users\\Bhaskar Ravuri\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\projects\\ATS-DEV\\PTG.ATS.Infra\\obj\\",
+      "projectPath": "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
+      "packagesPath": "C:\\Users\\Vasudev\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Bhaskar Ravuri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vasudev\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -731,8 +731,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\Projects\\projects\\ATS-DEV\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj": {
-              "projectPath": "D:\\Projects\\projects\\ATS-DEV\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj"
+            "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj": {
+              "projectPath": "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj"
             }
           }
         }
