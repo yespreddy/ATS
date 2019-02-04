@@ -19,3 +19,15 @@ D:\Projects\projects\ATS-DEV\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra
 D:\Projects\projects\ATS-DEV\PTG.ATS.Infra\bin\Debug\netcoreapp2.2\PTG.ATS.Entities.dll
 D:\Projects\projects\ATS-DEV\PTG.ATS.Infra\bin\Debug\netcoreapp2.2\PTG.ATS.Entities.pdb
 D:\Projects\projects\ATS-DEV\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.csproj.CopyComplete
+D:\ATS-New-Project\PTG.ATS.Infra\bin\Debug\netcoreapp2.2\PTG.ATS.Infra.deps.json
+D:\ATS-New-Project\PTG.ATS.Infra\bin\Debug\netcoreapp2.2\PTG.ATS.Infra.dll
+D:\ATS-New-Project\PTG.ATS.Infra\bin\Debug\netcoreapp2.2\PTG.ATS.Infra.pdb
+D:\ATS-New-Project\PTG.ATS.Infra\bin\Debug\netcoreapp2.2\PTG.ATS.Entities.dll
+D:\ATS-New-Project\PTG.ATS.Infra\bin\Debug\netcoreapp2.2\PTG.ATS.Entities.pdb
+D:\ATS-New-Project\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.csprojAssemblyReference.cache
+D:\ATS-New-Project\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.csproj.CoreCompileInputs.cache
+D:\ATS-New-Project\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.AssemblyInfoInputs.cache
+D:\ATS-New-Project\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.AssemblyInfo.cs
+D:\ATS-New-Project\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.csproj.CopyComplete
+D:\ATS-New-Project\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.dll
+D:\ATS-New-Project\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.pdb
