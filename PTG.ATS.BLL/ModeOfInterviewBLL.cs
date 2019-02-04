@@ -25,6 +25,5 @@ namespace PTG.ATS.BLL
                 ModeOfInterviewName = x.ModeOfInterviewName
             }).ToList();
         }
-
     }
 }
