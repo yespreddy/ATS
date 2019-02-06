@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using PTG.ATS.BLL;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -53,6 +54,29 @@ namespace PTG.ATS.Services.Controllers
             else
                 return Ok(response);
         }
+
+        [HttpGet]
+        [Route("GetJobTitle")]
+        public List<JobTitleMasterDTO> GetJobTitle()
+        {
+            JobRequisitionBL _jobRequisitionBL = new JobRequisitionBL();
+            return _jobRequisitionBL.GetJobTitleDetails();
+        }
+        [HttpGet]
+        [Route("GetEmploymentType")]
+        public List<EmploymentTypeMasterDTO> GetEmploymentType()
+        {
+            JobRequisitionBL _jobRequisitionBL = new JobRequisitionBL();
+            return _jobRequisitionBL.GetEmploymentType();
+        }
+        [HttpGet]
+        [Route("GetDepartment")]
+        public List<DepartmentMasterDTO> GetDepartment()
+        {
+            JobRequisitionBL _jobRequisitionBL = new JobRequisitionBL();
+            return _jobRequisitionBL.GetDepartment();
+        }
+
 
     }
 }
