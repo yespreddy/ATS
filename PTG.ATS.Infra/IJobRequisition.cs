@@ -13,5 +13,8 @@ namespace PTG.ATS.Infra
         List<JobRequisitionDTO> GetJobRequisition();
 
         CountryMasterDTO PostCountry(CountryMasterDTO countryDTO);
+
+        List<RequisitionTemplateMasterDTO> GetRequisitionTemplates();
+        JobRequisitionDTO SaveRequisition(JobRequisitionDTO jobRequisitionDTO);
     }
 }

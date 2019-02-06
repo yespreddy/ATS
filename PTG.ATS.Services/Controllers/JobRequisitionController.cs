@@ -54,5 +54,29 @@ namespace PTG.ATS.Services.Controllers
                 return Ok(response);
         }
 
+        // Get Method for RequisitionTemplates List
+        [HttpGet]
+        [Route("GetRequisitionTemplates")]
+        public List<RequisitionTemplateMasterDTO> GetRequisitionTemplates()
+        {
+            return _jobRequisition.GetRequisitionTemplates();
+        }
+
+        // Save Requisition Templates 1st Screen
+        [HttpPost]
+        [Route("SaveRequisition")]
+        public ActionResult SaveRequisition([FromBody] JobRequisitionDTO jobRequisitionDTO)
+        {
+            if (jobRequisitionDTO == null)
+                return BadRequest();
+
+            var response = _jobRequisition.SaveRequisition(jobRequisitionDTO);
+
+            if (response == null)
+                return BadRequest();
+            else
+                return Ok(response);
+        }
+
     }
 }
