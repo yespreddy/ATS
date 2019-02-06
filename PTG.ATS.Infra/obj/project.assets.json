@@ -702,23 +702,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bhaskar Ravuri\\.nuget\\packages\\": {},
+    "C:\\Users\\chiranjeevi\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\projects\\ATS-DEV\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
+      "projectUniqueName": "D:\\ATSDeskTop\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
       "projectName": "PTG.ATS.Infra",
-      "projectPath": "D:\\Projects\\projects\\ATS-DEV\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
-      "packagesPath": "C:\\Users\\Bhaskar Ravuri\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\projects\\ATS-DEV\\PTG.ATS.Infra\\obj\\",
+      "projectPath": "D:\\ATSDeskTop\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
+      "packagesPath": "C:\\Users\\chiranjeevi\\.nuget\\packages\\",
+      "outputPath": "D:\\ATSDeskTop\\ATS\\PTG.ATS.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Bhaskar Ravuri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\chiranjeevi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -726,13 +726,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://nuget.codesmartinc.com/nuget": {},
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\Projects\\projects\\ATS-DEV\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj": {
-              "projectPath": "D:\\Projects\\projects\\ATS-DEV\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj"
+            "D:\\ATSDeskTop\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj": {
+              "projectPath": "D:\\ATSDeskTop\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj"
             }
           }
         }
