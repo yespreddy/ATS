@@ -93,6 +93,37 @@ namespace PTG.ATS.BLL
                         }).ToList();
         }
 
+        public List<JobTitleMasterDTO> GetJobTitleDetails()
+        {
+            return dbContext.JobTitleMaster.Select(x => new JobTitleMasterDTO
+            {
+                JobTitleId = x.JobTitleId,
+                JobTitleName = x.JobTitleName,
+                Description = x.Description
+            }).ToList();
+
+        }
+        public List<EmploymentTypeMasterDTO> GetEmploymentType()
+        {
+            return dbContext.EmploymentTypeMaster.Select(x => new EmploymentTypeMasterDTO
+            {
+                EmploymentTypeId = x.EmploymentTypeId,
+                EmploymentTypeName = x.EmploymentTypeName,
+                Description = x.Description
+            }).ToList();
+
+        }
+        public List<DepartmentMasterDTO> GetDepartment()
+        {
+            return dbContext.DepartmentMaster.Select(x => new DepartmentMasterDTO
+            {
+                DepartmentId = x.DepartmentId,
+                DepartmentName = x.DepartmentName,
+            }).ToList();
+
+        }
+
+
         public HiringStageMasterDTO PostHiringstage(HiringStageMasterDTO hiringStageMasterDTO)
         {
             try
