@@ -535,35 +535,35 @@
     "Microsoft.EntityFrameworkCore/2.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NPLUN0CjvxirJYcsXdmxQKUKxKGlRikTYk3DYJZN2EZmfvtqgyphwe2wDM6rii8DAIJG/Yb5NeMapkT+eHGrLA==",
+      "sha512": "sha512-5fRYoE43lFwUd45Qp72IeaWxztgKFhKtH+/5w9J+f3jCPKux/qGriKMxWW+9V4BDu/p1xWtFJQFtcNfhOo+3dQ==",
       "path": "microsoft.entityframeworkcore/2.2.1",
       "hashPath": "microsoft.entityframeworkcore.2.2.1.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Abstractions/2.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ps+DT7pm2v/hp+fL1IFFOO/IcklhvRpWJhEfnVG5SOKHQkCAMmm6bOKiBPMvf34AyjJE57REUFsyqJxl/j7g+w==",
+      "sha512": "sha512-upsGw2amZa0LNu/dAmDKQtc53q/9DjMA/wuDlv7lSzVHj2PlHewYlnMGtomI4YEf/lRqe5Z4V+QPJFdMGVZlaA==",
       "path": "microsoft.entityframeworkcore.abstractions/2.2.1",
       "hashPath": "microsoft.entityframeworkcore.abstractions.2.2.1.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Analyzers/2.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4gmeUeD1WFCXJLelSTRmS0O0ozYSPzUsectv6lLfhiCtS7AIIk1MBsRZzSrHiVzOv7b+ksLn76mmM0rG1f1kFg==",
+      "sha512": "sha512-449BpHABVbtekNyo1a00URxgPB1CFF3TaONAY1vXbU67jS5QOynjUbH+MiCkJVtIzoxuDOS2ybSOVGR8zd0J/Q==",
       "path": "microsoft.entityframeworkcore.analyzers/2.2.1",
       "hashPath": "microsoft.entityframeworkcore.analyzers.2.2.1.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/2.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vVTwPmR6671ykE2nAWCPgeADLVVradKPF3Apl9aP8fu0hPLddWIhkDH5ghL/EdvMQdIMqR3ccRJ+E8MQPLjutg==",
+      "sha512": "sha512-yfsnjccSBIyWQuHg+zd2PxRoXNuRhC0T4jgtk5IjhToZ5TZMeAWjrhUbKjDG0Kth1IcND/i4ovOw7YplfKQt7A==",
       "path": "microsoft.entityframeworkcore.relational/2.2.1",
       "hashPath": "microsoft.entityframeworkcore.relational.2.2.1.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.SqlServer/2.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gNd/3tkmTgUvyItVvWHbioHMuzK6kEZpqWzZU/7cS+OiydzPGGks//s5BlJWLfWPX5DmbN/uweu0Yr5EpY4sFA==",
+      "sha512": "sha512-V58e2CI2eunGMUy+i7+S6JtyyVIb4DKCxYi8xf8Qz3r6RD7MliKBRfudiYm8I7aUqUmZsHOGXaOiPyb5diXnqg==",
       "path": "microsoft.entityframeworkcore.sqlserver/2.2.1",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.2.2.1.nupkg.sha512"
     },
