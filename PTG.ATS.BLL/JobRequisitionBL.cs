@@ -17,20 +17,20 @@ namespace PTG.ATS.BLL
         atsdevContext dbContext = new atsdevContext();
         ApplicationContext appContext = ApplicationContext.Instance;
 
-        public List<JobRequisitionDTO> GetJobRequisition()
-        {
-            //return appContext.atsMasterData.jobRequirementDTOs;
-            return dbContext.JobRequisition.Select(x => new JobRequisitionDTO
-            {
-                //JobRequisitionHiring = PrepareRequistionObject(),
-                JobRequisitionId = x.JobRequisitionId,
-                RequisitionTemplateId = x.RequisitionTemplateId,
-                JobRequisitionHiring = JobRequisitionHiringObject(),
-                JobRequisitionInterviewPanel = JobRequisitionInterviewPanelObject(),
-                JobRequisitionPreliminaryQuestionnaire = JobRequisitionPreliminaryQuestionnaireObject()
-            }).ToList();
+        //public List<JobRequisitionDTO> GetJobRequisition()
+        //{
+        //    //return appContext.atsMasterData.jobRequirementDTOs;
+        //    return dbContext.JobRequisition.Select(x => new JobRequisitionDTO
+        //    {
+        //        //JobRequisitionHiring = PrepareRequistionObject(),
+        //        JobRequisitionId = x.JobRequisitionId,
+        //        RequisitionTemplateId = x.RequisitionTemplateId,
+        //        JobRequisitionHiring = JobRequisitionHiringObject(),
+        //        JobRequisitionInterviewPanel = JobRequisitionInterviewPanelObject(),
+        //        JobRequisitionPreliminaryQuestionnaire = JobRequisitionPreliminaryQuestionnaireObject()
+        //    }).ToList();
 
-        }
+        //}
 
         // Get Requisition Templates List
         public List<RequisitionTemplateMasterDTO> GetRequisitionTemplates()

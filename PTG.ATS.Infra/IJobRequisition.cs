@@ -10,7 +10,7 @@ namespace PTG.ATS.Infra
 
     public interface IJobRequisition
     {
-        List<JobRequisitionDTO> GetJobRequisition();
+        //List<JobRequisitionDTO> GetJobRequisition();
 
         CountryMasterDTO PostCountry(CountryMasterDTO countryDTO);
 

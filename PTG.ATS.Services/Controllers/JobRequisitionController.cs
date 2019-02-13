@@ -31,12 +31,12 @@ namespace PTG.ATS.Services.Controllers
 
         //Get Method for Test
         // GET: /<controller>/
-        [HttpGet]
-        [Route("GetJobRequisition")]
-        public List<JobRequisitionDTO> GetjobRequisition()
-        {
-            return _jobRequisition.GetJobRequisition();
-        }
+        //[HttpGet]
+        //[Route("GetJobRequisition")]
+        //public List<JobRequisitionDTO> GetjobRequisition()
+        //{
+        //    return _jobRequisition.GetJobRequisition();
+        //}
 
         //Post Method for Test
         [HttpPost]
