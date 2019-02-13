@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using PTG.ATS.Entities;
 //using Claims.BE.BO;
 //using Claims.BE.DTO;
-using PTG.ATS.Infra;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -22,21 +21,18 @@ namespace PTG.ATS.Services.Controllers
     [Route("api/JobRequisition")]
     public class JobRequisitionController : Controller
     {
-
-        IJobRequisition _jobRequisition { get; set; }
-
-        public JobRequisitionController(IJobRequisition jobRequisition)
-        {
-            _jobRequisition = jobRequisition;
+        IJobRequisition _jobRequisitionBL = null;
+        
+        public JobRequisitionController(IJobRequisition jobRequisition) {
+            _jobRequisitionBL = jobRequisition;
         }
 
         //Get Method for Test
-        // GET: /<controller>/
         [HttpGet]
         [Route("GetJobRequisition")]
         public List<JobRequisitionDTO> GetjobRequisition()
         {
-            return _jobRequisition.GetJobRequisition();
+            return _jobRequisitionBL.GetJobRequisition();
         }
 
         //Post Method for Test
@@ -47,7 +43,7 @@ namespace PTG.ATS.Services.Controllers
             if (countryDTO == null)
                 return BadRequest();
 
-            var response = _jobRequisition.PostCountry(countryDTO);
+            var response = _jobRequisitionBL.PostCountry(countryDTO);
 
             if (response == null)
                 return BadRequest();
@@ -59,21 +55,20 @@ namespace PTG.ATS.Services.Controllers
         [Route("GetJobTitle")]
         public List<JobTitleMasterDTO> GetJobTitle()
         {
-            JobRequisitionBL _jobRequisitionBL = new JobRequisitionBL();
             return _jobRequisitionBL.GetJobTitleDetails();
         }
+
         [HttpGet]
         [Route("GetEmploymentType")]
         public List<EmploymentTypeMasterDTO> GetEmploymentType()
         {
-            JobRequisitionBL _jobRequisitionBL = new JobRequisitionBL();
             return _jobRequisitionBL.GetEmploymentType();
         }
+
         [HttpGet]
         [Route("GetDepartment")]
         public List<DepartmentMasterDTO> GetDepartment()
         {
-            JobRequisitionBL _jobRequisitionBL = new JobRequisitionBL();
             return _jobRequisitionBL.GetDepartment();
         }
 
@@ -82,7 +77,7 @@ namespace PTG.ATS.Services.Controllers
         [Route("GetRequisitionTemplates")]
         public List<RequisitionTemplateMasterDTO> GetRequisitionTemplates()
         {
-            return _jobRequisition.GetRequisitionTemplates();
+            return _jobRequisitionBL.GetRequisitionTemplates();
         }
 
         // Save Requisition Templates 1st Screen
@@ -93,7 +88,7 @@ namespace PTG.ATS.Services.Controllers
             if (jobRequisitionDTO == null)
                 return BadRequest();
 
-            var response = _jobRequisition.SaveRequisition(jobRequisitionDTO);
+            var response = _jobRequisitionBL.SaveRequisition(jobRequisitionDTO);
 
             if (response == null)
                 return BadRequest();

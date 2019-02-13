@@ -1,5 +1,4 @@
-﻿using PTG.ATS.Infra;
-using PTG.ATS.Entities;
+﻿using PTG.ATS.Entities;
 using PTG.ATS.DAL;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -22,12 +21,8 @@ namespace PTG.ATS.BLL
             //return appContext.atsMasterData.jobRequirementDTOs;
             return dbContext.JobRequisition.Select(x => new JobRequisitionDTO
             {
-                //JobRequisitionHiring = PrepareRequistionObject(),
                 JobRequisitionId = x.JobRequisitionId,
-                RequisitionTemplateId = x.RequisitionTemplateId,
-                JobRequisitionHiring = JobRequisitionHiringObject(),
-                JobRequisitionInterviewPanel = JobRequisitionInterviewPanelObject(),
-                JobRequisitionPreliminaryQuestionnaire = JobRequisitionPreliminaryQuestionnaireObject()
+                RequisitionTemplateId = x.RequisitionTemplateId
             }).ToList();
 
         }
@@ -217,6 +212,11 @@ namespace PTG.ATS.BLL
             _hiringStageMasterDTO.Description = hiringStageMasterDTO.Description;
 
             return _hiringStageMasterDTO;
+        }
+
+        public HiringStageMasterDTO PostHiring(HiringStageMasterDTO hiringStageMasterDTO)
+        {
+            throw new NotImplementedException();
         }
     }
 }

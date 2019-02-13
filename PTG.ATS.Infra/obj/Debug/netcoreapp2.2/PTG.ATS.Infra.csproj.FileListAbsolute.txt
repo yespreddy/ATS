@@ -31,3 +31,12 @@ D:\ATSDeskTop\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.AssemblyIn
 D:\ATSDeskTop\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.csproj.CopyComplete
 D:\ATSDeskTop\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.dll
 D:\ATSDeskTop\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.pdb
+D:\Manohar\ATS\PTG.ATS.Infra\bin\Debug\netcoreapp2.2\PTG.ATS.Infra.deps.json
+D:\Manohar\ATS\PTG.ATS.Infra\bin\Debug\netcoreapp2.2\PTG.ATS.Infra.dll
+D:\Manohar\ATS\PTG.ATS.Infra\bin\Debug\netcoreapp2.2\PTG.ATS.Infra.pdb
+D:\Manohar\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.csproj.CoreCompileInputs.cache
+D:\Manohar\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.AssemblyInfoInputs.cache
+D:\Manohar\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.AssemblyInfo.cs
+D:\Manohar\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.dll
+D:\Manohar\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.pdb
+D:\Manohar\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.csprojAssemblyReference.cache

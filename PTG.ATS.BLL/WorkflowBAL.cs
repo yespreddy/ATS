@@ -7,10 +7,21 @@ using System.Text;
 
 namespace PTG.ATS.BLL
 {
-    public class WorkflowBAL
+    public class WorkflowBAL : IJobRequisition
     {
         atsdevContext dbContext = new atsdevContext();
         ApplicationContext appContext = ApplicationContext.Instance;
+
+        public List<DepartmentMasterDTO> GetDepartment()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<EmploymentTypeMasterDTO> GetEmploymentType()
+        {
+            throw new NotImplementedException();
+        }
+
         public List<HiringStageMasterDTO> GetHiringStages()
         {
 
@@ -42,6 +53,27 @@ namespace PTG.ATS.BLL
             }).ToList();
 
         }
+
+        public List<JobRequisitionDTO> GetJobRequisition()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<JobTitleMasterDTO> GetJobTitleDetails()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<RequisitionTemplateMasterDTO> GetRequisitionTemplates()
+        {
+            throw new NotImplementedException();
+        }
+
+        public CountryMasterDTO PostCountry(CountryMasterDTO countryDTO)
+        {
+            throw new NotImplementedException();
+        }
+
         public HiringStageMasterDTO PostHiring(HiringStageMasterDTO hiringStageMasterDTO)
         {
             try
@@ -59,6 +91,11 @@ namespace PTG.ATS.BLL
             {
                 throw ex;
             }
+        }
+
+        public JobRequisitionDTO SaveRequisition(JobRequisitionDTO jobRequisitionDTO)
+        {
+            throw new NotImplementedException();
         }
 
         private HiringStageMaster MapHiring(HiringStageMasterDTO hiringStageMasterDTO)

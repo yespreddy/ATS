@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using PTG.ATS.Entities;
 //using Claims.BE.BO;
 //using Claims.BE.DTO;
-using PTG.ATS.Infra;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -22,12 +21,9 @@ namespace PTG.ATS.Services.Controllers
     [Route("api/Workflow")]
     public class WorkflowController : Controller
     {
-        IJobRequisition _jobRequisition { get; set; }
+        WorkflowBAL workflow = new WorkflowBAL();
 
-        public WorkflowController(IJobRequisition jobRequisition)
-        {
-            _jobRequisition = jobRequisition;
-        }
+        IJobRequisition _jobRequisition { get; set; }
 
         //Get Method for Test
         // GET: /<controller>/
@@ -35,7 +31,6 @@ namespace PTG.ATS.Services.Controllers
         [Route("Hiringstage")]
         public List<HiringStageMasterDTO> GetHiringStageDetails()
         {
-            WorkflowBAL workflow = new WorkflowBAL();
             var templist=workflow.GetHiringStages();
             return templist;
         }
@@ -43,11 +38,10 @@ namespace PTG.ATS.Services.Controllers
         [Route("PostHiringstage")]
         public ActionResult PostHiringstage([FromBody] HiringStageMasterDTO hiringStageMasterDTO)
         {
-            WorkflowBAL workflow = new WorkflowBAL();
             if (hiringStageMasterDTO == null)
                 return BadRequest();
 
-            var response = _jobRequisition.PostHiringstage(hiringStageMasterDTO);
+            var response = _jobRequisition.PostHiring(hiringStageMasterDTO);
 
             if (response == null)
                 return BadRequest();
