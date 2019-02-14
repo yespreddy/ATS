@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PTG.ATS.DAL.Models;
+using PTG.ATS.Entities.DTO; //included
 
 namespace PTG.ATS.BLL
 {
@@ -93,9 +94,9 @@ namespace PTG.ATS.BLL
                         }).ToList();
         }
 
-        public List<JobTitleMasterDTO> GetJobTitleDetails()
+        public List<JobTitleDTO> GetJobTitleDetails()
         {
-            return dbContext.JobTitleMaster.Select(x => new JobTitleMasterDTO
+            return dbContext.JobTitleMaster.Select(x => new JobTitleDTO
             {
                 JobTitleId = x.JobTitleId,
                 JobTitleName = x.JobTitleName,
@@ -103,9 +104,9 @@ namespace PTG.ATS.BLL
             }).ToList();
 
         }
-        public List<EmploymentTypeMasterDTO> GetEmploymentType()
+        public List<EmploymentTypeDTO> GetEmploymentType()
         {
-            return dbContext.EmploymentTypeMaster.Select(x => new EmploymentTypeMasterDTO
+            return dbContext.EmploymentTypeMaster.Select(x => new EmploymentTypeDTO
             {
                 EmploymentTypeId = x.EmploymentTypeId,
                 EmploymentTypeName = x.EmploymentTypeName,
@@ -113,9 +114,9 @@ namespace PTG.ATS.BLL
             }).ToList();
 
         }
-        public List<DepartmentMasterDTO> GetDepartment()
+        public List<DepartmentDTO> GetDepartment()
         {
-            return dbContext.DepartmentMaster.Select(x => new DepartmentMasterDTO
+            return dbContext.DepartmentMaster.Select(x => new DepartmentDTO
             {
                 DepartmentId = x.DepartmentId,
                 DepartmentName = x.DepartmentName,
