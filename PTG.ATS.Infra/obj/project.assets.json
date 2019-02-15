@@ -686,23 +686,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sateesh Pabbati\\.nuget\\packages\\": {},
+    "C:\\Users\\Chandrima Das\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Manohar\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
+      "projectUniqueName": "D:\\sudhir\\ATS\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
       "projectName": "PTG.ATS.Infra",
-      "projectPath": "D:\\Manohar\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
-      "packagesPath": "C:\\Users\\Sateesh Pabbati\\.nuget\\packages\\",
-      "outputPath": "D:\\Manohar\\ATS\\PTG.ATS.Infra\\obj\\",
+      "projectPath": "D:\\sudhir\\ATS\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
+      "packagesPath": "C:\\Users\\Chandrima Das\\.nuget\\packages\\",
+      "outputPath": "D:\\sudhir\\ATS\\ATS\\PTG.ATS.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Sateesh Pabbati\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Chandrima Das\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -710,7 +710,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://microsoft.pkgs.visualstudio.com/_packaging/Universal.Store/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {

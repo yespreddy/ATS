@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace PTG.ATS.Entities
 {
-    public partial class JobRequisitionPreliminaryQuestionnaireDTO
+    public class JobRequisitionPreliminaryQuestionnaireDTO
     {
         public int JobRequisitionPreliminaryQuestionnaireId { get; set; }
         public int JobRequisitionId { get; set; }
@@ -26,8 +26,5 @@ namespace PTG.ATS.Entities
         public DateTime? CreatedDate { get; set; }
         public string ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
-
-        public virtual JobRequisitionDTO JobRequisition { get; set; }
-        public virtual JobTitleMasterDTO PositionApplied { get; set; }
     }
 }

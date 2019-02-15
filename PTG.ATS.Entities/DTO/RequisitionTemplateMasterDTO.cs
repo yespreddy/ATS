@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace PTG.ATS.Entities
 {
-    public partial class RequisitionTemplateMasterDTO
+    public class RequisitionTemplateMasterDTO
     {
         public int RequisitionTemplateId { get; set; }
         public string RequisitionTemplateName { get; set; }

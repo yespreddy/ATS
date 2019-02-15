@@ -3,14 +3,8 @@ using System.Collections.Generic;
 
 namespace PTG.ATS.Entities
 {
-    public partial class StateMasterDTO
+    public class StateMasterDTO
     {
-        public StateMasterDTO()
-        {
-            CityMaster = new HashSet<CityMasterDTO>();
-            JobRequisition = new HashSet<JobRequisitionDTO>();
-        }
-
         public int StateId { get; set; }
         public string Name { get; set; }
         public int? CountryId { get; set; }
@@ -20,9 +14,5 @@ namespace PTG.ATS.Entities
         public DateTime? CreatedDate { get; set; }
         public string ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
-
-        public virtual CountryMasterDTO Country { get; set; }
-        public virtual ICollection<CityMasterDTO> CityMaster { get; set; }
-        public virtual ICollection<JobRequisitionDTO> JobRequisition { get; set; }
     }
 }

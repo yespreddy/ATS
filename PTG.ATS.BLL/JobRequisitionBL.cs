@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PTG.ATS.DAL.Models;
-using PTG.ATS.Entities.DTO; //included
 
 namespace PTG.ATS.BLL
 {
@@ -26,7 +25,7 @@ namespace PTG.ATS.BLL
                 RequisitionTemplateId = x.RequisitionTemplateId
             }).ToList();
 
-        //}
+        }
 
         // Get Requisition Templates List
         public List<RequisitionTemplateMasterDTO> GetRequisitionTemplates()
@@ -105,7 +104,7 @@ namespace PTG.ATS.BLL
         {
             return appContext.atsMasterData.JobRequisitionInterviewPanelDTOs
                              .Select(y => new JobRequisitionInterviewPanelDTO
-                             { Designation = y.Designation }).ToList();
+                             { DesignationId = y.DesignationId }).ToList();
         }
 
         private ICollection<JobRequisitionHiringDTO> JobRequisitionHiringObject()
@@ -155,9 +154,9 @@ namespace PTG.ATS.BLL
                         }).ToList();
         }
 
-        public List<JobTitleDTO> GetJobTitleDetails()
+        public List<JobTitleMasterDTO> GetJobTitleDetails()
         {
-            return dbContext.JobTitleMaster.Select(x => new JobTitleDTO
+            return dbContext.JobTitleMaster.Select(x => new JobTitleMasterDTO
             {
                 JobTitleId = x.JobTitleId,
                 JobTitleName = x.JobTitleName,
@@ -165,9 +164,9 @@ namespace PTG.ATS.BLL
             }).ToList();
 
         }
-        public List<EmploymentTypeDTO> GetEmploymentType()
+        public List<EmploymentTypeMasterDTO> GetEmploymentType()
         {
-            return dbContext.EmploymentTypeMaster.Select(x => new EmploymentTypeDTO
+            return dbContext.EmploymentTypeMaster.Select(x => new EmploymentTypeMasterDTO
             {
                 EmploymentTypeId = x.EmploymentTypeId,
                 EmploymentTypeName = x.EmploymentTypeName,
@@ -175,9 +174,9 @@ namespace PTG.ATS.BLL
             }).ToList();
 
         }
-        public List<DepartmentDTO> GetDepartment()
+        public List<DepartmentMasterDTO> GetDepartment()
         {
-            return dbContext.DepartmentMaster.Select(x => new DepartmentDTO
+            return dbContext.DepartmentMaster.Select(x => new DepartmentMasterDTO
             {
                 DepartmentId = x.DepartmentId,
                 DepartmentName = x.DepartmentName,

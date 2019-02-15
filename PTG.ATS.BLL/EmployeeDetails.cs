@@ -11,7 +11,6 @@ namespace PTG.ATS.BLL
     public class EmployeeDetails
     {
         atsdevContext dbContext = new atsdevContext();
-        atsdevContext dbContext1 = new atsdevContext();
 
         public List<EmployeeDTO> GetEmployeeDetails()
         {
@@ -27,7 +26,7 @@ namespace PTG.ATS.BLL
 
         public DesignationMasterDTO GetDesignation(int designationID)
         {
-            return dbContext1.DesignationMaster.Where(x=>x.DesignationId == designationID).Select(x => new DesignationMasterDTO
+            return dbContext.DesignationMaster.Where(x=>x.DesignationId == designationID).Select(x => new DesignationMasterDTO
             {
                 DesignationName = x.DesignationName,
                 DesignationId = x.DesignationId
