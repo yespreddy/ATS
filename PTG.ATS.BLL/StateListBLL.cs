@@ -25,7 +25,7 @@ namespace PTG.ATS.BLL
                 stateDTO.StateId = item.StateId;
                 stateDTO.Name = item.Name;
                 stateDTO.CountryId = item.CountryId;
-                //stateDTO.IsActive = item.IsActive;
+                stateDTO.IsActive = item.IsActive;
                 stateDTO.IsDeleted = item.IsDeleted;
                 stateDTO.CreatedBy = item.CreatedBy;
                 stateDTO.CreatedDate = item.CreatedDate;

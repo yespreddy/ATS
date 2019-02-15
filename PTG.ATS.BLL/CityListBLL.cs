@@ -26,7 +26,7 @@ namespace PTG.ATS.BLL
                     cityDTO.CityId = item.CityId;
                     cityDTO.Name = item.Name;
                     cityDTO.StateId = item.StateId;
-                   // cityDTO.IsActive = item.IsActive;
+                    cityDTO.IsActive = item.IsActive;
                     cityDTO.IsDeleted = item.IsDeleted;
                     cityDTO.CreatedBy = item.CreatedBy;
                     cityDTO.CreatedDate = item.CreatedDate;

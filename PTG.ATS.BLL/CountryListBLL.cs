@@ -26,7 +26,7 @@ namespace PTG.ATS.BLL
                 countryDTO.CountryId = item.CountryId;
                 countryDTO.Name = item.Name;
                 countryDTO.CountryCode = item.CountryCode;
-                //countryDTO.IsActive = item.IsActive;
+                countryDTO.IsActive = item.IsActive;
                 countryDTO.IsDeleted = item.IsDeleted;
                 countryDTO.CreatedBy = item.CreatedBy;
                 countryDTO.CreatedBy = item.CreatedBy;
