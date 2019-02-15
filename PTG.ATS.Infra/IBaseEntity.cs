@@ -4,8 +4,7 @@ using System.Text;
 
 namespace PTG.ATS.Infra
 {
-    public interface ICommon
+    class IBaseEntity
     {
-
     }
 }

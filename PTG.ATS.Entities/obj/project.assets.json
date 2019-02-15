@@ -207,6 +207,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "PTG.ATS.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/PTG.ATS.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PTG.ATS.Infra.dll": {}
+        }
       }
     }
   },
@@ -678,31 +688,37 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "PTG.ATS.Infra/1.0.0": {
+      "type": "project",
+      "path": "../PTG.ATS.Infra/PTG.ATS.Infra.csproj",
+      "msbuildProject": "../PTG.ATS.Infra/PTG.ATS.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "PTG.ATS.Infra >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\chiranjeevi\\.nuget\\packages\\": {},
+    "C:\\Users\\Sateesh Pabbati\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ATSDeskTop\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj",
+      "projectUniqueName": "D:\\Manohar\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj",
       "projectName": "PTG.ATS.Entities",
-      "projectPath": "D:\\ATSDeskTop\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj",
-      "packagesPath": "C:\\Users\\chiranjeevi\\.nuget\\packages\\",
-      "outputPath": "D:\\ATSDeskTop\\ATS\\PTG.ATS.Entities\\obj\\",
+      "projectPath": "D:\\Manohar\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj",
+      "packagesPath": "C:\\Users\\Sateesh Pabbati\\.nuget\\packages\\",
+      "outputPath": "D:\\Manohar\\ATS\\PTG.ATS.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\chiranjeevi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sateesh Pabbati\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -710,12 +726,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://nuget.codesmartinc.com/nuget": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Manohar\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj": {
+              "projectPath": "D:\\Manohar\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
