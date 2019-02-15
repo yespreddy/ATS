@@ -112,7 +112,7 @@ namespace PTG.ATS.BLL
             return appContext.atsMasterData.jobRequisitionHiringDTOs
                         .Select(y => new JobRequisitionHiringDTO
                         {
-                            JobRequisition = y.JobRequisition
+                            JobRequisitionId = y.JobRequisitionId
                         }).ToList();
         }
 
@@ -150,7 +150,7 @@ namespace PTG.ATS.BLL
             return appContext.atsMasterData.jobRequisitionHiringDTOs
                         .Select(y => new JobRequisitionHiringDTO
                         {
-                            JobRequisition = y.JobRequisition
+                            JobRequisitionId = y.JobRequisitionId
                         }).ToList();
         }
 
