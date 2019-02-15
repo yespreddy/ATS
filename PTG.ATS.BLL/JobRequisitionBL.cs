@@ -26,7 +26,7 @@ namespace PTG.ATS.BLL
                 RequisitionTemplateId = x.RequisitionTemplateId
             }).ToList();
 
-        }
+        //}
 
         // Get Requisition Templates List
         public List<RequisitionTemplateMasterDTO> GetRequisitionTemplates()
