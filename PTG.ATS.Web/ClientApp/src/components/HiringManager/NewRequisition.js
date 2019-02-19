@@ -89,7 +89,7 @@ class NewRequisition extends Component {
                                                 </div>
                                                 <div className="col-md-4 form-group">
                                                     <label>Postal Code <sup>*</sup>	   </label>
-                                                    <SelectField className="form-control" name="category" options={options} />
+                                                    <TextField className="form-control" name="department" />
                                                 </div>
                                             </div>
                                         </Form>
@@ -226,8 +226,7 @@ class NewRequisition extends Component {
                         </Accordion>
                         <div className="col-md-12">
                             <div className="float-right">
-                                <button className="btn secondary-btn m-r-10">Cancel</button>
-                                <Link to="/Preliminary" className="btn primary-btn">Submit Candidate</Link>
+                                <Link to="/Preliminary" className="btn primary-btn">Next</Link>
                             </div>
                         </div>
                     </div>

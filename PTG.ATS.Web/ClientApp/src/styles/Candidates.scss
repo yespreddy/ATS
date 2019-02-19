@@ -392,17 +392,10 @@
       }
 
     }
-            }
-      }
+            
+      
 
-      &-action-btns{
-          text-align:right;
-          a, button{
-              display: inline-block;
-              margin-right: 10px;
-          }
-      }
-    }
+   
 
 .addcandidates{
     background: #fff;
@@ -417,10 +410,16 @@
     .accordion{       
         width: 100%;
         border: 0px;
+        &__item{
+            border-bottom:1px solid #e2e2e2;
+        }
+
         &__title{
             background: none;
             position: relative;
             padding: 15px;
+          
+
             &:hover{
                 background:none;
             }
@@ -434,7 +433,11 @@
            right: 15px;
         }
         &__body{
-            font-size: 15px;        
+            font-size: 15px;     
+            &--hidden{
+                opacity: 1;
+                display:block;
+            }   
         }
     }
 
@@ -450,9 +453,9 @@
         width:100%;
         flex-wrap:wrap;
         label{
-            text-transform:uppercase;
+            text-transform:capitalize;
             font-size:14px;
-            font-weight:500;
+            font-weight:400;
             input{
                 margin-right:5px;  
                  display: inline-block;
