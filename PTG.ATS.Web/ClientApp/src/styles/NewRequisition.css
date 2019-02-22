@@ -1,0 +1,124 @@
+.new-requisition {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.new-requisition h2 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.new-requisition .choose-template {
+  margin-bottom: 50px;
+}
+
+.new-requisition .choose-template select {
+  position: relative;
+}
+
+.new-requisition .choose-template a {
+  position: absolute;
+  right: -40%;
+  bottom: 6px;
+}
+
+.new-requisition .accordion {
+  width: 100%;
+  border: 0px;
+}
+
+.new-requisition .accordion__item {
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 10px;
+}
+
+.new-requisition .accordion__title {
+  background: #D9D9D9;
+  position: relative;
+  padding: 15px;
+}
+
+.new-requisition .accordion__title:hover, .new-requisition .accordion__title .active {
+  background: #0065FF;
+  color: #fff;
+}
+
+.new-requisition .accordion__title h3 {
+  font-size: 16px;
+  margin: 0 0 0 30px;
+  font-weight: 500;
+}
+
+.new-requisition .accordion__arrow {
+  left: 15px;
+}
+
+.new-requisition .accordion__body {
+  font-size: 15px;
+  background: #E9E9E9;
+  padding: 20px;
+}
+
+.new-requisition .accordion__body--hidden {
+  opacity: 1;
+  display: block;
+}
+
+.new-requisition .accordion__body .list-group-item {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.new-requisition .accordion__body .list-group-item-icons {
+  margin-left: auto;
+}
+
+.new-requisition .accordion__body .list-group-item-icons i {
+  margin-left: 15px;
+  color: #0065FF;
+}
+
+.new-requisition-each {
+  border-top: #d9d9d9 solid 1px;
+  padding-top: 15px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+.new-requisition form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.new-requisition form label {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.new-requisition form label input {
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.new-requisition form label sup {
+  color: red;
+  font-size: 11px;
+}
+
+.new-requisition form .form-control {
+  font-size: 13px;
+}
+/*# sourceMappingURL=NewRequisition.css.map */

@@ -3,7 +3,7 @@ import '../../styles/Candidates.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { Accordion, AccordionItem, AccordionItemTitle, AccordionItemBody, } from 'react-accessible-accordion';
 import { Form, TextField, SelectField, TextareaField, CheckboxField } from 'react-components-form';
-import Breadcrumbs from "../Common/Breadcrumb";
+import Breadcrumbs from "../common/breadcrumb";
 import { Link } from "react-router-dom";
 
 const options = [
@@ -17,7 +17,7 @@ class NewRequisition extends Component {
         super(props);
         this.state = {
             tabIndex: 0,
-        }
+        };
     }
 
     render() {
@@ -226,7 +226,7 @@ class NewRequisition extends Component {
                         </Accordion>
                         <div className="col-md-12">
                             <div className="float-right">
-                                <Link to="/Preliminary" className="btn primary-btn">Next</Link>
+                                <Link to="/WorkFlow" className="btn primary-btn">Next</Link>
                             </div>
                         </div>
                     </div>
