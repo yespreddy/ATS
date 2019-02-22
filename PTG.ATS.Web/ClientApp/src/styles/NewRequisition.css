@@ -121,4 +121,41 @@
 .new-requisition form .form-control {
   font-size: 13px;
 }
+
+.new-requisition .interview-panel-table .table {
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+.new-requisition .interview-panel-table .table th {
+  border-bottom: 1px solid #333;
+}
+
+.new-requisition .interview-panel-table .table th, .new-requisition .interview-panel-table .table td {
+  border-top: 0;
+}
+
+.new-requisition .interview-panel-table .table .first {
+  background: #397F41;
+  color: #fff;
+  padding: 3px;
+}
+
+.new-requisition .interview-panel-table .table .second {
+  background: #F8540C;
+  color: #fff;
+  padding: 3px;
+}
+
+.new-requisition .interview-panel-form form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.new-requisition .interview-panel-form form input[type="text"] {
+  margin-left: 16px;
+}
+
+.new-requisition .m-50 {
+  margin-top: 50px;
+}
 /*# sourceMappingURL=NewRequisition.css.map */

@@ -62,7 +62,7 @@ class WorkFlow extends Component {
                             <div className="col-md-6 form-group">
                                 <div className="float-right">
                                     <Link to="/NewRequisition" className="btn btn-outline-primary mr-3">Previous</Link>
-                                    <Link to="/Preliminary" className="btn primary-btn">Next</Link>
+                                    <Link to="/InterviewPanel" className="btn primary-btn">Next</Link>
                                 </div>
                             </div>
                         <Form>
@@ -185,7 +185,7 @@ class WorkFlow extends Component {
                         </Accordion>
                         <div className="col-md-12">
                             <div className="float-right">
-                                <Link to="/Preliminary" className="btn primary-btn">Next</Link>
+                                <Link to="/InterviewPanel" className="btn primary-btn">Next</Link>
                             </div>
                         </div>
                     </div>

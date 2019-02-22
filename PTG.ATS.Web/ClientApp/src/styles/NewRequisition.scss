@@ -109,4 +109,44 @@
         }
     }
 
+    .interview-panel{
+        &-table{
+            .table{
+                font-size:14px;
+                margin-bottom:50px;
+                th{
+                    border-bottom: 1px solid #333;
+                }
+                th,td{
+                    border-top: 0; 
+                }
+                .first{
+                    background: #397F41;
+                    color: #fff;
+                    padding:3px;
+                }
+                .second{
+                    background: #F8540C;
+                    color: #fff;
+                    padding:3px;
+                }
+                
+            }
+        }
+        &-form{           
+            
+            form{
+                input[type="checkbox"]{
+                    margin-right: 5px;
+                }
+                input[type="text"]{
+                    margin-left:16px;
+                }
+            }
+        }
+    }
+    .m-50{
+        margin-top:50px;
+    }
+    
 }
