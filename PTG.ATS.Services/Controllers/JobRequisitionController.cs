@@ -19,6 +19,7 @@ namespace PTG.ATS.Services.Controllers
     //[Authorize]
     [Produces("application/json")]
     [Route("api/JobRequisition")]
+
     public class JobRequisitionController : Controller
     {
         IJobRequisition _jobRequisitionBL = null;
@@ -80,7 +81,7 @@ namespace PTG.ATS.Services.Controllers
             return _jobRequisitionBL.GetRequisitionTemplates();
         }
 
-        // Save Requisition Templates 1st Screen
+        // Save Requisition Templates 53rd  Screen
         [HttpPost]
         [Route("SaveRequisition")]
         public ActionResult SaveRequisition([FromBody] JobRequisitionDTO jobRequisitionDTO)
