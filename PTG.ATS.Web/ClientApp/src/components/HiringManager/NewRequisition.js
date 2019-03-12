@@ -3,8 +3,9 @@ import '../../styles/Candidates.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { Accordion, AccordionItem, AccordionItemTitle, AccordionItemBody, } from 'react-accessible-accordion';
 import { Form, TextField, SelectField, TextareaField, CheckboxField } from 'react-components-form';
-import Breadcrumbs from "../common/breadcrumb";
+import Breadcrumbs from "../Common/breadcrumb";
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
 const options = [
     { label: "Option 1", value: "opt1" },
@@ -17,7 +18,21 @@ class NewRequisition extends Component {
         super(props);
         this.state = {
             tabIndex: 0,
-        };
+            reqtemplate: []
+        }
+    }
+
+    componentDidMount() {
+        axios.get('http://localhost:5000/api/JobRequisition/GetRequisitionTemplates')
+            .then((response) => {
+                console.log(response);
+                this.setState({
+                    reqtemplate: response.data
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            });
     }
 
     render() {
@@ -34,20 +49,20 @@ class NewRequisition extends Component {
 
                 <div className="processStage">
                     <div className="Step active">
-						<span>1</span>
-						<p>New Requisition</p>
+                        <span>1</span>
+                        <p>New Requisition</p>
                     </div>
                     <div className="Step">
-						<span>2</span>
-						<p>Preliminary Questionnaire</p>
+                        <span>2</span>
+                        <p>Preliminary Questionnaire</p>
                     </div>
                     <div className="Step">
-						<span>3</span>
-						<p>Workflow</p>
+                        <span>3</span>
+                        <p>Workflow</p>
                     </div>
                     <div className="Step">
-						<span>4</span>
-						<p>Interview Panel</p>
+                        <span>4</span>
+                        <p>Interview Panel</p>
                     </div>
                 </div>
 
@@ -57,7 +72,9 @@ class NewRequisition extends Component {
                         <Form>
                             <div className="col-md-4 form-group">
                                 <label>Requisition Template </label>
-                                <SelectField className="form-control" name="category" options={options} />
+                                <select className="form-control">
+                                    {this.state.reqtemplate.map(reqtemp => <option key={reqtemp.requisitionTemplateId} value="{reqtemp.requisitionTemplateName}">{reqtemp.requisitionTemplateName}</option>)}
+                                </select>
                             </div>
                         </Form>
                     </div>

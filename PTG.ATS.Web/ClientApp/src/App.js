@@ -1,20 +1,20 @@
 ﻿import React, { Component } from "react";
 import { Route, Redirect, Switch } from "react-router-dom";
 import Recruiterdashboard from "./components/Recruiter/Recruiterdashboard";
-import Candidates from "./components/candidate/Candidates";
+import Candidates from "./components/Candidate/Candidates";
 import Jobs from "./components/Jobs/Jobs";
-import Header from "./components/common/Header";
+import Header from "./components/Common/Header";
 import JobsdetailedCandidate from "./components/Jobs/Jobdetailed-candidates";
 import JobdetailedOverview from "./components/Jobs/Jobdetailed-overview";
-import AddCandidate from "./components/candidate/Addcandidate";
-import Candidates360Candidates from "./components/candidate/Candidates360-candidates";
+import AddCandidate from "./components/Candidate/Addcandidate";
+import Candidates360Candidates from "./components/Candidate/Candidates360-candidates";
 import HiringManagerDashboard from "./components/HiringManager/HiringManagerDashboard";
 import NewRequisition from "./components/HiringManager/NewRequisition";
 import WorkFlow from "./components/HiringManager/WorkFlow";
 import InterviewPanel from "./components/HiringManager/InterviewPanel";
 import Preliminary from "./components/HiringManager/Preliminary"; 
 import AdvanceSearch from "./components/Search/AdvanceSearch"; 
-import AddCandidatesBulk from "./components/candidate/AddCandidatesbulk";
+import AddCandidatesBulk from "./components/Candidate/AddCandidatesbulk";
 
 class App extends Component {
 	render() {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../../styles/Candidates.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { Accordion, AccordionItem, AccordionItemTitle, AccordionItemBody, } from 'react-accessible-accordion';
-import Breadcrumbs from "../Common/Breadcrumb";
+import Breadcrumbs from "../Common/breadcrumb";
 import { Form, Button, FormGroup, Label, Input} from 'reactstrap';
 // eslint-disable-next-line
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../../styles/NewRequisition.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { Form, TextField, SelectField, TextareaField, CheckboxField } from 'react-components-form';
-import Breadcrumbs from "../common/breadcrumb";
+import Breadcrumbs from "../Common/breadcrumb";
 import { Link } from "react-router-dom";
 import { Table } from 'reactstrap';
 
@@ -17,7 +17,7 @@ class InterviewPanel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            tabIndex: 0,
+            tabIndex: 0
         }
     }
 

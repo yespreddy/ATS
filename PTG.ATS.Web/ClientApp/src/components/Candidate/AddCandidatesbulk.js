@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../styles/Candidates.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
-import Breadcrumbs from "../Common/Breadcrumb";
+import Breadcrumbs from "../Common/breadcrumb";
 import { Link } from "react-router-dom";
 import { CustomInput, Form, FormGroup, Label } from 'reactstrap';
 
