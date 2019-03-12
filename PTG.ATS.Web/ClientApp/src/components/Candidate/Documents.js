@@ -4,8 +4,6 @@ import Candidatestable from "../Common/AllCandidatesTable";
 import 'react-accessible-accordion/dist/fancy-example.css';
 import '../../styles/CandiadatesDocument.css';
 import { Accordion, AccordionItem, AccordionItemTitle, AccordionItemBody, } from 'react-accessible-accordion';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import { Col, Row, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import AddDocument from '../Common/AddDocumentPopup';
 
 

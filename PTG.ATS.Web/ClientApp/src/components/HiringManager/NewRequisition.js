@@ -3,7 +3,7 @@ import '../../styles/Candidates.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { Accordion, AccordionItem, AccordionItemTitle, AccordionItemBody, } from 'react-accessible-accordion';
 import { Form, TextField, SelectField, TextareaField, CheckboxField } from 'react-components-form';
-import Breadcrumbs from "../Common/breadcrumb";
+import Breadcrumbs from "../Common/Breadcrumb";
 import { Link } from "react-router-dom";
 import axios from 'axios';
 
@@ -13,21 +13,66 @@ const options = [
     { label: "Option 3", value: "opt3" },
 ];
 
+const nopostions = [
+    { label: "01", value: "01" },
+    { label: "02", value: "02" },
+    { label: "03", value: "03" },
+    { label: "04", value: "04" },
+    { label: "05", value: "05" },
+    { label: "06", value: "06" }
+];
+
 class NewRequisition extends Component {
     constructor(props) {
         super(props);
         this.state = {
             tabIndex: 0,
-            reqtemplate: []
+            reqtemplate: [],
+            jobtitle: [],
+            employmenttype: [],
+            getdepartment:[]
         }
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/api/JobRequisition/GetRequisitionTemplates')
+        axios.get('http://localhost:1165/api/JobRequisition/GetRequisitionTemplates')
             .then((response) => {
                 console.log(response);
                 this.setState({
                     reqtemplate: response.data
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+
+            axios.get('http://localhost:1165/api/JobRequisition/GetJobTitle')
+            .then((response) => {
+                console.log(response);
+                this.setState({
+                    jobtitle: response.data
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+
+            axios.get('http://localhost:1165/api/JobRequisition/GetEmploymentType')
+            .then((response) => {
+                console.log(response);
+                this.setState({
+                    employmenttype: response.data
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+
+            axios.get('http://localhost:1165/api/JobRequisition/GetDepartment')
+            .then((response) => {
+                console.log(response);
+                this.setState({
+                    getdepartment: response.data
                 });
             })
             .catch((error) => {
@@ -124,21 +169,33 @@ class NewRequisition extends Component {
                                             <div className="flexy">
                                                 <div className="col-md-4 form-group">
                                                     <label>Choose Job Title <sup>*</sup></label>
-                                                    <SelectField className="form-control" name="category" options={options} />
+                                                    <select className="form-control">
+                                    {this.state.jobtitle.map(jobtit => <option key={jobtit.jobTitleId} value="{jobtit.jobTitleName}">{jobtit.jobTitleName}</option>)}
+                                </select>
+
+
                                                 </div>
                                                 <div className="col-md-4 form-group">
                                                     <label>No.of Positions <sup>*</sup>	   </label>
-                                                    <SelectField className="form-control" name="category" options={options} />
+                                                    <SelectField className="form-control" name="category" options={nopostions} />
                                                 </div>
                                             </div>
                                             <div className="flexy">
                                                 <div className="col-md-4 form-group">
                                                     <label>Employment Type<sup>*</sup>	   </label>
-                                                    <SelectField className="form-control" name="category" options={options} />
+                                                    <select className="form-control">
+                                    {this.state.employmenttype.map(emptype => <option key={emptype.employmentTypeId} value="{emptype.employmentTypeName}">{emptype.employmentTypeName}</option>)}
+                                </select>
+
+
                                                 </div>
                                                 <div className="col-md-4 form-group">
                                                     <label>Department <sup>*</sup>	   </label>
-                                                    <TextField className="form-control" name="department" />
+                                                    
+                                                    <select className="form-control">
+                                    {this.state.getdepartment.map(getdep => <option key={getdep.departmentId} value="{getdep.departmentName}">{getdep.departmentName}</option>)}
+                                </select>
+
                                                 </div>
                                             </div>
                                             <div className="flexy">
