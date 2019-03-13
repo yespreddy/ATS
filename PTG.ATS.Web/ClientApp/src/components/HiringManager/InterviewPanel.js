@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import '../../styles/NewRequisition.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
-import { Form, TextField, SelectField, TextareaField, CheckboxField } from 'react-components-form';
+import { Form, TextField, SelectField} from 'react-components-form';
 import Breadcrumbs from "../Common/Breadcrumb";
 import { Link } from "react-router-dom";
 import { Table } from 'reactstrap';
+import axios from 'axios';
 
 
 const options = [
@@ -17,8 +18,24 @@ class InterviewPanel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            tabIndex: 0
+            tabIndex: 0,
+            modeofinterview:[]
         }
+    }
+
+    componentDidMount() {
+        axios.get('http://localhost:1165/GetModeOfInterviewDetails')
+        .then((response) => {
+            console.log(response);
+            this.setState({
+                modeofinterview: response.data
+            });
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+
+
     }
 
     render() {
@@ -96,7 +113,9 @@ class InterviewPanel extends Component {
             <td>
                 <Form>                                           
                     <div className="form-group">
-                        <SelectField className="form-control" name="category" options={options} />
+                    <select className="form-control">
+                                    {this.state.modeofinterview.map(modeint => <option key={modeint.modeOfInterviewId} value="{modeint.modeOfInterviewName}">{modeint.modeOfInterviewName}</option>)}
+                                </select>
                     </div>
                 </Form>
             </td>
