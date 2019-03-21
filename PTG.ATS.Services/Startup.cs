@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using PTG.ATS.Infra;
 using PTG.ATS.BLL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -41,9 +40,9 @@ namespace PTG.ATS.Services
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-
+            ApplicationContext.InstanceInit();
             //Interface registration
-            services.AddScoped<IJobRequisition, JobRequisitionBL>();
+            services.AddTransient<IJobRequisition, JobRequisitionBL>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
