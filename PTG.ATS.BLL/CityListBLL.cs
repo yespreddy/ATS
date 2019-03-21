@@ -16,10 +16,10 @@ namespace PTG.ATS.BLL
                 atsdevContext = new atsdevContext();
             }
 
-            public List<CityMasterDTO> GetCityMasterDTOs()
+            public List<CityMasterDTO> GetCityMasterDTOs(int StateId)
             {
                 List<CityMasterDTO> CityMasterDTOs = new List<CityMasterDTO>();
-                List<CityMaster> cities = atsdevContext.CityMaster.ToList();
+                List<CityMaster> cities = atsdevContext.CityMaster.Where(x=>x.StateId== StateId).ToList();
                 foreach (var item in cities)
                 {
                     CityMasterDTO cityDTO = new CityMasterDTO();

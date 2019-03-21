@@ -15,10 +15,10 @@ namespace PTG.ATS.BLL
             atsdevContext = new atsdevContext();
         }
 
-        public List<StateMasterDTO> GetStateMasterDTOs()
+        public List<StateMasterDTO> GetStateMasterDTOs(int CountryId)
         {
             List<StateMasterDTO> StateMasterDTOs = new List<StateMasterDTO>();
-            List<StateMaster> states = atsdevContext.StateMaster.ToList();
+            List<StateMaster> states = atsdevContext.StateMaster.Where(x=>x.CountryId== CountryId).ToList();
             foreach (var item in states)
             {
                 StateMasterDTO stateDTO = new StateMasterDTO();
