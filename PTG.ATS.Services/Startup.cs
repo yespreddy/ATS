@@ -44,6 +44,14 @@ namespace PTG.ATS.Services
             //Interface registration
             services.AddTransient<IJobRequisition, JobRequisitionBL>();
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("GlobalRequests", builder => builder
+                    .AllowAnyOrigin()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowCredentials());
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             //Swagger implemention
@@ -66,7 +74,7 @@ namespace PTG.ATS.Services
             }
 
             app.UseHttpsRedirection();
-
+            app.UseCors(options => options.WithOrigins("http://localhost:3000").AllowAnyMethod());
             //Swagger implemention
             app.UseSwagger();
             app.UseSwaggerUI(c =>

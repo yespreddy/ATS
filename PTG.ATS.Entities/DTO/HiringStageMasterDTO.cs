@@ -3,14 +3,8 @@ using System.Collections.Generic;
 
 namespace PTG.ATS.Entities
 {
-    public partial class HiringStageMasterDTO
+    public class HiringStageMasterDTO
     {
-        public HiringStageMasterDTO()
-        {
-            HiringStagesWorkflowMaster = new HashSet<HiringStagesWorkflowMasterDTO>();
-            JobRequisitionHiring = new HashSet<JobRequisitionHiringDTO>();
-        }
-
         public int HiringStageId { get; set; }
         public string HiringStageName { get; set; }
         public string Description { get; set; }
@@ -21,8 +15,6 @@ namespace PTG.ATS.Entities
         public DateTime? CreatedDate { get; set; }
         public string ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
-
-        public virtual ICollection<HiringStagesWorkflowMasterDTO> HiringStagesWorkflowMaster { get; set; }
-        public virtual ICollection<JobRequisitionHiringDTO> JobRequisitionHiring { get; set; }
+        public List<HiringStagesWorkflowMasterDTO> HiringStagesWorkflowMaster { get; set; }
     }
 }

@@ -3,14 +3,8 @@ using System.Collections.Generic;
 
 namespace PTG.ATS.Entities
 {
-    public partial class DesignationMasterDTO
+    public class DesignationMasterDTO
     {
-        public DesignationMasterDTO()
-        {
-            Employee = new HashSet<EmployeeDTO>();
-            JobRequisitionInterviewPanel = new HashSet<JobRequisitionInterviewPanelDTO>();
-        }
-
         public int DesignationId { get; set; }
         public string DesignationName { get; set; }
         public string Description { get; set; }
@@ -20,8 +14,5 @@ namespace PTG.ATS.Entities
         public DateTime? CreatedDate { get; set; }
         public string ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
-
-        public virtual ICollection<EmployeeDTO> Employee { get; set; }
-        public virtual ICollection<JobRequisitionInterviewPanelDTO> JobRequisitionInterviewPanel { get; set; }
     }
 }

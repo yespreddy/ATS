@@ -1,0 +1,152 @@
+
+.new-requisition{
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;    
+
+    h2{
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .choose-template {
+        margin-bottom: 50px;
+
+        select {
+            position: relative;
+        }
+
+        a {
+            position: absolute;
+            right:-40%;
+            bottom: 6px;
+        }
+    }
+
+    .accordion{       
+        width: 100%;
+        border: 0px;
+        &__item{
+            border-bottom:1px solid #e2e2e2;
+            margin-bottom: 10px;
+        }
+
+        &__title{
+            background: #D9D9D9;
+            position: relative;
+            padding: 15px;
+
+            &:hover, .active {
+                background:#0065FF;
+                color: #fff;
+            }
+            h3{
+                font-size: 16px;
+                margin:0 0 0 30px;
+                font-weight:500;
+            }
+        }
+        &__arrow {
+           left: 15px;
+        }
+        &__body{
+            font-size: 15px;
+            background: #E9E9E9;
+            padding: 20px;
+            
+            &--hidden{
+                opacity: 1;
+                display:block;
+            }
+
+            .list-group {
+                &-item {
+                    margin-bottom: 5px;
+                    display: flex;
+                    flex-flow: row nowrap;
+
+                    &-icons {
+                        margin-left: auto;
+
+                        i {
+                            margin-left: 15px;
+                            color: #0065FF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-each{
+        border-top:#d9d9d9 solid 1px;
+        padding-top:15px;
+        margin-top: 15px;
+        padding-bottom:15px;
+    }
+
+    form{
+        display: flex;
+        width:100%;
+        flex-wrap:wrap;
+        label{
+            text-transform:capitalize;
+            font-size:14px;
+            font-weight:400;
+            input{
+                margin-right:5px;  
+                 display: inline-block;
+                vertical-align: middle;
+            }
+            sup{
+                color:red;
+                font-size: 11px;
+            }
+        }
+    
+        & .form-control{
+          font-size: 13px;
+        }
+    }
+
+    .interview-panel{
+        &-table{
+            .table{
+                font-size:14px;
+                margin-bottom:50px;
+                th{
+                    border-bottom: 1px solid #333;
+                }
+                th,td{
+                    border-top: 0; 
+                }
+                .first{
+                    background: #397F41;
+                    color: #fff;
+                    padding:3px;
+                }
+                .second{
+                    background: #F8540C;
+                    color: #fff;
+                    padding:3px;
+                }
+                
+            }
+        }
+        &-form{           
+            
+            form{
+                input[type="checkbox"]{
+                    margin-right: 5px;
+                }
+                input[type="text"]{
+                    margin-left:16px;
+                }
+            }
+        }
+    }
+    .m-50{
+        margin-top:50px;
+    }
+    
+}

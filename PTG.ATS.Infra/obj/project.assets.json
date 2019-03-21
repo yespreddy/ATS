@@ -686,23 +686,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sateesh Pabbati\\.nuget\\packages\\": {},
+    "C:\\Users\\Aneel\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Manohar\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
+      "projectUniqueName": "D:\\Projects\\ats_app\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
       "projectName": "PTG.ATS.Infra",
-      "projectPath": "D:\\Manohar\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
-      "packagesPath": "C:\\Users\\Sateesh Pabbati\\.nuget\\packages\\",
-      "outputPath": "D:\\Manohar\\ATS\\PTG.ATS.Infra\\obj\\",
+      "projectPath": "D:\\Projects\\ats_app\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj",
+      "packagesPath": "C:\\Users\\Aneel\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\ats_app\\PTG.ATS.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Sateesh Pabbati\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aneel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

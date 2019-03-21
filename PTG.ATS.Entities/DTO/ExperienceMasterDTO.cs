@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace PTG.ATS.Entities
 {
-    public partial class ExperienceMasterDTO
+    public class ExperienceMasterDTO
     {
         public int ExperienceId { get; set; }
         public string ExperienceName { get; set; }

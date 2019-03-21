@@ -10,7 +10,6 @@ namespace PTG.ATS.BLL
     public class LocationDeatails
     {
         atsdevContext dbContext = new atsdevContext();
-        atsdevContext dbContext1 = new atsdevContext();
         public List<LocationMasterDTO> GetLocationDetails()
         {
             return dbContext.LocationMaster.Select(x => new LocationMasterDTO
@@ -24,7 +23,7 @@ namespace PTG.ATS.BLL
 
         public CityMasterDTO GetCity(int? cityId)
         {
-            return dbContext1.CityMaster.Where(x => x.CityId == cityId).Select(x => new CityMasterDTO
+            return dbContext.CityMaster.Where(x => x.CityId == cityId).Select(x => new CityMasterDTO
             {
                 Name = x.Name,
                 CityId = x.CityId

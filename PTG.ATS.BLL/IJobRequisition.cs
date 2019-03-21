@@ -7,7 +7,7 @@ namespace PTG.ATS.BLL
 {
     public interface IJobRequisition
     {
-        //List<JobRequisitionDTO> GetJobRequisition();
+        List<JobRequisitionDTO> GetJobRequisition();
 
         List<JobTitleMasterDTO> GetJobTitleDetails();
 

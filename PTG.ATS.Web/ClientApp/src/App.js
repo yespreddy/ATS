@@ -6,10 +6,12 @@ import Jobs from "./components/Jobs/Jobs";
 import Header from "./components/Common/Header";
 import JobsdetailedCandidate from "./components/Jobs/Jobdetailed-candidates";
 import JobdetailedOverview from "./components/Jobs/Jobdetailed-overview";
-import AddCandidate from "./components/Candidate/AddCandidate";
+import AddCandidate from "./components/Candidate/Addcandidate";
 import Candidates360Candidates from "./components/Candidate/Candidates360-candidates";
 import HiringManagerDashboard from "./components/HiringManager/HiringManagerDashboard";
 import NewRequisition from "./components/HiringManager/NewRequisition";
+import WorkFlow from "./components/HiringManager/WorkFlow";
+import InterviewPanel from "./components/HiringManager/InterviewPanel";
 import Preliminary from "./components/HiringManager/Preliminary"; 
 import AdvanceSearch from "./components/Search/AdvanceSearch"; 
 import AddCandidatesBulk from "./components/Candidate/AddCandidatesbulk";
@@ -31,6 +33,8 @@ class App extends Component {
 						<Route path="/AddCandidatesBulk" component={AddCandidatesBulk} activeClassName='active' />
 						<Route path="/hiringmanagerdashboard" component={HiringManagerDashboard} activeClassName='active' />
 						<Route path="/NewRequisition" component={NewRequisition} activeClassName='active' />
+						<Route path="/WorkFlow" component={WorkFlow} activeClassName='active' />
+						<Route path="/InterviewPanel" component={InterviewPanel} activeClassName='active' />
 						<Route path="/Preliminary" component={Preliminary} activeClassName='active' />
 						<Route path="/AdvanceSearch" component={AdvanceSearch} />
 						<Redirect from="/" exact to="/hiringmanagerdashboard" activeClassName='active' />

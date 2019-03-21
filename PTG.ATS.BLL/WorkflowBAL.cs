@@ -36,7 +36,7 @@ namespace PTG.ATS.BLL
                 CreatedBy = stage.CreatedBy,
                 CreatedDate = stage.CreatedDate,
                 ModifiedBy = stage.ModifiedBy,
-                ModifiedDate = stage.ModifiedDate,
+                ModifiedDate = stage.ModifiedDate,               
                 HiringStagesWorkflowMaster = dbContext.HiringStagesWorkflowMaster.Where(x => x.HiringStageId == stage.HiringStageId).Select(innerstage => new HiringStagesWorkflowMasterDTO
                 {
                     HiringStagesWorkflowId = innerstage.HiringStagesWorkflowId,
