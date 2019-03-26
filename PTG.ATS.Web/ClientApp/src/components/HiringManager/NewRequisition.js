@@ -30,8 +30,16 @@ class NewRequisition extends Component {
             reqtemplate: [],
             jobtitle: [],
             employmenttype: [],
-            getdepartment:[]
+            getdepartment:[],
+            getcountry:[],
+            getStates:[],
+            getCity:[],         
+            selectedCityId : 0 
         }
+        this.handleCountryChange = this.handleCountryChange.bind(this);
+        this.handleStateChange = this.handleStateChange.bind(this);   
+        this.handleCityChange = this.handleCityChange.bind(this);   
+             
     }
 
     componentDidMount() {
@@ -78,8 +86,56 @@ class NewRequisition extends Component {
             .catch((error) => {
                 console.log(error);
             });
+            axios.get('http://localhost:1165/GetCountries')
+            .then((response) => {
+                console.log(response);
+                this.setState({
+                    getcountry: response.data
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+           
     }
 
+    handleCountryChange(event) {
+        this.setState({value: event.target.value});
+        let selectedCountryId = event.target.value;
+       // console.log(event.target.value);
+        axios.get('http://localhost:1165/GetStates?CountryId='+selectedCountryId )
+            .then((response) => {
+                //console.log(response);
+                this.setState({
+                    getStates: response.data
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            });           
+      }
+
+      handleStateChange(event) {
+        this.setState({value: event.target.value});
+        let selectedStateId = event.target.value;
+       // console.log(event.target.value);
+        axios.get('http://localhost:1165/GetCities?StateId='+selectedStateId )
+            .then((response) => {
+                //console.log(response);
+                this.setState({
+                    getCity: response.data
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            });           
+      }
+      handleCityChange(event){
+          this.setState({value : event.target.value});
+          let selectedCityId = event.target.value;
+          console.log(selectedCityId);
+      }
+      
     render() {
         return (
             <React.Fragment>
@@ -137,17 +193,25 @@ class NewRequisition extends Component {
                                             <div className="flexy">
                                                 <div className="col-md-4 form-group">
                                                     <label>Country <sup>*</sup>  </label>
-                                                    <SelectField className="form-control" name="category" options={options} />
+                                                  
+                                                    <select className="form-control" onChange={this.handleCountryChange}>
+                                    {this.state.getcountry.map(getcou => <option key={getcou.countryId} value={getcou.countryId}>{getcou.name}</option>)}
+                                </select>
+
                                                 </div>
                                                 <div className="col-md-4 form-group">
                                                     <label>State <sup>*</sup>  </label>
-                                                    <SelectField className="form-control" name="category" options={options} />
+                                                    <select className="form-control"  onChange={this.handleStateChange}>
+                                    {this.state.getStates.map(getstate => <option key={getstate.stateId} value={getstate.stateId}>{getstate.name}</option>)}
+                                </select>
                                                 </div>
                                             </div>
                                             <div className="flexy">
                                                 <div className="col-md-4 form-group">
                                                     <label>City <sup>*</sup>  </label>
-                                                    <SelectField className="form-control" name="category" options={options} />
+                                                    <select className="form-control" onChange={this.handleCityChange}>
+                                    {this.state.getCity.map(getcity => <option key={getcity.cityId} value={getcity.cityId}>{getcity.name}</option>)}
+                                </select>
                                                 </div>
                                                 <div className="col-md-4 form-group">
                                                     <label>Postal Code <sup>*</sup>	   </label>
