@@ -19,5 +19,28 @@ namespace PTG.ATS.Services.Controllers
             var tempList = _locationDeatails.GetLocationDetails();
             return tempList;
         }
+
+        [HttpGet]
+        [Route("GetCountries")]
+        public List<CountryMasterDTO> GetCountries()
+        {
+            var tempCities = _locationDeatails.GetCountries();
+            return tempCities;
+        }
+
+        [HttpGet]
+        [Route("GetStates")]
+        public List<StateMasterDTO> GetStates(int CountryId)
+        {
+            var tempSates = _locationDeatails.GetStates(CountryId);
+            return tempSates;
+        }
+        [HttpGet]
+        [Route("GetCities")]
+        public List<CityMasterDTO> GetCities(int StateId)
+        {
+            var tempCities = _locationDeatails.GetCities(StateId);
+            return tempCities;
+        }
     }
 }    
