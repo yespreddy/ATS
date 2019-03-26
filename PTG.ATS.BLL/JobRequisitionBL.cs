@@ -18,12 +18,19 @@ namespace PTG.ATS.BLL
 
         public List<JobRequisitionDTO> GetJobRequisition()
         {
+
             //return appContext.atsMasterData.jobRequirementDTOs;
-            return dbContext.JobRequisition.Select(x => new JobRequisitionDTO
+            return dbContext.JobRequisition.Select(Requisition => new JobRequisitionDTO
             {
-                JobRequisitionId = x.JobRequisitionId,
-                RequisitionTemplateId = x.RequisitionTemplateId
-            }).ToList();
+                JobRequisitionId = Requisition.JobRequisitionId,
+                RequisitionTemplateId = Requisition.RequisitionTemplateId,
+                JobTitleId = Requisition.JobTitleId,
+                JobTitleMaster = dbContext.JobTitleMaster.Where(d => d.JobTitleId == Requisition.JobTitleId).Select(f => new JobTitleMasterDTO() {
+                    JobTitleName = f.JobTitleName,
+                    JobTitleId = f.JobTitleId
+                }).FirstOrDefault(),
+                CreatedDate = Requisition.CreatedDate,
+        }).ToList();
 
         }
 
