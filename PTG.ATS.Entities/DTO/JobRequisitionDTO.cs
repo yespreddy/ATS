@@ -33,5 +33,7 @@ namespace PTG.ATS.Entities
         public DateTime? CreatedDate { get; set; }
         public string ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
+        public JobTitleMasterDTO JobTitleMaster { get; set; }
+        public EmployeeDTO HiringManager { get; set; }
     }
 }

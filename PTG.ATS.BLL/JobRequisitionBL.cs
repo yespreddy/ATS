@@ -18,8 +18,6 @@ namespace PTG.ATS.BLL
 
         public List<JobRequisitionDTO> GetJobRequisition()
         {
-
-            //return appContext.atsMasterData.jobRequirementDTOs;
             return dbContext.JobRequisition.Select(Requisition => new JobRequisitionDTO
             {
                 JobRequisitionId = Requisition.JobRequisitionId,
@@ -30,6 +28,14 @@ namespace PTG.ATS.BLL
                     JobTitleId = f.JobTitleId
                 }).FirstOrDefault(),
                 CreatedDate = Requisition.CreatedDate,
+                HiringManager = dbContext.Employee.Where(x => x.EmployeeId == Requisition.ReportingManagerId).Select(Manager => new EmployeeDTO() {
+                    EmployeeFirstName = Manager.EmployeeFirstName,
+                    EmployeeMiddleName = Manager.EmployeeMiddleName,
+                    EmployeeLastName = Manager.EmployeeLastName,
+                    DesignationId = Manager.DesignationId,
+                    EmploymentTypeId = Manager.EmploymentTypeId,
+                    DepartmentId = Manager.DepartmentId
+                }).FirstOrDefault(),
         }).ToList();
 
         }
