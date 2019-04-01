@@ -12,13 +12,13 @@ namespace PTG.ATS.Services.Controllers
     {
         LocationDeatails _locationDeatails = new LocationDeatails();
 
-        [HttpGet]
-        [Route("GetLocationDetails")]
-        public List<LocationMasterDTO> GetLocationDetails()
-        {
-            var tempList = _locationDeatails.GetLocationDetails();
-            return tempList;
-        }
+        //[HttpGet]
+        //[Route("GetLocationDetails")]
+        //public List<LocationMasterDTO> GetLocationDetails()
+        //{
+        //    var tempList = _locationDeatails.GetLocationDetails();
+        //    return tempList;
+        //}
 
         [HttpGet]
         [Route("GetCountries")]

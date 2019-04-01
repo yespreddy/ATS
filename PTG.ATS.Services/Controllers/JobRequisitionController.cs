@@ -36,20 +36,20 @@ namespace PTG.ATS.Services.Controllers
         }
 
         //Post Method for Test
-        [HttpPost]
-        [Route("PostCountry")]
-        public ActionResult PostCountry([FromBody] CountryMasterDTO countryDTO)
-        {
-            if (countryDTO == null)
-                return BadRequest();
+        //[HttpPost]
+        //[Route("PostCountry")]
+        //public ActionResult PostCountry([FromBody] CountryMasterDTO countryDTO)
+        //{
+        //    if (countryDTO == null)
+        //        return BadRequest();
 
-            var response = _jobRequisitionBL.PostCountry(countryDTO);
+        //    var response = _jobRequisitionBL.PostCountry(countryDTO);
 
-            if (response == null)
-                return BadRequest();
-            else
-                return Ok(response);
-        }
+        //    if (response == null)
+        //        return BadRequest();
+        //    else
+        //        return Ok(response);
+        //}
 
         [HttpGet]
         [Route("GetJobTitle")]

@@ -10,16 +10,16 @@ namespace PTG.ATS.BLL
     public class LocationDeatails
     {
         atsdevContext dbContext = new atsdevContext();
-        public List<LocationMasterDTO> GetLocationDetails()
-        {
-            return dbContext.LocationMaster.Select(x => new LocationMasterDTO
-            {
-                LocationId = x.LocationId,
-                Name = x.Name,
-                City = GetCity(x.CityId)
+        //public List<LocationMasterDTO> GetLocationDetails()
+        //{
+        //    return dbContext.LocationMaster.Select(x => new LocationMasterDTO
+        //    {
+        //        LocationId = x.LocationId,
+        //        Name = x.Name,
+        //        City = GetCity(x.CityId)
 
-            }).ToList();
-        }
+        //    }).ToList();
+        //}
         public List<CountryMasterDTO> GetCountries()
         {
             return dbContext.CountryMaster.Select(x => new CountryMasterDTO

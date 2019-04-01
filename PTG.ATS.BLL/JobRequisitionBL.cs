@@ -129,24 +129,24 @@ namespace PTG.ATS.BLL
                         }).ToList();
         }
 
-        public CountryMasterDTO PostCountry(CountryMasterDTO countryDTO)
-        {
-            try
-            {
-                CountryMaster country = MapCountry(countryDTO);
-                if (countryDTO != null)
-                {
-                    dbContext.Add(country);
-                    dbContext.SaveChanges();
-                    appContext.RefreshClaimMasterDataAsync();
-                }
-                return countryDTO;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+        //public CountryMasterDTO PostCountry(CountryMasterDTO countryDTO)
+        //{
+        //    try
+        //    {
+        //        CountryMaster country = MapCountry(countryDTO);
+        //        if (countryDTO != null)
+        //        {
+        //            dbContext.Add(country);
+        //            dbContext.SaveChanges();
+        //            appContext.RefreshClaimMasterDataAsync();
+        //        }
+        //        return countryDTO;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
 
         private CountryMaster MapCountry(CountryMasterDTO countryDTO)
         {
