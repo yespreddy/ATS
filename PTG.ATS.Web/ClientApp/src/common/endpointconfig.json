@@ -1,0 +1,16 @@
+{
+
+  "endpoints": {
+    "https://atsdev.azurewebsites.net/": "https://atsstaging.azurewebsites.net/" //Azure DEV url
+  },
+
+  "apiUrl": "http://localhost:1165", //localhost url
+  "GETJOBREQUISITION": "/api/JobRequisition/GetJobRequisition",
+  "GETJOBTITLE": "/api/JobRequisition/GetJobTitle",
+  "GETEMPLOYMENTTYPE": "/api/JobRequisition/GetEmploymentType",
+  "GETDEPARTMENT": "/api/JobRequisition/GetDepartment",
+  "GETREQUISITIONTEMPLATES": "/api/JobRequisition/GetRequisitionTemplates",
+  "GETLOCATION": "/GetLocationDetails",
+  "GETINTERVIEWMODEDETAILS": "/GetModeOfInterviewDetails",
+  "GETHIRINGSTAGE": "/api/Workflow/Hiringstage"
+}

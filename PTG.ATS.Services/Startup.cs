@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using PTG.ATS.Infra;
 using PTG.ATS.BLL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -43,8 +42,16 @@ namespace PTG.ATS.Services
             });
             ApplicationContext.InstanceInit();
             //Interface registration
-            services.AddScoped<IJobRequisition, JobRequisitionBL>();
+            services.AddTransient<IJobRequisition, JobRequisitionBL>();
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("GlobalRequests", builder => builder
+                    .AllowAnyOrigin()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowCredentials());
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             //Swagger implemention
@@ -67,7 +74,7 @@ namespace PTG.ATS.Services
             }
 
             app.UseHttpsRedirection();
-
+            app.UseCors(options => options.WithOrigins("http://localhost:3000").AllowAnyMethod());
             //Swagger implemention
             app.UseSwagger();
             app.UseSwaggerUI(c =>

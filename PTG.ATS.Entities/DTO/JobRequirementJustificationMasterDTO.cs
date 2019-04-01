@@ -3,13 +3,8 @@ using System.Collections.Generic;
 
 namespace PTG.ATS.Entities
 {
-    public partial class JobRequirementJustificationMasterDTO
+    public class JobRequirementJustificationMasterDTO
     {
-        public JobRequirementJustificationMasterDTO()
-        {
-            JobRequisition = new HashSet<JobRequisitionDTO>();
-        }
-
         public int JobRequirementJustificationId { get; set; }
         public string JobRequirementJustificationName { get; set; }
         public string Description { get; set; }
@@ -19,7 +14,5 @@ namespace PTG.ATS.Entities
         public DateTime? CreatedDate { get; set; }
         public string ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
-
-        public virtual ICollection<JobRequisitionDTO> JobRequisition { get; set; }
     }
 }

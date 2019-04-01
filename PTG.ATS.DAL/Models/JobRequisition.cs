@@ -7,6 +7,7 @@ namespace PTG.ATS.DAL.Models
     {
         public JobRequisition()
         {
+            JobRequisitionCandidate = new HashSet<JobRequisitionCandidate>();
             JobRequisitionHiring = new HashSet<JobRequisitionHiring>();
             JobRequisitionInterviewPanel = new HashSet<JobRequisitionInterviewPanel>();
             JobRequisitionPreliminaryQuestionnaire = new HashSet<JobRequisitionPreliminaryQuestionnaire>();
@@ -52,6 +53,7 @@ namespace PTG.ATS.DAL.Models
         public virtual Employee ReportingManager { get; set; }
         public virtual RequisitionTemplateMaster RequisitionTemplate { get; set; }
         public virtual StateMaster State { get; set; }
+        public virtual ICollection<JobRequisitionCandidate> JobRequisitionCandidate { get; set; }
         public virtual ICollection<JobRequisitionHiring> JobRequisitionHiring { get; set; }
         public virtual ICollection<JobRequisitionInterviewPanel> JobRequisitionInterviewPanel { get; set; }
         public virtual ICollection<JobRequisitionPreliminaryQuestionnaire> JobRequisitionPreliminaryQuestionnaire { get; set; }

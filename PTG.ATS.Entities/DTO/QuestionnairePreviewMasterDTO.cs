@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace PTG.ATS.Entities
 {
-    public partial class QuestionnairePreviewMasterDTO
+    public class QuestionnairePreviewMasterDTO
     {
         public int QuestionnairePreviewId { get; set; }
         public string QuestionnairePreviewLocation { get; set; }
@@ -15,7 +15,5 @@ namespace PTG.ATS.Entities
         public DateTime? CreatedDate { get; set; }
         public string ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
-
-        public virtual RequisitionTemplateMasterDTO RequisitionTemplate { get; set; }
     }
 }

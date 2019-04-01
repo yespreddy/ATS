@@ -8,6 +8,7 @@ namespace PTG.ATS.DAL.Models
         public CityMaster()
         {
             JobRequisition = new HashSet<JobRequisition>();
+            JobRequisitionCandidate = new HashSet<JobRequisitionCandidate>();
             LocationMaster = new HashSet<LocationMaster>();
         }
 
@@ -23,6 +24,7 @@ namespace PTG.ATS.DAL.Models
 
         public virtual StateMaster State { get; set; }
         public virtual ICollection<JobRequisition> JobRequisition { get; set; }
+        public virtual ICollection<JobRequisitionCandidate> JobRequisitionCandidate { get; set; }
         public virtual ICollection<LocationMaster> LocationMaster { get; set; }
     }
 }

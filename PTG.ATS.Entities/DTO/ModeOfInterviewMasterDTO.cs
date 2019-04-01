@@ -3,13 +3,8 @@ using System.Collections.Generic;
 
 namespace PTG.ATS.Entities
 {
-    public partial class ModeOfInterviewMasterDTO
+    public class ModeOfInterviewMasterDTO
     {
-        public ModeOfInterviewMasterDTO()
-        {
-            JobRequisitionInterviewPanel = new HashSet<JobRequisitionInterviewPanelDTO>();
-        }
-
         public int ModeOfInterviewId { get; set; }
         public string ModeOfInterviewName { get; set; }
         public string Description { get; set; }
@@ -19,7 +14,5 @@ namespace PTG.ATS.Entities
         public DateTime? CreatedDate { get; set; }
         public string ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
-
-        public virtual ICollection<JobRequisitionInterviewPanelDTO> JobRequisitionInterviewPanel { get; set; }
     }
 }

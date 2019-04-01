@@ -924,6 +924,9 @@
       "PTG.ATS.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "PTG.ATS.Infra": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/PTG.ATS.Entities.dll": {}
         },
@@ -934,9 +937,6 @@
       "PTG.ATS.Infra/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
-        "dependencies": {
-          "PTG.ATS.Entities": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/PTG.ATS.Infra.dll": {}
         },
@@ -948,11 +948,10 @@
   },
   "libraries": {
     "Microsoft.EntityFrameworkCore/2.2.1": {
-      "sha512": "5fRYoE43lFwUd45Qp72IeaWxztgKFhKtH+/5w9J+f3jCPKux/qGriKMxWW+9V4BDu/p1xWtFJQFtcNfhOo+3dQ==",
+      "sha512": "NPLUN0CjvxirJYcsXdmxQKUKxKGlRikTYk3DYJZN2EZmfvtqgyphwe2wDM6rii8DAIJG/Yb5NeMapkT+eHGrLA==",
       "type": "package",
       "path": "microsoft.entityframeworkcore/2.2.1",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.xml",
@@ -961,11 +960,10 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Abstractions/2.2.1": {
-      "sha512": "upsGw2amZa0LNu/dAmDKQtc53q/9DjMA/wuDlv7lSzVHj2PlHewYlnMGtomI4YEf/lRqe5Z4V+QPJFdMGVZlaA==",
+      "sha512": "ps+DT7pm2v/hp+fL1IFFOO/IcklhvRpWJhEfnVG5SOKHQkCAMmm6bOKiBPMvf34AyjJE57REUFsyqJxl/j7g+w==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.abstractions/2.2.1",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
@@ -974,11 +972,10 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Analyzers/2.2.1": {
-      "sha512": "449BpHABVbtekNyo1a00URxgPB1CFF3TaONAY1vXbU67jS5QOynjUbH+MiCkJVtIzoxuDOS2ybSOVGR8zd0J/Q==",
+      "sha512": "4gmeUeD1WFCXJLelSTRmS0O0ozYSPzUsectv6lLfhiCtS7AIIk1MBsRZzSrHiVzOv7b+ksLn76mmM0rG1f1kFg==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.analyzers/2.2.1",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "microsoft.entityframeworkcore.analyzers.2.2.1.nupkg.sha512",
@@ -986,11 +983,10 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/2.2.1": {
-      "sha512": "yfsnjccSBIyWQuHg+zd2PxRoXNuRhC0T4jgtk5IjhToZ5TZMeAWjrhUbKjDG0Kth1IcND/i4ovOw7YplfKQt7A==",
+      "sha512": "vVTwPmR6671ykE2nAWCPgeADLVVradKPF3Apl9aP8fu0hPLddWIhkDH5ghL/EdvMQdIMqR3ccRJ+E8MQPLjutg==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.relational/2.2.1",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.xml",
@@ -999,11 +995,10 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.SqlServer/2.2.1": {
-      "sha512": "V58e2CI2eunGMUy+i7+S6JtyyVIb4DKCxYi8xf8Qz3r6RD7MliKBRfudiYm8I7aUqUmZsHOGXaOiPyb5diXnqg==",
+      "sha512": "gNd/3tkmTgUvyItVvWHbioHMuzK6kEZpqWzZU/7cS+OiydzPGGks//s5BlJWLfWPX5DmbN/uweu0Yr5EpY4sFA==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.sqlserver/2.2.1",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
@@ -1503,7 +1498,6 @@
       "type": "package",
       "path": "microsoft.win32.registry/4.5.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -1667,12 +1661,10 @@
       ]
     },
     "Remotion.Linq/2.2.0": {
-      "sha512": "twDAH8dAXXCAf3sRv1Tf94u66eEHvgU75hfn1nn2v4fSWXD50XoDOAk8WpSrbViNuMkB4kN1ElnOGm1c519IHg==",
+      "sha512": "fK/76UmpC0FXBlGDFVPLJHQlDLYnGC+XY3eoDgCgbtrhi0vzbXDQ3n/IYHhqSKqXQfGw/u04A1drWs7rFVkRjw==",
       "type": "package",
       "path": "remotion.linq/2.2.0",
       "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
         "lib/net35/Remotion.Linq.XML",
         "lib/net35/Remotion.Linq.dll",
         "lib/net40/Remotion.Linq.XML",
@@ -1819,7 +1811,6 @@
       "type": "package",
       "path": "system.collections.immutable/1.5.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -1842,7 +1833,6 @@
       "type": "package",
       "path": "system.componentmodel.annotations/4.5.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -2072,7 +2062,6 @@
       "type": "package",
       "path": "system.diagnostics.diagnosticsource/4.5.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -2477,7 +2466,6 @@
       "type": "package",
       "path": "system.memory/4.5.1",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -3058,7 +3046,6 @@
       "type": "package",
       "path": "system.runtime.compilerservices.unsafe/4.5.1",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -3163,7 +3150,6 @@
       "type": "package",
       "path": "system.security.accesscontrol/4.5.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -3205,7 +3191,6 @@
       "type": "package",
       "path": "system.security.principal.windows/4.5.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -3315,7 +3300,6 @@
       "type": "package",
       "path": "system.text.encoding.codepages/4.5.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -3520,23 +3504,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vasudev\\.nuget\\packages\\": {},
+    "C:\\Users\\Chandrima Das\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj",
+      "projectUniqueName": "D:\\sudhir\\ATS\\ATS\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj",
       "projectName": "PTG.ATS.BLL",
-      "projectPath": "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj",
-      "packagesPath": "C:\\Users\\Vasudev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.BLL\\obj\\",
+      "projectPath": "D:\\sudhir\\ATS\\ATS\\PTG.ATS.BLL\\PTG.ATS.BLL.csproj",
+      "packagesPath": "C:\\Users\\Chandrima Das\\.nuget\\packages\\",
+      "outputPath": "D:\\sudhir\\ATS\\ATS\\PTG.ATS.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Vasudev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Chandrima Das\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3544,19 +3528,20 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://microsoft.pkgs.visualstudio.com/_packaging/Universal.Store/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.DAL\\PTG.ATS.DAL.csproj": {
-              "projectPath": "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.DAL\\PTG.ATS.DAL.csproj"
+            "D:\\sudhir\\ATS\\ATS\\PTG.ATS.DAL\\PTG.ATS.DAL.csproj": {
+              "projectPath": "D:\\sudhir\\ATS\\ATS\\PTG.ATS.DAL\\PTG.ATS.DAL.csproj"
             },
-            "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj": {
-              "projectPath": "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj"
+            "D:\\sudhir\\ATS\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj": {
+              "projectPath": "D:\\sudhir\\ATS\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj"
             },
-            "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj": {
-              "projectPath": "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj"
+            "D:\\sudhir\\ATS\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj": {
+              "projectPath": "D:\\sudhir\\ATS\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj"
             }
           }
         }

@@ -207,6 +207,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "PTG.ATS.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/PTG.ATS.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PTG.ATS.Infra.dll": {}
+        }
       }
     }
   },
@@ -678,31 +688,37 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "PTG.ATS.Infra/1.0.0": {
+      "type": "project",
+      "path": "../PTG.ATS.Infra/PTG.ATS.Infra.csproj",
+      "msbuildProject": "../PTG.ATS.Infra/PTG.ATS.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "PTG.ATS.Infra >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vasudev\\.nuget\\packages\\": {},
+    "C:\\Users\\Chandrima Das\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj",
+      "projectUniqueName": "D:\\sudhir\\ATS\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj",
       "projectName": "PTG.ATS.Entities",
-      "projectPath": "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj",
-      "packagesPath": "C:\\Users\\Vasudev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vasudev\\source\\repos\\ATS2\\PTG.ATS.Entities\\obj\\",
+      "projectPath": "D:\\sudhir\\ATS\\ATS\\PTG.ATS.Entities\\PTG.ATS.Entities.csproj",
+      "packagesPath": "C:\\Users\\Chandrima Das\\.nuget\\packages\\",
+      "outputPath": "D:\\sudhir\\ATS\\ATS\\PTG.ATS.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Vasudev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Chandrima Das\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -710,11 +726,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://microsoft.pkgs.visualstudio.com/_packaging/Universal.Store/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\sudhir\\ATS\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj": {
+              "projectPath": "D:\\sudhir\\ATS\\ATS\\PTG.ATS.Infra\\PTG.ATS.Infra.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
