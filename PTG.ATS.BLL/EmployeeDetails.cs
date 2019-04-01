@@ -26,7 +26,8 @@ namespace PTG.ATS.BLL
 
         public DesignationMasterDTO GetDesignation(int designationID)
         {
-            return dbContext.DesignationMaster.Where(x=>x.DesignationId == designationID).Select(x => new DesignationMasterDTO
+            atsdevContext _dbContext = new atsdevContext();
+            return _dbContext.DesignationMaster.Where(x=>x.DesignationId == designationID).Select(x => new DesignationMasterDTO
             {
                 DesignationName = x.DesignationName,
                 DesignationId = x.DesignationId
