@@ -65,5 +65,14 @@ namespace PTG.ATS.BLL
 
             }).FirstOrDefault();
         }
+        public List<LocationMasterDTO> GetLocation(int? cityId)
+        {
+            return dbContext.LocationMaster.Where(x => x.CityId == cityId).Select(x => new LocationMasterDTO
+            {
+                Name = x.Name,
+                LocationId = x.LocationId
+
+            }).ToList();
+        }
     }
 }

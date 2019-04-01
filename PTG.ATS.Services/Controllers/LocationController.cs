@@ -42,5 +42,12 @@ namespace PTG.ATS.Services.Controllers
             var tempCities = _locationDeatails.GetCities(StateId);
             return tempCities;
         }
+        [HttpGet]
+        [Route("GetLocation")]
+        public List<LocationMasterDTO> GetLocation(int cityId)
+        {
+            var templocation = _locationDeatails.GetLocation(cityId);
+            return templocation;
+        }
     }
 }    
