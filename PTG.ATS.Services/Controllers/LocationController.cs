@@ -12,13 +12,13 @@ namespace PTG.ATS.Services.Controllers
     {
         LocationDeatails _locationDeatails = new LocationDeatails();
 
-        [HttpGet]
-        [Route("GetLocationDetails")]
-        public List<LocationMasterDTO> GetLocationDetails()
-        {
-            var tempList = _locationDeatails.GetLocationDetails();
-            return tempList;
-        }
+        //[HttpGet]
+        //[Route("GetLocationDetails")]
+        //public List<LocationMasterDTO> GetLocationDetails()
+        //{
+        //    var tempList = _locationDeatails.GetLocationDetails();
+        //    return tempList;
+        //}
 
         [HttpGet]
         [Route("GetCountries")]
@@ -41,6 +41,13 @@ namespace PTG.ATS.Services.Controllers
         {
             var tempCities = _locationDeatails.GetCities(StateId);
             return tempCities;
+        }
+        [HttpGet]
+        [Route("GetLocation")]
+        public List<LocationMasterDTO> GetLocation(int cityId)
+        {
+            var templocation = _locationDeatails.GetLocation(cityId);
+            return templocation;
         }
     }
 }    

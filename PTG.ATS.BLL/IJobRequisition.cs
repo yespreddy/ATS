@@ -15,7 +15,7 @@ namespace PTG.ATS.BLL
 
         List<DepartmentMasterDTO> GetDepartment();
 
-        CountryMasterDTO PostCountry(CountryMasterDTO countryDTO);
+        //CountryMasterDTO PostCountry(CountryMasterDTO countryDTO);
 
         List<RequisitionTemplateMasterDTO> GetRequisitionTemplates();
 
