@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using PTG.ATS.BLL;
+using PTG.ATS.DAL.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -29,10 +30,9 @@ namespace PTG.ATS.Services.Controllers
         // GET: /<controller>/
         [HttpGet]
         [Route("Hiringstage")]
-        public List<HiringStageMasterDTO> GetHiringStageDetails()
+        public List<GetWorkFlowDTO> GetHiringStageDetails(int RequisitionTemplatedId)
         {
-            var templist=workflow.GetHiringStages();
-            return templist;
+            return workflow.GetHiringStages(RequisitionTemplatedId);
         }
         [HttpPost]
         [Route("PostHiringstage")]

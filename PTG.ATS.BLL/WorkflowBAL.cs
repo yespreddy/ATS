@@ -22,37 +22,62 @@ namespace PTG.ATS.BLL
             throw new NotImplementedException();
         }
 
-        public List<HiringStageMasterDTO> GetHiringStages()
+        public List<GetWorkFlowDTO> GetHiringStages(int RequisitionTemplatedId)
         {
+            var workflowIds = new List<GetWorkFlowDTO> { };
+         
+            var hiringStageIds = dbContext.JobRequisitionHiringStageSubStageLink.
+                 Where(x => x.RequisitionTemplateID == RequisitionTemplatedId).Select(f =>
+                 f.HiringStageID
+            ).Distinct().ToList();
 
-            return dbContext.HiringStageMaster.Select(stage => new HiringStageMasterDTO
+
+            try
             {
-                HiringStageId = stage.HiringStageId,
-                HiringStageName = stage.HiringStageName,
-                Description = stage.Description,
-                IsLocked = stage.IsLocked,
-                IsActive = stage.IsActive,
-                IsDeleted = stage.IsDeleted,
-                CreatedBy = stage.CreatedBy,
-                CreatedDate = stage.CreatedDate,
-                ModifiedBy = stage.ModifiedBy,
-                ModifiedDate = stage.ModifiedDate,               
-                HiringStagesWorkflowMaster = dbContext.HiringStagesWorkflowMaster.Where(x => x.HiringStageId == stage.HiringStageId).Select(innerstage => new HiringStagesWorkflowMasterDTO
+                if (hiringStageIds.Count > 0)
                 {
-                    HiringStagesWorkflowId = innerstage.HiringStagesWorkflowId,
-                    HiringStagesWorkflowName = innerstage.HiringStagesWorkflowName,
-                    Description = innerstage.Description,
-                    HiringStageId = innerstage.HiringStageId,
-                    IsActive = innerstage.IsActive,
-                    IsDeleted = innerstage.IsDeleted,
-                    CreatedBy = innerstage.CreatedBy,
-                    CreatedDate = innerstage.CreatedDate,
-                    ModifiedBy = innerstage.ModifiedBy,
-                    ModifiedDate = innerstage.ModifiedDate
-                }).ToList()
-            }).ToList();
+
+                    workflowIds = dbContext.JobRequisitionHiringStageSubStageLink.Where(d => hiringStageIds.Contains(d.HiringStageID)).Select(f => new
+                    GetWorkFlowDTO
+                    {
+                        HiringStageId = f.HiringStageID,
+                        HiringStageName = dbContext.HiringStageMaster.Where(v => v.HiringStageId == f.HiringStageID).Select(y => y.HiringStageName).First(),
+                        GetWorkFloWStagesDTO =
+                        dbContext.HiringStagesWorkflowMaster.Where(o => (dbContext.JobRequisitionHiringStageSubStageLink.Where(a => hiringStageIds.Contains(a.HiringStageID)).Select(i => i.HiringStagesWorkflowID)).Contains(f.HiringStagesWorkflowID)).Select(p =>
+                                         new GetWorkFloWStagesDTO()
+                                         {
+                                             HiringStagesWorkflowId = p.HiringStagesWorkflowID,
+                                             HiringStagesWorkflowName = p.HiringStagesWorkflowName
+                                         }).ToList()
+
+                    }).GroupBy(x => x.HiringStageId).Select(y => y.First()).ToList();
+
+                }
+                else {
+                    workflowIds = dbContext.HiringStageSubStageLinkMaster.Select(t=>new GetWorkFlowDTO {
+                        HiringStageId = t.HiringStageId,
+                        HiringStageName = dbContext.HiringStageMaster.Where(r => r.HiringStageId == t.HiringStageId).Select(z => z.HiringStageName).First(),
+                        GetWorkFloWStagesDTO = dbContext.HiringStagesWorkflowMaster.Where(o => (dbContext.JobRequisitionHiringStageSubStageLink.Where(a => a.HiringStageID==t.HiringStageId).Select(i => i.HiringStagesWorkflowID)).Contains(o.HiringStagesWorkflowID)).Select(p =>
+                                        new GetWorkFloWStagesDTO()
+                                        {
+                                            HiringStagesWorkflowId = p.HiringStagesWorkflowID,
+                                            HiringStagesWorkflowName = p.HiringStagesWorkflowName
+                                        }).ToList()
+
+                    }).GroupBy(x => x.HiringStageId).Select(y => y.First()).ToList();
+                }
+
+                return workflowIds;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
 
         }
+
 
         public List<JobRequisitionDTO> GetJobRequisition()
         {

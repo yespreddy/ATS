@@ -10,7 +10,7 @@ namespace PTG.ATS.DAL.Models
             JobRequisitionHiring = new HashSet<JobRequisitionHiring>();
         }
 
-        public int HiringStagesWorkflowId { get; set; }
+        public int HiringStagesWorkflowID { get; set; }
         public string HiringStagesWorkflowName { get; set; }
         public string Description { get; set; }
         public int HiringStageId { get; set; }

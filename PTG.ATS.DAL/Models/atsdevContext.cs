@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -41,6 +42,11 @@ namespace PTG.ATS.DAL.Models
         public virtual DbSet<QuestionnairePreviewMaster> QuestionnairePreviewMaster { get; set; }
         public virtual DbSet<RequisitionTemplateMaster> RequisitionTemplateMaster { get; set; }
         public virtual DbSet<StateMaster> StateMaster { get; set; }
+        public virtual DbSet<HiringStageSubStageLinkMaster> HiringStageSubStageLinkMaster { get; set; }
+
+        
+        public virtual DbSet<JobRequisitionHiringStageSubStageLink> JobRequisitionHiringStageSubStageLink { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -451,10 +457,10 @@ namespace PTG.ATS.DAL.Models
 
             modelBuilder.Entity<HiringStagesWorkflowMaster>(entity =>
             {
-                entity.HasKey(e => e.HiringStagesWorkflowId)
+                entity.HasKey(e => e.HiringStagesWorkflowID)
                     .HasName("PK_HiringStagesWorkflow");
 
-                entity.Property(e => e.HiringStagesWorkflowId).HasColumnName("HiringStagesWorkflowID");
+                entity.Property(e => e.HiringStagesWorkflowID).HasColumnName("HiringStagesWorkflowID");
 
                 entity.Property(e => e.CreatedBy)
                     .HasMaxLength(100)
