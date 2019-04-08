@@ -3,7 +3,7 @@ import '../../styles/Candidates.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { Accordion, AccordionItem, AccordionItemTitle, AccordionItemBody, } from 'react-accessible-accordion';
 import { Form, TextField, SelectField, TextareaField, CheckboxField } from 'react-components-form';
-import Breadcrumbs from "../Common/Breadcrumb";
+import Breadcrumbs from "../Common/breadcrumb";
 import { Link } from "react-router-dom";
 import axios from 'axios';
 

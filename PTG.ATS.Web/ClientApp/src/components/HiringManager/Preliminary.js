@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../styles/Candidates.css';
-import Breadcrumbs from "../Common/Breadcrumb";
+import Breadcrumbs from "../Common/breadcrumb";
 import logger from 'redux-logger'
 import FileViewer from 'react-file-viewer';
 import { Nav, NavLink } from 'reactstrap';

@@ -4,7 +4,7 @@ import '../../../node_modules/react-tabs/style/react-tabs.css';
 import '../../styles/Candidates.css';
 import '../../styles/Tabs.css';
 import AllCandidatesTable from "../Common/AllCandidatesTable"
-import InnerNav from '../Common/InnerNav';
+import InnerNav from '../Common/innernav';
 import { Link } from 'react-router-dom'
 
 

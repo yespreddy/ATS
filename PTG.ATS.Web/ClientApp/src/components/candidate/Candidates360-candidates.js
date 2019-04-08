@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import Innernav from '../Common/InnerNav';
+import Innernav from '../Common/innernav';
 import { Button } from 'reactstrap';
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import '../../../node_modules/react-tabs/style/react-tabs.css';

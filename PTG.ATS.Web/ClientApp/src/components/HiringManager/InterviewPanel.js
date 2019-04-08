@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../../styles/NewRequisition.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { Form, TextField, SelectField} from 'react-components-form';
-import Breadcrumbs from "../Common/Breadcrumb";
+import Breadcrumbs from "../Common/breadcrumb";
 import { Link } from "react-router-dom";
 import { Table } from 'reactstrap';
 import axios from 'axios';

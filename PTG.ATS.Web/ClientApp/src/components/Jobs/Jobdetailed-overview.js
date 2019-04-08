@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../styles/Candidates.css';
-import Innernav from '../Common/InnerNav';
+import Innernav from '../Common/innernav';
 import { Link } from 'react-router-dom';
 import "../../styles/Jobs.css";
 import { Button } from 'reactstrap';

@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,IAAI;CACd",
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,MAAM,EAAE,cAAc;EACtB,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,GAAG;CACrB",
     "sources": [
         "interview_candidate.scss"
     ],

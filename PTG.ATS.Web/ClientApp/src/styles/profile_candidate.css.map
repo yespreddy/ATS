@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,KAAK,EAAE,GAAG;CACb",
+    "mappings": "AAAA,AAAA,SAAS,CAAC,KAAK;AACf,UAAU,CAAC,KAAK,CAAC;EACb,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,KAAK;CACnB",
     "sources": [
         "profile_candidate.scss"
     ],
