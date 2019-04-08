@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "interview_candidate.scss"
+    ],
+    "names": [],
+    "file": "interview_candidate.css"
+}

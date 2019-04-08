@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,KAAK,EAAE,GAAG;CACb",
+    "sources": [
+        "profile_candidate.scss"
+    ],
+    "names": [],
+    "file": "profile_candidate.css"
+}

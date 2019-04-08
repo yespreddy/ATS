@@ -1,6 +1,6 @@
 ﻿import React, { Component } from "react";
 import { Route, Redirect, Switch } from "react-router-dom";
-import Recruiterdashboard from "./components/Recruiter/RecruiterDashboard";
+import Recruiterdashboard from "./components/Recruiter/Recruiterdashboard";
 import Candidates from "./components/Candidate/Candidates";
 import Jobs from "./components/Jobs/Jobs";
 import Header from "./components/Common/Header";

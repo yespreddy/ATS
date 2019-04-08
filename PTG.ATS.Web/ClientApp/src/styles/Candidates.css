@@ -79,7 +79,7 @@
 
 .candidates-questionnaire .list-group-item {
   margin-bottom: 10px;
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 
 .candidates-questionnaire .list-group-item .fa {
@@ -101,7 +101,7 @@
 
 .candidates-discussion .user-comment {
   padding: 20px 20px 20px 40px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 5px;
@@ -131,7 +131,7 @@
 }
 
 .candidates-discussion .timeline .list-group:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 3px;
   background-color: #525975;
@@ -157,7 +157,7 @@
 }
 
 .candidates-discussion .timeline .list-group-item:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 14px;
   height: 14px;
@@ -170,7 +170,7 @@
 }
 
 .candidates-discussion .timeline .list-group-item:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 36px;
   height: 36px;
@@ -281,7 +281,8 @@
   font-size: 26px;
 }
 
-.candidates-assess-wrap .rating > span:hover ~ span:before, .candidates-assess-wrap .rating > span:hover .active:before {
+.candidates-assess-wrap .rating > span:hover ~ span:before,
+.candidates-assess-wrap .rating > span:hover .active:before {
   content: "\2605";
   position: absolute;
 }
@@ -294,7 +295,7 @@
 .candidates-assess-wrap .bar {
   width: 50%;
   height: 18px;
-  background-color: #A71F37;
+  background-color: #a71f37;
   -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
@@ -306,13 +307,15 @@
 .candidates-assess-wrap .bar-wrap .progress {
   overflow: hidden;
   height: 18px;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 0px;
 }
 
-.candidates-assess-wrap .snapshot-item .rating, .candidates-assess-wrap .snapshot-item .bar-wrap, .candidates-assess-wrap .snapshot-item label {
+.candidates-assess-wrap .snapshot-item .rating,
+.candidates-assess-wrap .snapshot-item .bar-wrap,
+.candidates-assess-wrap .snapshot-item label {
   display: inline-block;
   vertical-align: middle;
   margin-right: 20px;
@@ -329,7 +332,7 @@
 
 .candidates-assess-wrap .user-comment {
   padding: 20px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   margin-bottom: 20px;
   border-radius: 5px;
 }
@@ -455,5 +458,34 @@
   font-size: 14px;
   text-align: center;
   border-top: 1px solid #cacaca;
+}
+
+.borderRight ul li {
+  border-top: none !important;
+}
+
+.borderRight {
+  border-right: 3px solid #cdcdcd;
+}
+
+.borderTop {
+  border-top: 3px solid #cdcdcd;
+}
+
+.borderBottom {
+  border-bottom: 2px solid #cdcdcd;
+}
+
+.marginRL {
+  margin: 0 15px !important;
+}
+
+.taskSection a {
+  border-left: 10px solid #cdcdcd;
+  border-radius: 0px !important;
+}
+
+.taskSection a p:last-child {
+  margin-bottom: 0px;
 }
 /*# sourceMappingURL=Candidates.css.map */

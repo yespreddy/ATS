@@ -6,3 +6,6 @@
 /.vs
 /PTG.ATS.DAL
 /PTG.ATS.Services
+/PTG.ATS.Infra/obj/Release/netcoreapp2.2
+/PTG.ATS.Entities/obj/Release/netcoreapp2.2
+/PTG.ATS.BLL/obj/Release/netcoreapp2.2

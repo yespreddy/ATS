@@ -1,13 +1,17 @@
 .react-tabs__tab-list {
   margin: 0 !important;
   border-bottom: 1px solid #c1c0c3;
-  background: #f4f4f4; }
-  .react-tabs__tab-list li {
-    border-radius: 0px;
-    font-size: 1rem;
-    padding: 1rem; }
+  background: #f4f4f4;
+}
+
+.react-tabs__tab-list li {
+  border-radius: 0px;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
 .react-tabs__tab-panel {
   background: #fff;
-  padding-top: 15px; }
-
+  padding-top: 15px;
+}
 /*# sourceMappingURL=Tabs.css.map */

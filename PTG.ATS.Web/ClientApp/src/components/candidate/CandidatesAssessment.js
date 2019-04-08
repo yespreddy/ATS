@@ -57,9 +57,9 @@ class Candidatesassessment extends React.Component {
                                 <span>☆</span>
                                 <span>☆</span>
                             </div>
-                            <div class="bar-wrap">
-                                <div class="progress">
-                                    <div class="bar"></div>
+                            <div className="bar-wrap">
+                                <div className="progress">
+                                    <div className="bar"></div>
                                 </div>
                             </div>
                             <label>2 (50%)</label>
@@ -73,9 +73,9 @@ class Candidatesassessment extends React.Component {
                                 <span>☆</span>
                                 <span>☆</span>
                             </div>
-                            <div class="bar-wrap">
-                                <div class="progress">
-                                    <div class="bar"></div>
+                            <div className="bar-wrap">
+                                <div className="progress">
+                                    <div className="bar"></div>
                                 </div>
                             </div>
                             <label>2 (50%)</label>
@@ -89,9 +89,9 @@ class Candidatesassessment extends React.Component {
                                 <span>☆</span>
                                 <span>☆</span>
                             </div>
-                            <div class="bar-wrap">
-                                <div class="progress">
-                                    <div class="bar"></div>
+                            <div className="bar-wrap">
+                                <div className="progress">
+                                    <div className="bar"></div>
                                 </div>
                             </div>
                             <label>2 (50%)</label>
@@ -105,9 +105,9 @@ class Candidatesassessment extends React.Component {
                                 <span>☆</span>
                                 <span>☆</span>
                             </div>
-                            <div class="bar-wrap">
-                                <div class="progress">
-                                    <div class="bar"></div>
+                            <div className="bar-wrap">
+                                <div className="progress">
+                                    <div className="bar"></div>
                                 </div>
                             </div>
                             <label>2 (50%)</label>
@@ -121,9 +121,9 @@ class Candidatesassessment extends React.Component {
                                 <span>☆</span>
                                 <span>☆</span>
                             </div>
-                            <div class="bar-wrap">
-                                <div class="progress">
-                                    <div class="bar"></div>
+                            <div className="bar-wrap">
+                                <div className="progress">
+                                    <div className="bar"></div>
                                 </div>
                             </div>
                             <label>2 (50%)</label>
