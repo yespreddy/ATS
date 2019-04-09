@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using PTG.ATS.BLL;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -31,12 +32,12 @@ namespace PTG.ATS.Services.Controllers
 
         //Get Method for Test
         // GET: /<controller>/
-        //[HttpGet]
-        //[Route("GetJobRequisition")]
-        //public List<JobRequisitionDTO> GetjobRequisition()
-        //{
-        //    return _jobRequisition.GetJobRequisition();
-        //}
+        [HttpGet]
+        [Route("GetJobRequisition")]
+        public List<JobRequisitionDTO> GetjobRequisition()
+        {
+            return _jobRequisition.GetJobRequisition();
+        }
 
         //Post Method for Test
         [HttpPost]
@@ -54,29 +55,28 @@ namespace PTG.ATS.Services.Controllers
                 return Ok(response);
         }
 
-        // Get Method for RequisitionTemplates List
         [HttpGet]
-        [Route("GetRequisitionTemplates")]
-        public List<RequisitionTemplateMasterDTO> GetRequisitionTemplates()
+        [Route("GetJobTitle")]
+        public List<JobTitleMasterDTO> GetJobTitle()
         {
-            return _jobRequisition.GetRequisitionTemplates();
+            JobRequisitionBL _jobRequisitionBL = new JobRequisitionBL();
+            return _jobRequisitionBL.GetJobTitleDetails();
+        }
+        [HttpGet]
+        [Route("GetEmploymentType")]
+        public List<EmploymentTypeMasterDTO> GetEmploymentType()
+        {
+            JobRequisitionBL _jobRequisitionBL = new JobRequisitionBL();
+            return _jobRequisitionBL.GetEmploymentType();
+        }
+        [HttpGet]
+        [Route("GetDepartment")]
+        public List<DepartmentMasterDTO> GetDepartment()
+        {
+            JobRequisitionBL _jobRequisitionBL = new JobRequisitionBL();
+            return _jobRequisitionBL.GetDepartment();
         }
 
-        // Save Requisition Templates 1st Screen
-        [HttpPost]
-        [Route("SaveRequisition")]
-        public ActionResult SaveRequisition([FromBody] JobRequisitionDTO jobRequisitionDTO)
-        {
-            if (jobRequisitionDTO == null)
-                return BadRequest();
-
-            var response = _jobRequisition.SaveRequisition(jobRequisitionDTO);
-
-            if (response == null)
-                return BadRequest();
-            else
-                return Ok(response);
-        }
 
     }
 }
