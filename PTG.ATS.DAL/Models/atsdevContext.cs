@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -27,26 +26,27 @@ namespace PTG.ATS.DAL.Models
         public virtual DbSet<EmploymentTypeMaster> EmploymentTypeMaster { get; set; }
         public virtual DbSet<ExperienceMaster> ExperienceMaster { get; set; }
         public virtual DbSet<HiringStageMaster> HiringStageMaster { get; set; }
+        public virtual DbSet<HiringStageSubStageLinkMaster> HiringStageSubStageLinkMaster { get; set; }
         public virtual DbSet<HiringStagesWorkflowMaster> HiringStagesWorkflowMaster { get; set; }
+        public virtual DbSet<HrquestionMaster> HrquestionMaster { get; set; }
         public virtual DbSet<InterviewRoundMaster> InterviewRoundMaster { get; set; }
         public virtual DbSet<JobRequirementJustificationMaster> JobRequirementJustificationMaster { get; set; }
         public virtual DbSet<JobRequisition> JobRequisition { get; set; }
         public virtual DbSet<JobRequisitionCandidate> JobRequisitionCandidate { get; set; }
         public virtual DbSet<JobRequisitionHiring> JobRequisitionHiring { get; set; }
+        public virtual DbSet<JobRequisitionHiringStageSubStageLink> JobRequisitionHiringStageSubStageLink { get; set; }
         public virtual DbSet<JobRequisitionInterviewPanel> JobRequisitionInterviewPanel { get; set; }
         public virtual DbSet<JobRequisitionPreliminaryQuestionnaire> JobRequisitionPreliminaryQuestionnaire { get; set; }
+        public virtual DbSet<JobRequisitionPreliminaryQuestionnaireHrquestion> JobRequisitionPreliminaryQuestionnaireHrquestion { get; set; }
+        public virtual DbSet<JobRequisitionPreliminaryQuestionnaireOtherQuestion> JobRequisitionPreliminaryQuestionnaireOtherQuestion { get; set; }
         public virtual DbSet<JobTitleMaster> JobTitleMaster { get; set; }
         public virtual DbSet<LocationMaster> LocationMaster { get; set; }
         public virtual DbSet<ModeOfInterviewMaster> ModeOfInterviewMaster { get; set; }
         public virtual DbSet<MoreInformationTypeMaster> MoreInformationTypeMaster { get; set; }
+        public virtual DbSet<OtherQuestionMaster> OtherQuestionMaster { get; set; }
         public virtual DbSet<QuestionnairePreviewMaster> QuestionnairePreviewMaster { get; set; }
         public virtual DbSet<RequisitionTemplateMaster> RequisitionTemplateMaster { get; set; }
         public virtual DbSet<StateMaster> StateMaster { get; set; }
-        public virtual DbSet<HiringStageSubStageLinkMaster> HiringStageSubStageLinkMaster { get; set; }
-
-        
-        public virtual DbSet<JobRequisitionHiringStageSubStageLink> JobRequisitionHiringStageSubStageLink { get; set; }
-
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -455,12 +455,49 @@ namespace PTG.ATS.DAL.Models
                 entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
             });
 
+            modelBuilder.Entity<HiringStageSubStageLinkMaster>(entity =>
+            {
+                entity.Property(e => e.HiringStageSubStageLinkMasterId).HasColumnName("HiringStageSubStageLinkMasterID");
+
+                entity.Property(e => e.CreatedBy)
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.CreatedDate).HasColumnType("datetime");
+
+                entity.Property(e => e.HiringStageId).HasColumnName("HiringStageID");
+
+                entity.Property(e => e.HiringStagesWorkflowId).HasColumnName("HiringStagesWorkflowID");
+
+                entity.Property(e => e.IsActive)
+                    .IsRequired()
+                    .HasDefaultValueSql("((1))");
+
+                entity.Property(e => e.ModifiedBy)
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
+
+                entity.HasOne(d => d.HiringStage)
+                    .WithMany(p => p.HiringStageSubStageLinkMaster)
+                    .HasForeignKey(d => d.HiringStageId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__HiringStageSubStageLinkMaster1__HiringStageID");
+
+                entity.HasOne(d => d.HiringStagesWorkflow)
+                    .WithMany(p => p.HiringStageSubStageLinkMaster)
+                    .HasForeignKey(d => d.HiringStagesWorkflowId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__HiringStageSubStageLinkMaster1__HiringStagesWorkflowID");
+            });
+
             modelBuilder.Entity<HiringStagesWorkflowMaster>(entity =>
             {
-                entity.HasKey(e => e.HiringStagesWorkflowID)
+                entity.HasKey(e => e.HiringStagesWorkflowId)
                     .HasName("PK_HiringStagesWorkflow");
 
-                entity.Property(e => e.HiringStagesWorkflowID).HasColumnName("HiringStagesWorkflowID");
+                entity.Property(e => e.HiringStagesWorkflowId).HasColumnName("HiringStagesWorkflowID");
 
                 entity.Property(e => e.CreatedBy)
                     .HasMaxLength(100)
@@ -469,8 +506,6 @@ namespace PTG.ATS.DAL.Models
                 entity.Property(e => e.CreatedDate).HasColumnType("datetime");
 
                 entity.Property(e => e.Description).IsUnicode(false);
-
-                entity.Property(e => e.HiringStageId).HasColumnName("HiringStageID");
 
                 entity.Property(e => e.HiringStagesWorkflowName)
                     .IsRequired()
@@ -486,12 +521,39 @@ namespace PTG.ATS.DAL.Models
                     .IsUnicode(false);
 
                 entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
+            });
 
-                entity.HasOne(d => d.HiringStage)
-                    .WithMany(p => p.HiringStagesWorkflowMaster)
-                    .HasForeignKey(d => d.HiringStageId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__HiringSta__Hirin__47A6A41B");
+            modelBuilder.Entity<HrquestionMaster>(entity =>
+            {
+                entity.HasKey(e => e.HrquestionId);
+
+                entity.ToTable("HRQuestionMaster");
+
+                entity.Property(e => e.HrquestionId).HasColumnName("HRQuestionID");
+
+                entity.Property(e => e.CreatedBy)
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.CreatedDate).HasColumnType("datetime");
+
+                entity.Property(e => e.Description).IsUnicode(false);
+
+                entity.Property(e => e.HrquestionText)
+                    .IsRequired()
+                    .HasColumnName("HRQuestionText")
+                    .HasMaxLength(150)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.IsActive)
+                    .IsRequired()
+                    .HasDefaultValueSql("((1))");
+
+                entity.Property(e => e.ModifiedBy)
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
             });
 
             modelBuilder.Entity<InterviewRoundMaster>(entity =>
@@ -831,6 +893,53 @@ namespace PTG.ATS.DAL.Models
                     .HasConstraintName("FK__JobRequis__JobRe__4C6B5938");
             });
 
+            modelBuilder.Entity<JobRequisitionHiringStageSubStageLink>(entity =>
+            {
+                entity.HasKey(e => e.JobRequisitionHiringStageSubStageLinkMasterId);
+
+                entity.Property(e => e.JobRequisitionHiringStageSubStageLinkMasterId).HasColumnName("JobRequisitionHiringStageSubStageLinkMasterID");
+
+                entity.Property(e => e.CreatedBy)
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.CreatedDate).HasColumnType("datetime");
+
+                entity.Property(e => e.HiringStageId).HasColumnName("HiringStageID");
+
+                entity.Property(e => e.HiringStagesWorkflowId).HasColumnName("HiringStagesWorkflowID");
+
+                entity.Property(e => e.IsActive)
+                    .IsRequired()
+                    .HasDefaultValueSql("((1))");
+
+                entity.Property(e => e.ModifiedBy)
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
+
+                entity.Property(e => e.RequisitionTemplateId).HasColumnName("RequisitionTemplateID");
+
+                entity.HasOne(d => d.HiringStage)
+                    .WithMany(p => p.JobRequisitionHiringStageSubStageLink)
+                    .HasForeignKey(d => d.HiringStageId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__HiringStageSubStageLinkMaster__HiringStageID");
+
+                entity.HasOne(d => d.HiringStagesWorkflow)
+                    .WithMany(p => p.JobRequisitionHiringStageSubStageLink)
+                    .HasForeignKey(d => d.HiringStagesWorkflowId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__HiringStageSubStageLinkMaster__HiringStagesWorkflowID");
+
+                entity.HasOne(d => d.RequisitionTemplate)
+                    .WithMany(p => p.JobRequisitionHiringStageSubStageLink)
+                    .HasForeignKey(d => d.RequisitionTemplateId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__HiringStageSubStageLinkMaster__RequisitionTemplateID");
+            });
+
             modelBuilder.Entity<JobRequisitionInterviewPanel>(entity =>
             {
                 entity.Property(e => e.JobRequisitionInterviewPanelId).HasColumnName("JobRequisitionInterviewPanelID");
@@ -1037,6 +1146,96 @@ namespace PTG.ATS.DAL.Models
                     .HasConstraintName("FK__JobRequis__Posit__73852659");
             });
 
+            modelBuilder.Entity<JobRequisitionPreliminaryQuestionnaireHrquestion>(entity =>
+            {
+                entity.HasKey(e => e.QuestionnairePreviewHrquestionId)
+                    .HasName("PK_QuestionnairePreviewHRQuestion");
+
+                entity.ToTable("JobRequisitionPreliminaryQuestionnaireHRQuestion");
+
+                entity.Property(e => e.QuestionnairePreviewHrquestionId).HasColumnName("QuestionnairePreviewHRQuestionID");
+
+                entity.Property(e => e.AnswerText)
+                    .IsRequired()
+                    .IsUnicode(false);
+
+                entity.Property(e => e.CreatedBy)
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.CreatedDate).HasColumnType("datetime");
+
+                entity.Property(e => e.HrquestionId).HasColumnName("HRQuestionID");
+
+                entity.Property(e => e.IsActive)
+                    .IsRequired()
+                    .HasDefaultValueSql("((1))");
+
+                entity.Property(e => e.JobRequisitionPreliminaryQuestionnaireId).HasColumnName("JobRequisitionPreliminaryQuestionnaireID");
+
+                entity.Property(e => e.ModifiedBy)
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
+
+                entity.HasOne(d => d.Hrquestion)
+                    .WithMany(p => p.JobRequisitionPreliminaryQuestionnaireHrquestion)
+                    .HasForeignKey(d => d.HrquestionId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_QuestionnairePreviewHRQuestion_HRQuestionID");
+
+                entity.HasOne(d => d.JobRequisitionPreliminaryQuestionnaire)
+                    .WithMany(p => p.JobRequisitionPreliminaryQuestionnaireHrquestion)
+                    .HasForeignKey(d => d.JobRequisitionPreliminaryQuestionnaireId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_QuestionnairePreviewHRQuestion_JobRequisitionPreliminaryQuestionnaireID");
+            });
+
+            modelBuilder.Entity<JobRequisitionPreliminaryQuestionnaireOtherQuestion>(entity =>
+            {
+                entity.HasKey(e => e.QuestionnairePreviewOtherQuestionId)
+                    .HasName("PK_QuestionnairePreviewOtherQuestion");
+
+                entity.Property(e => e.QuestionnairePreviewOtherQuestionId).HasColumnName("QuestionnairePreviewOtherQuestionID");
+
+                entity.Property(e => e.AnswerText)
+                    .IsRequired()
+                    .IsUnicode(false);
+
+                entity.Property(e => e.CreatedBy)
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.CreatedDate).HasColumnType("datetime");
+
+                entity.Property(e => e.IsActive)
+                    .IsRequired()
+                    .HasDefaultValueSql("((1))");
+
+                entity.Property(e => e.JobRequisitionPreliminaryQuestionnaireId).HasColumnName("JobRequisitionPreliminaryQuestionnaireID");
+
+                entity.Property(e => e.ModifiedBy)
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
+
+                entity.Property(e => e.OtherQuestionId).HasColumnName("OtherQuestionID");
+
+                entity.HasOne(d => d.JobRequisitionPreliminaryQuestionnaire)
+                    .WithMany(p => p.JobRequisitionPreliminaryQuestionnaireOtherQuestion)
+                    .HasForeignKey(d => d.JobRequisitionPreliminaryQuestionnaireId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_QuestionnairePreviewOtherQuestion_JobRequisitionPreliminaryQuestionnaireID");
+
+                entity.HasOne(d => d.OtherQuestion)
+                    .WithMany(p => p.JobRequisitionPreliminaryQuestionnaireOtherQuestion)
+                    .HasForeignKey(d => d.OtherQuestionId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_QuestionnairePreviewOtherQuestion_OtherQuestionID");
+            });
+
             modelBuilder.Entity<JobTitleMaster>(entity =>
             {
                 entity.HasKey(e => e.JobTitleId)
@@ -1171,6 +1370,36 @@ namespace PTG.ATS.DAL.Models
                 entity.Property(e => e.MoreInformationTypeName)
                     .IsRequired()
                     .HasMaxLength(100)
+                    .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<OtherQuestionMaster>(entity =>
+            {
+                entity.HasKey(e => e.OtherQuestionId);
+
+                entity.Property(e => e.OtherQuestionId).HasColumnName("OtherQuestionID");
+
+                entity.Property(e => e.CreatedBy)
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.CreatedDate).HasColumnType("datetime");
+
+                entity.Property(e => e.Description).IsUnicode(false);
+
+                entity.Property(e => e.IsActive)
+                    .IsRequired()
+                    .HasDefaultValueSql("((1))");
+
+                entity.Property(e => e.ModifiedBy)
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
+
+                entity.Property(e => e.OtherQuestionText)
+                    .IsRequired()
+                    .HasMaxLength(150)
                     .IsUnicode(false);
             });
 

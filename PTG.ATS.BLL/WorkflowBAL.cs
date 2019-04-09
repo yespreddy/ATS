@@ -27,8 +27,8 @@ namespace PTG.ATS.BLL
             var workflowIds = new List<GetWorkFlowDTO> { };
          
             var hiringStageIds = dbContext.JobRequisitionHiringStageSubStageLink.
-                 Where(x => x.RequisitionTemplateID == RequisitionTemplatedId).Select(f =>
-                 f.HiringStageID
+                 Where(x => x.RequisitionTemplateId == RequisitionTemplatedId).Select(f =>
+                 f.HiringStageId
             ).Distinct().ToList();
 
 
@@ -37,16 +37,16 @@ namespace PTG.ATS.BLL
                 if (hiringStageIds.Count > 0)
                 {
 
-                    workflowIds = dbContext.JobRequisitionHiringStageSubStageLink.Where(d => hiringStageIds.Contains(d.HiringStageID)).Select(f => new
+                    workflowIds = dbContext.JobRequisitionHiringStageSubStageLink.Where(d => hiringStageIds.Contains(d.HiringStageId)).Select(f => new
                     GetWorkFlowDTO
                     {
-                        HiringStageId = f.HiringStageID,
-                        HiringStageName = dbContext.HiringStageMaster.Where(v => v.HiringStageId == f.HiringStageID).Select(y => y.HiringStageName).First(),
+                        HiringStageId = f.HiringStageId,
+                        HiringStageName = dbContext.HiringStageMaster.Where(v => v.HiringStageId == f.HiringStageId).Select(y => y.HiringStageName).First(),
                         GetWorkFloWStagesDTO =
-                        dbContext.HiringStagesWorkflowMaster.Where(o => (dbContext.JobRequisitionHiringStageSubStageLink.Where(a => hiringStageIds.Contains(a.HiringStageID)).Select(i => i.HiringStagesWorkflowID)).Contains(f.HiringStagesWorkflowID)).Select(p =>
+                        dbContext.HiringStagesWorkflowMaster.Where(o => (dbContext.JobRequisitionHiringStageSubStageLink.Where(a => hiringStageIds.Contains(a.HiringStageId)).Select(i => i.HiringStagesWorkflowId)).Contains(f.HiringStagesWorkflowId)).Select(p =>
                                          new GetWorkFloWStagesDTO()
                                          {
-                                             HiringStagesWorkflowId = p.HiringStagesWorkflowID,
+                                             HiringStagesWorkflowId = p.HiringStagesWorkflowId,
                                              HiringStagesWorkflowName = p.HiringStagesWorkflowName
                                          }).ToList()
 
@@ -57,10 +57,10 @@ namespace PTG.ATS.BLL
                     workflowIds = dbContext.HiringStageSubStageLinkMaster.Select(t=>new GetWorkFlowDTO {
                         HiringStageId = t.HiringStageId,
                         HiringStageName = dbContext.HiringStageMaster.Where(r => r.HiringStageId == t.HiringStageId).Select(z => z.HiringStageName).First(),
-                        GetWorkFloWStagesDTO = dbContext.HiringStagesWorkflowMaster.Where(o => (dbContext.JobRequisitionHiringStageSubStageLink.Where(a => a.HiringStageID==t.HiringStageId).Select(i => i.HiringStagesWorkflowID)).Contains(o.HiringStagesWorkflowID)).Select(p =>
+                        GetWorkFloWStagesDTO = dbContext.HiringStagesWorkflowMaster.Where(o => (dbContext.JobRequisitionHiringStageSubStageLink.Where(a => a.HiringStageId==t.HiringStageId).Select(i => i.HiringStagesWorkflowId)).Contains(o.HiringStagesWorkflowId)).Select(p =>
                                         new GetWorkFloWStagesDTO()
                                         {
-                                            HiringStagesWorkflowId = p.HiringStagesWorkflowID,
+                                            HiringStagesWorkflowId = p.HiringStagesWorkflowId,
                                             HiringStagesWorkflowName = p.HiringStagesWorkflowName
                                         }).ToList()
 

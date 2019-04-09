@@ -7,13 +7,15 @@ namespace PTG.ATS.DAL.Models
     {
         public HiringStageMaster()
         {
-            HiringStagesWorkflowMaster = new HashSet<HiringStagesWorkflowMaster>();
+            HiringStageSubStageLinkMaster = new HashSet<HiringStageSubStageLinkMaster>();
             JobRequisitionHiring = new HashSet<JobRequisitionHiring>();
+            JobRequisitionHiringStageSubStageLink = new HashSet<JobRequisitionHiringStageSubStageLink>();
         }
 
         public int HiringStageId { get; set; }
         public string HiringStageName { get; set; }
         public string Description { get; set; }
+        public int? DispalyOrder { get; set; }
         public bool IsLocked { get; set; }
         public bool? IsActive { get; set; }
         public bool IsDeleted { get; set; }
@@ -22,7 +24,8 @@ namespace PTG.ATS.DAL.Models
         public string ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
 
-        public virtual ICollection<HiringStagesWorkflowMaster> HiringStagesWorkflowMaster { get; set; }
+        public virtual ICollection<HiringStageSubStageLinkMaster> HiringStageSubStageLinkMaster { get; set; }
         public virtual ICollection<JobRequisitionHiring> JobRequisitionHiring { get; set; }
+        public virtual ICollection<JobRequisitionHiringStageSubStageLink> JobRequisitionHiringStageSubStageLink { get; set; }
     }
 }

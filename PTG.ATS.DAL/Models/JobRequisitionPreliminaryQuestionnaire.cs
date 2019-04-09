@@ -5,6 +5,12 @@ namespace PTG.ATS.DAL.Models
 {
     public partial class JobRequisitionPreliminaryQuestionnaire
     {
+        public JobRequisitionPreliminaryQuestionnaire()
+        {
+            JobRequisitionPreliminaryQuestionnaireHrquestion = new HashSet<JobRequisitionPreliminaryQuestionnaireHrquestion>();
+            JobRequisitionPreliminaryQuestionnaireOtherQuestion = new HashSet<JobRequisitionPreliminaryQuestionnaireOtherQuestion>();
+        }
+
         public int JobRequisitionPreliminaryQuestionnaireId { get; set; }
         public int JobRequisitionId { get; set; }
         public string FirstName { get; set; }
@@ -29,5 +35,7 @@ namespace PTG.ATS.DAL.Models
 
         public virtual JobRequisition JobRequisition { get; set; }
         public virtual JobTitleMaster PositionApplied { get; set; }
+        public virtual ICollection<JobRequisitionPreliminaryQuestionnaireHrquestion> JobRequisitionPreliminaryQuestionnaireHrquestion { get; set; }
+        public virtual ICollection<JobRequisitionPreliminaryQuestionnaireOtherQuestion> JobRequisitionPreliminaryQuestionnaireOtherQuestion { get; set; }
     }
 }

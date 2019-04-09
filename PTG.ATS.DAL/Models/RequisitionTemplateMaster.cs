@@ -9,6 +9,7 @@ namespace PTG.ATS.DAL.Models
         {
             DepartmentMaster = new HashSet<DepartmentMaster>();
             JobRequisition = new HashSet<JobRequisition>();
+            JobRequisitionHiringStageSubStageLink = new HashSet<JobRequisitionHiringStageSubStageLink>();
             JobTitleMaster = new HashSet<JobTitleMaster>();
             QuestionnairePreviewMaster = new HashSet<QuestionnairePreviewMaster>();
         }
@@ -25,6 +26,7 @@ namespace PTG.ATS.DAL.Models
 
         public virtual ICollection<DepartmentMaster> DepartmentMaster { get; set; }
         public virtual ICollection<JobRequisition> JobRequisition { get; set; }
+        public virtual ICollection<JobRequisitionHiringStageSubStageLink> JobRequisitionHiringStageSubStageLink { get; set; }
         public virtual ICollection<JobTitleMaster> JobTitleMaster { get; set; }
         public virtual ICollection<QuestionnairePreviewMaster> QuestionnairePreviewMaster { get; set; }
     }

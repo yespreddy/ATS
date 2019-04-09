@@ -57,3 +57,4 @@ D:\sudhir\ATS\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.AssemblyIn
 D:\sudhir\ATS\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.AssemblyInfo.cs
 D:\sudhir\ATS\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.dll
 D:\sudhir\ATS\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.pdb
+D:\sudhir\ATS\ATS\PTG.ATS.Infra\obj\Debug\netcoreapp2.2\PTG.ATS.Infra.csprojAssemblyReference.cache
