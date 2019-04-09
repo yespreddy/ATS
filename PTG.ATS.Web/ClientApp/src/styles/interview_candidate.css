@@ -3,4 +3,22 @@
   padding: 1rem;
   border-radius: 5px;
 }
+
+.secLeft,
+.secRight {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.secLeft p:first-child,
+.secRight p:first-child {
+  padding: 0 15px 0 0;
+}
+
+.secLeft p,
+.secRight p {
+  padding: 0 15px;
+}
 /*# sourceMappingURL=interview_candidate.css.map */

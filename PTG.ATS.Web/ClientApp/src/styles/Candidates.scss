@@ -254,7 +254,7 @@
             }
 
             .rating {
-              &>span {
+              & > span {
                 font-size: 36px;
               }
             }
@@ -310,15 +310,14 @@
         display: block;
         float: none;
 
-        &>span {
+        & > span {
           display: inline-block;
           position: relative;
           // width: 1.1em;
           font-size: 26px;
 
           &:hover {
-
-            &~span,
+            & ~ span,
             .active {
               &:before {
                 content: "\2605";
@@ -363,7 +362,6 @@
 
       .snapshot {
         &-item {
-
           .rating,
           .bar-wrap,
           label {
@@ -541,5 +539,33 @@
 
   & p:last-child {
     margin-bottom: 0px;
+  }
+}
+
+.noNotes {
+  padding: 0.6rem;
+  background-color: #eee;
+  text-align: center;
+  color: #767676;
+  & p {
+    margin: 0px;
+  }
+}
+
+.candetails {
+  border-bottom: 3px solid #adb5bd;
+}
+
+.candidateList {
+  padding: 0 1rem;
+  flex-flow: row wrap;
+
+  & p:first-child {
+    padding: 0px 30px 0px 0px;
+  }
+
+  & p {
+    padding: 0px 30px;
+    margin: 0;
   }
 }

@@ -1,5 +1,18 @@
 .accordListDown {
-    border: 2px solid #ddd;
-    padding: 1rem;
-    border-radius: 5px;
+  border: 2px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.secLeft,
+.secRight {
+  flex-flow: row wrap;
+
+  & p:first-child {
+    padding: 0 15px 0 0;
+  }
+
+  & p {
+    padding: 0 15px;
+  }
 }

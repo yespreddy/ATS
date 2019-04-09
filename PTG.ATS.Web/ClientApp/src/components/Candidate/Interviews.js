@@ -22,16 +22,16 @@ class Interviews extends React.Component {
                         </div>
                     </AccordionItemTitle>
                     <AccordionItemBody>
-                            <div className="accordListDown ">
+                            <div className="accordListDown">
                                 <div className="d-flex">
-                                    <div className="d-flex mr-auto">
+                                    <div className="d-flex mr-auto secLeft">
                                         <p>Java Technical Discussion</p>
                                         <p><i className="fa fa-users"></i> <span className="ml-1">In-Person</span></p>
-                                        <p><i className="fa fa-time"></i> <span className="ml-1">1 Hr</span></p>
+                                        <p><i className="fa fa-clock-o" aria-hidden="true"></i><span className="ml-1">1 Hr</span></p>
                                     </div>
-                                    <div className="d-flex ml-auto">
-                                        <p><i class="fa fa-calendar" aria-hidden="true"></i></p>
-                                        <p><i class="fa fa-trash-o" aria-hidden="true"></i></p>
+                                    <div className="d-flex ml-auto secRight">
+                                        <p><i className="fa fa-calendar" aria-hidden="true"></i></p>
+                                        <p><i className="fa fa-trash-o" aria-hidden="true"></i></p>
                                     </div>
                                 </div>    
                                 <div className="">
@@ -58,14 +58,14 @@ class Interviews extends React.Component {
                     <AccordionItemBody>
                     <div className="accordListDown ">
                                 <div className="d-flex">
-                                    <div className="d-flex mr-auto">
+                                    <div className="d-flex mr-auto secLeft">
                                         <p>Initial Telephone Screening</p>
-                                        <p><i className="fa fa-users"></i> <span className="ml-1">Phone</span></p>
-                                        <p><i className="fa fa-time"></i> <span className="ml-1">30 Mins</span></p>
+                                        <p><i className="fa fa-phone" aria-hidden="true"></i><span className="ml-1">Phone</span></p>
+                                        <p><i className="fa fa-clock-o" aria-hidden="true"></i> <span className="ml-1">30 Mins</span></p>
                                     </div>
-                                    <div className="d-flex ml-auto">
-                                        <p><i class="fa fa-calendar" aria-hidden="true"></i></p>
-                                        <p><i class="fa fa-trash-o" aria-hidden="true"></i></p>
+                                    <div className="d-flex ml-auto secRight">
+                                        <p><i className="fa fa-pencil" aria-hidden="true"></i></p>
+                                        <p><i className="fa fa-eye" aria-hidden="true"></i></p>
                                     </div>
                                 </div>    
                                 <div className="d-flex ">
