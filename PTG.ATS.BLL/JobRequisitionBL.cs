@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PTG.ATS.DAL.Models;
+using PTG.ATS.Entities.DTO;
 
 namespace PTG.ATS.BLL
 {
@@ -51,7 +52,7 @@ namespace PTG.ATS.BLL
         }
 
         // Save Requisition Templates 1st Screen
-        public JobRequisitionDTO SaveRequisition(JobRequisitionDTO jobRequisitionDTO)
+        public JobRequisitionSaveDTO SaveRequisition(JobRequisitionSaveDTO jobRequisitionDTO)
         {
             try
             {
@@ -71,7 +72,7 @@ namespace PTG.ATS.BLL
             }
         }
 
-        private JobRequisition MapJobRequisition(JobRequisitionDTO jobRequisitionDTO)
+        private JobRequisition MapJobRequisition(JobRequisitionSaveDTO jobRequisitionDTO)
         {
             JobRequisition _jobRequisitionDTO = new JobRequisition();
             _jobRequisitionDTO.JobRequisitionId = jobRequisitionDTO.JobRequisitionId;
@@ -99,7 +100,7 @@ namespace PTG.ATS.BLL
             _jobRequisitionDTO.IsActive = jobRequisitionDTO.IsActive;
             _jobRequisitionDTO.IsDeleted = jobRequisitionDTO.IsDeleted;
             _jobRequisitionDTO.CreatedBy = jobRequisitionDTO.CreatedBy;
-            _jobRequisitionDTO.CreatedDate = System.DateTime.Now;
+            _jobRequisitionDTO.CreatedDate = null;
             _jobRequisitionDTO.ModifiedBy = jobRequisitionDTO.ModifiedBy;
             _jobRequisitionDTO.ModifiedDate = jobRequisitionDTO.ModifiedDate;
 

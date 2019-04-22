@@ -1,4 +1,5 @@
 ﻿using PTG.ATS.Entities;
+using PTG.ATS.Entities.DTO;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -19,7 +20,7 @@ namespace PTG.ATS.BLL
 
         List<RequisitionTemplateMasterDTO> GetRequisitionTemplates();
 
-        JobRequisitionDTO SaveRequisition(JobRequisitionDTO jobRequisitionDTO);
+        JobRequisitionSaveDTO SaveRequisition(JobRequisitionSaveDTO jobRequisitionDTO);
 
         HiringStageMasterDTO PostHiring(HiringStageMasterDTO hiringStageMasterDTO);
 

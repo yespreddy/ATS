@@ -6,5 +6,6 @@ namespace PTG.ATS.Infra
 {
     class IBaseEntity
     {
+        //int JobRequisitionId;
     }
 }

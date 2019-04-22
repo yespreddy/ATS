@@ -1,5 +1,6 @@
 ﻿using PTG.ATS.DAL.Models;
 using PTG.ATS.Entities;
+using PTG.ATS.Entities.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -119,6 +120,11 @@ namespace PTG.ATS.BLL
         }
 
         public JobRequisitionDTO SaveRequisition(JobRequisitionDTO jobRequisitionDTO)
+        {
+            throw new NotImplementedException();
+        }
+
+        public JobRequisitionSaveDTO SaveRequisition(JobRequisitionSaveDTO jobRequisitionDTO)
         {
             throw new NotImplementedException();
         }

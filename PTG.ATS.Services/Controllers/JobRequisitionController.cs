@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using PTG.ATS.BLL;
+using PTG.ATS.Entities.DTO;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -83,7 +84,7 @@ namespace PTG.ATS.Services.Controllers
         // Save Requisition Templates 1st Screen
         [HttpPost]
         [Route("SaveRequisition")]
-        public ActionResult SaveRequisition([FromBody] JobRequisitionDTO jobRequisitionDTO)
+        public ActionResult SaveRequisition([FromBody] JobRequisitionSaveDTO jobRequisitionDTO)
         {
             if (jobRequisitionDTO == null)
                 return BadRequest();
@@ -95,6 +96,5 @@ namespace PTG.ATS.Services.Controllers
             else
                 return Ok(response);
         }
-
     }
 }
