@@ -7,6 +7,7 @@ namespace PTG.ATS.DAL.Models
     {
         public CityMaster()
         {
+            Employee = new HashSet<Employee>();
             JobRequisition = new HashSet<JobRequisition>();
             JobRequisitionCandidate = new HashSet<JobRequisitionCandidate>();
             LocationMaster = new HashSet<LocationMaster>();
@@ -23,6 +24,7 @@ namespace PTG.ATS.DAL.Models
         public DateTime? ModifiedDate { get; set; }
 
         public virtual StateMaster State { get; set; }
+        public virtual ICollection<Employee> Employee { get; set; }
         public virtual ICollection<JobRequisition> JobRequisition { get; set; }
         public virtual ICollection<JobRequisitionCandidate> JobRequisitionCandidate { get; set; }
         public virtual ICollection<LocationMaster> LocationMaster { get; set; }

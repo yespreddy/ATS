@@ -7,6 +7,7 @@ namespace PTG.ATS.DAL.Models
     {
         public CountryMaster()
         {
+            Employee = new HashSet<Employee>();
             JobRequisition = new HashSet<JobRequisition>();
             StateMaster = new HashSet<StateMaster>();
         }
@@ -21,6 +22,7 @@ namespace PTG.ATS.DAL.Models
         public string ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
 
+        public virtual ICollection<Employee> Employee { get; set; }
         public virtual ICollection<JobRequisition> JobRequisition { get; set; }
         public virtual ICollection<StateMaster> StateMaster { get; set; }
     }

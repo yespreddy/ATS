@@ -309,6 +309,10 @@ namespace PTG.ATS.DAL.Models
             {
                 entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
 
+                entity.Property(e => e.CityId).HasColumnName("CityID");
+
+                entity.Property(e => e.CountryId).HasColumnName("CountryID");
+
                 entity.Property(e => e.CreatedBy)
                     .HasMaxLength(100)
                     .IsUnicode(false);
@@ -339,11 +343,25 @@ namespace PTG.ATS.DAL.Models
                     .IsRequired()
                     .HasDefaultValueSql("((1))");
 
+                entity.Property(e => e.LocationId).HasColumnName("LocationID");
+
                 entity.Property(e => e.ModifiedBy)
                     .HasMaxLength(100)
                     .IsUnicode(false);
 
                 entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
+
+                entity.Property(e => e.StateId).HasColumnName("StateID");
+
+                entity.HasOne(d => d.City)
+                    .WithMany(p => p.Employee)
+                    .HasForeignKey(d => d.CityId)
+                    .HasConstraintName("FK__Employee__City__0B5CAFEA");
+
+                entity.HasOne(d => d.Country)
+                    .WithMany(p => p.Employee)
+                    .HasForeignKey(d => d.CountryId)
+                    .HasConstraintName("FK__Employee__Country__0B5CAFEA");
 
                 entity.HasOne(d => d.Department)
                     .WithMany(p => p.Employee)
@@ -362,6 +380,16 @@ namespace PTG.ATS.DAL.Models
                     .HasForeignKey(d => d.EmploymentTypeId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Employee__Employ__57DD0BE4");
+
+                entity.HasOne(d => d.Location)
+                    .WithMany(p => p.Employee)
+                    .HasForeignKey(d => d.LocationId)
+                    .HasConstraintName("FK__Employee__Location__0B5CAFEA");
+
+                entity.HasOne(d => d.State)
+                    .WithMany(p => p.Employee)
+                    .HasForeignKey(d => d.StateId)
+                    .HasConstraintName("FK__Employee__State__0B5CAFEA");
             });
 
             modelBuilder.Entity<EmploymentTypeMaster>(entity =>

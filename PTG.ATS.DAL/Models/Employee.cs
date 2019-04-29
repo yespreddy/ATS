@@ -24,6 +24,10 @@ namespace PTG.ATS.DAL.Models
         public int DesignationId { get; set; }
         public int EmploymentTypeId { get; set; }
         public int DepartmentId { get; set; }
+        public int CountryId { get; set; }
+        public int StateId { get; set; }
+        public int CityId { get; set; }
+        public int LocationId { get; set; }
         public bool? IsActive { get; set; }
         public bool IsDeleted { get; set; }
         public string CreatedBy { get; set; }
@@ -31,9 +35,13 @@ namespace PTG.ATS.DAL.Models
         public string ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
 
+        public virtual CityMaster City { get; set; }
+        public virtual CountryMaster Country { get; set; }
         public virtual DepartmentMaster Department { get; set; }
         public virtual DesignationMaster Designation { get; set; }
         public virtual EmploymentTypeMaster EmploymentType { get; set; }
+        public virtual LocationMaster Location { get; set; }
+        public virtual StateMaster State { get; set; }
         public virtual ICollection<JobRequisition> JobRequisitionApprover { get; set; }
         public virtual ICollection<JobRequisitionInterviewPanel> JobRequisitionInterviewPanelApprovalDirector { get; set; }
         public virtual ICollection<JobRequisitionInterviewPanel> JobRequisitionInterviewPanelCeo { get; set; }
