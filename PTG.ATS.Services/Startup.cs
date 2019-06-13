@@ -43,6 +43,7 @@ namespace PTG.ATS.Services
             ApplicationContext.InstanceInit();
             //Interface registration
             services.AddTransient<IJobRequisition, JobRequisitionBL>();
+            services.AddTransient<IPriliminaryQuestionary, PriliminaryQuestionaryBLL>();
 
             services.AddCors(options =>
             {
