@@ -60,3 +60,6 @@ D:\sudhir\ATS\ATS\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.Asse
 D:\sudhir\ATS\ATS\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.csproj.CopyComplete
 D:\sudhir\ATS\ATS\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.dll
 D:\sudhir\ATS\ATS\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.pdb
+F:\ATS_Code\ATS\PTG.ATS.Entities\bin\Debug\netcoreapp2.2\PTG.ATS.Infra.dll
+F:\ATS_Code\ATS\PTG.ATS.Entities\bin\Debug\netcoreapp2.2\PTG.ATS.Infra.pdb
+F:\ATS_Code\ATS\PTG.ATS.Entities\obj\Debug\netcoreapp2.2\PTG.ATS.Entities.csproj.CopyComplete
